@@ -5,6 +5,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_event_wagner_picture_2"
+		texturefile = "gfx/event_pictures/WAG/wagner_picture_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_idea_Wagner_army"
 		texturefile = "gfx/wagner_gfx/Wagner_idea.png"
 		legacy_lazy_load = no
@@ -13,5 +18,19 @@ spriteTypes = {
 		name = "GFX_Wagner_tt"
 		texturefile = "gfx/wagner_gfx/Wagner_tt.png"
 		legacy_lazy_load = no
+	}
+
+	#국민정신 
+	spriteType = { 
+		name = "GFX_idea_WAG_NoStepBack"
+		texturefile = "gfx/wagner_gfx/WAG_NoStepBack.png"
+	}
+	spriteType = {
+		name = "GFX_idea_WAG_Russia_Tactics"
+		texturefile = "gfx/wagner_gfx/WAG_Russia_Tactics.png"
+	}
+	spriteType = {
+		name = "GFX_idea_WAG_bad_bureaucracy"
+		texturefile = "gfx/wagner_gfx/WAG_bad_bureaucracy.png"
 	}
 }

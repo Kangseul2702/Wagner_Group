@@ -2,10 +2,8 @@ add_namespace = wagtrip
 # country event
 
 country_event = {
-	id =wagtrip.1
-	immediate = { 
-		log = "[GetDateText]: [Root.GetName]: event wagtrip.1"
-	}
+	id = wagtrip.1
+	immediate = {  log = "[GetDateText]: [Root.GetName]: event wagtrip.1" }
 	title = wagtrip.1.t
 	desc = wagtrip.1.desc
 	picture = GFX_event_Wagner_picture_1
@@ -15,7 +13,26 @@ country_event = {
 
 	option = {
 		name = wagtrip.1.a
-		
+		log = "[GetDateText]: [Root.GetName]: event wagtrip.1.a"
+		add_ideas = WAG_NoStepBack
+		country_event = { id = wagtrip.2 days = 04 }
+	}
+}
+
+country_event = {
+	id = wagtrip.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wagtrip.2" }
+	title = wagtrip.2.t
+	desc = wagtrip.2.desc
+	picture = GFX_event_wagner_picture_2
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = wagtrip.2.a
+		log = "[GetDateText]: [Root.GetName]: event wagtrip.2.a"
+		add_ideas = WAG_bad_bureaucracy
 	}
 }
 

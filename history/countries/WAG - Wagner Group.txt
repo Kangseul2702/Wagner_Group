@@ -5,6 +5,13 @@ capital = 195
 add_ideas = {
 	Wagner_army
 	closed_economy
+
+	WAG_Russia_Tactics
+}
+set_party_name = {
+	ideology = loyal_pop
+	long_name = Wagner_party_long
+	name = Wagner_party
 }
 
 set_technology = {
