@@ -1,0 +1,58 @@
+music_station = "radio_jujutsu_kaisen"
+
+music = {
+	song = "Where_our_blue_is"
+	chance = {
+		modifier = {
+			factor = 2
+		}		
+	}
+}
+music = {
+	song = "Akari"
+	chance = {
+		modifier = {
+			factor = 2
+		}		
+	}
+}
+music = {
+	song = "SPECIALZ"
+	chance = {
+		modifier = {
+			factor = 2
+		}		
+	}
+}
+music = {
+	song = "hero"
+	chance = {
+		modifier = {
+			factor = 2
+		}		
+	}
+}
+music = {
+	song = "Sunny"
+	chance = {
+		modifier = {
+			factor = 2
+		}		
+	}
+}
+music = {
+	song = "Idideverything_ai_gojo"
+	chance = {
+		modifier = {
+			factor = 2
+		}		
+	}
+}
+music = {
+	song = "they_are_not_there"
+	chance = {
+		modifier = {
+			factor = 2
+		}		
+	}
+}

@@ -1,0 +1,37 @@
+# MAINTHEME
+
+music = {
+	name = "Where_our_blue_is"
+	file = "Where_our_blue_is.ogg"
+	volume = 1
+}
+music = {
+	name = "Akari"
+	file = "Akari.ogg"
+	volume = 1
+}
+music = {
+	name = "SPECIALZ"
+	file = "SPECIALZ.ogg"
+	volume = 1
+}
+music = {
+	name = "hero"
+	file = "hero.ogg"
+	volume = 1
+}
+music = {
+	name = "Sunny"
+	file = "Sunny.ogg"
+	volume = 1
+}
+music = {
+	name = "Idideverything_ai_gojo"
+	file = "Idideverything_aigojo.ogg"
+	volume = 1
+}
+music = {
+	name = "they_are_not_there"
+	file = "they_are_not_there.ogg"
+	volume = 0.6
+}
