@@ -8,6 +8,7 @@ characters={
 		}
 		
 		country_leader = {
+			desc = WAG_Prigozhin_desc
 			ideology = Wagner_ideologies 
 			id = -1
 		}
