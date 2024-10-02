@@ -1,0 +1,25 @@
+sub_units = {
+	#Tactical Bomber = Multirole fighter
+	mr_fighter = {
+		sprite = mr_fighter
+		priority = 1
+		active = yes
+		type = { fighter cas tactical_bomber }
+		need = { jet_multirole_equipment = 1 }
+		categories = { category_fighter }
+		land_air_wing_size = 100
+	}
+
+	#modern_carrier Tactical Bomber = Multirole fighter
+	cv_mr_fighter = {
+		sprite = mr_fighter
+		priority = 1
+		active = yes
+		type = { fighter cas tactical_bomber }
+		need = { jet_multirole_equipment = 1 }
+		categories = { category_fighter }
+		land_air_wing_size = 10
+		carrier_air_wing_size = 10
+	}
+}
+	

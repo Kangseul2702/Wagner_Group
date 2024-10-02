@@ -1,0 +1,10 @@
+objectTypes = {
+	pdxmesh = {
+		name = "SOV_IFV_T_15_Armata_mesh"
+		file = "gfx/models/units/SOV/tanks/SOV_IFV_T_15_Armata.mesh"
+
+		animation = { id = "attack"			type = "SOV_IFV_T_15_Armata_attack_animation" }
+		animation = { id = "idle"			type = "SOV_IFV_T_15_Armata_idle_animation" }
+		animation = { id = "move"			type = "SOV_IFV_T_15_Armata_moving_animation" }
+	}
+}

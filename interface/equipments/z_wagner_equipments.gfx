@@ -1,0 +1,130 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_event_Wagner_picture_1_medium"
+		texturefile = "gfx/event_pictures/WAG/Wagner_picture_1.png"
+		
+	}
+
+	# LAND
+
+	spriteType = {
+		name = "GFX_WAG_modern_tank_equipment_3_medium"
+		textureFile = "gfx/wagner_equipments/LAND/MBT5.dds"
+		
+	}
+
+	spriteType = {
+		name = "GFX_WAG_modern_tank_artillery_equipment_3_medium"
+		textureFile = "gfx/wagner_equipments/LAND/SPG5.dds"
+		
+	}
+
+	spriteType = {
+		name = "GFX_WAG_modern_tank_aa_equipment_3_medium"
+		textureFile = "gfx/wagner_equipments/LAND/SPA4.dds"
+		
+	}
+
+	spriteType = {
+		name = "GFX_WAG_attack_heli_equipment_3_medium"
+		textureFile = "gfx/wagner_equipments/AIR/AH4.dds"
+		
+	}
+
+	spriteType = {
+		name = "GFX_WAG_mechanized_equipment_4_medium"
+		textureFile = "gfx/wagner_equipments/LAND/APC5.dds"
+		
+	}
+
+	spriteType = {
+		name = "GFX_WAG_infantry_weapons_0_medium"
+		textureFile = "gfx/wagner_equipments/INF/INF1.dds"
+		
+	}
+
+	spriteType = {
+		name = "GFX_WAG_infantry_weapons_1_medium"
+		textureFile = "gfx/wagner_equipments/INF/INF2.dds"
+		
+	}
+
+	spriteType = {
+		name = "GFX_WAG_infantry_weapons_2_medium"
+		textureFile = "gfx/wagner_equipments/INF/INF3.dds"
+		
+	}
+
+	spriteType = {
+		name = "GFX_WAG_infantry_weapons_3_medium"
+		textureFile = "gfx/wagner_equipments/INF/INF4.dds"
+		
+	}
+
+	spriteType = {
+		name = "GFX_WAG_infantry_weapons_4_medium"
+		textureFile = "gfx/wagner_equipments/INF/INF5.dds"
+		
+	}
+
+	spriteType = {
+		name = "GFX_WAG_infantry_weapons_5_medium"
+		textureFile = "gfx/wagner_equipments/INF/INF6.dds"
+		
+	}
+
+	# AIR
+
+	spriteType = {
+		name = "GFX_WAG_jet_fighter_equipment_3_medium"
+		textureFile = "gfx/wagner_equipments/AIR/AS4.dds"
+		
+	}
+
+	spriteType = {
+		name = "GFX_WAG_jet_multirole_equipment_0_medium"
+		textureFile = "gfx/wagner_equipments/AIR/MR4.dds"
+		
+	}
+
+	# Ground Forces Technology
+    spriteType = {
+        name = "GFX_WAG_Wagner_Tank_Tech_medium"
+        texturefile = "gfx/wagner_equipments/LAND/MBT5.dds"
+        
+    }
+
+    spriteType = {
+        name = "GFX_WAG_Wagner_mechanized_Tech_medium"
+        texturefile = "gfx/wagner_equipments/LAND/APC5.dds"
+        
+    }
+    
+    # Artillery Technology
+    spriteType = {
+        name = "GFX_WAG_Wagner_Artillery_Tech_medium"
+        texturefile = "gfx/wagner_equipments/LAND/SPG5.dds"
+        
+    }
+    
+    # Air Defense Technology
+    spriteType = {
+        name = "GFX_WAG_Wagner_Air_Defense_Tech_medium"
+        texturefile = "gfx/wagner_equipments/LAND/SPA4.dds"
+        
+    }
+    
+    # Air Force Technology
+    spriteType = {
+        name = "GFX_WAG_Wagner_Air_Tech_medium"
+        texturefile = "gfx/wagner_equipments/AIR/MR4.dds"
+        
+    }
+    
+    # Helicopter Technology
+    spriteType = {
+        name = "GFX_WAG_Wagner_Heli_Tech_medium"
+        texturefile = "gfx/wagner_equipments/AIR/AH4.dds"
+        
+    }
+}

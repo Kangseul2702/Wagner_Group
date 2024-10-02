@@ -1,0 +1,72 @@
+objectTypes = {
+	##### RUSSIA #####
+
+	pdxmesh = {
+		name = "SOV_A50_mesh"
+		file = "gfx/models/units/SOV/planes/SOV_awacs_a50.mesh"
+	}
+	pdxmesh = {
+		name = "SOV_SU33_mesh"
+		file = "gfx/models/units/SOV/planes/SOV_cvmr_su33.mesh"
+	}
+	pdxmesh = {
+		name = "SOV_SU75_mesh"
+		file = "gfx/models/units/SOV/planes/SOV_mr_su75.mesh"
+	}
+	pdxmesh = {
+		name = "SOV_SU30_mesh"
+		file = "gfx/models/units/SOV/planes/SOV_mr_su30.mesh"
+	}
+	pdxmesh = {
+		name = "SOV_SU27_mesh"
+		file = "gfx/models/units/SOV/planes/SOV_as_su27.mesh"
+	}
+	pdxmesh = {
+		name = "SOV_MIG21_mesh"
+		file = "gfx/models/units/SOV/planes/SOV_mr_mig21.mesh"
+	}
+	pdxmesh = {
+		name = "SOV_MIG23_mesh"
+		file = "gfx/models/units/SOV/planes/SOV_as_mig23.mesh"
+	}
+	pdxmesh = {
+		name = "SOV_Tu95_mesh"
+		file = "gfx/models/units/SOV/planes/SOV_bomber_tu95.mesh"
+	}
+	pdxmesh = {
+		name = "SOV_Tu22_mesh"
+		file = "gfx/models/units/SOV/planes/SOV_bomber_tu22.mesh"
+	}
+	pdxmesh = {
+		name = "SOV_Tu160_mesh"
+		file = "gfx/models/units/SOV/planes/SOV_bomber_tu160.mesh"
+	}
+	pdxmesh = {
+		name = "SOV_MIG29_mesh"
+		file = "gfx/models/units/SOV/planes/SOV_mr_mig29.mesh"
+	}
+	pdxmesh = {
+		name = "SOV_MIG29K_mesh"
+		file = "gfx/models/units/SOV/planes/SOV_cvmr_mig29k.mesh"
+	}
+	pdxmesh = {
+		name = "SOV_SU57_mesh"
+		file = "gfx/models/units/SOV/planes/SOV_as_su57.mesh"
+	}
+	pdxmesh = {
+		name = "SOV_SU17_mesh"
+		file = "gfx/models/units/SOV/planes/SOV_stk_su17.mesh"
+	}
+	pdxmesh = {
+		name = "SOV_SU24_mesh"
+		file = "gfx/models/units/SOV/planes/SOV_stk_su24.mesh"
+	}
+	pdxmesh = {
+		name = "SOV_SU34_mesh"
+		file = "gfx/models/units/SOV/planes/SOV_stk_su34.mesh"
+	}
+	pdxmesh = {
+		name = "SOV_cas_mesh"
+		file = "gfx/models/units/SOV/planes/SOV_cas_su25.mesh"
+	}
+}

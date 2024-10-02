@@ -1,0 +1,135 @@
+technologies = {
+    # Ground Forces Technology
+	Wagner_Tank_Tech = {
+        start_year = 2022
+        
+        allow = {
+            tag = WAG
+        }
+        
+        enable_equipments = {
+            modern_tank_equipment_3
+        }
+        
+        enable_subunits = {
+            modern_armor
+            mechanized
+        }
+        
+        research_cost = 1
+        
+        ai_will_do = {
+            factor = 10
+        }
+	}
+
+
+	Wagner_mechanized_Tech = {
+        start_year = 2022
+        
+        allow = {
+            tag = WAG
+        }
+        
+        enable_equipments = {
+            mechanized_equipment_4
+        }
+        
+        enable_subunits = {
+            modern_armor
+            mechanized
+        }
+        
+        research_cost = 1
+        
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    
+    # Artillery Technology
+    Wagner_Artillery_Tech = {
+        start_year = 2022
+        
+        allow = {
+            tag = WAG
+        }
+        
+        enable_equipments = {
+            modern_tank_artillery_equipment_3
+        }
+        
+        research_cost = 1
+        
+        ai_will_do = {
+            factor = 8
+        }
+    }
+    
+    # Air Defense Technology
+    Wagner_Air_Defense_Tech = {
+        start_year = 2022
+        
+        allow = {
+            tag = WAG
+        }
+        
+        enable_equipments = {
+            modern_tank_aa_equipment_3
+        }
+        
+        research_cost = 1
+        
+        ai_will_do = {
+            factor = 7
+        }
+    }
+    
+    # Air Force Technology
+    Wagner_Air_Tech = {
+        start_year = 2022
+        
+        allow = {
+            tag = WAG
+        }
+        
+        enable_equipments = {
+            jet_multirole_equipment_0
+            jet_fighter_equipment_3
+        }
+        
+        enable_subunits = {
+            mr_fighter
+            cv_mr_fighter
+        }
+        
+        research_cost = 1
+        
+        ai_will_do = {
+            factor = 9
+        }
+    }
+    
+    # Helicopter Technology
+    Wagner_Heli_Tech = {
+        start_year = 2022
+        
+        allow = {
+            tag = WAG
+        }
+        
+        enable_equipments = {
+            attack_heli_equipment_3
+        }
+        
+        enable_subunits = {
+            attack_heli_support
+        }
+        
+        research_cost = 1
+        
+        ai_will_do = {
+            factor = 8
+        }
+    }
+}
