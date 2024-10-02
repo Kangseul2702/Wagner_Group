@@ -9,14 +9,6 @@ music = {
 	}
 }
 music = {
-	song = "Akari"
-	chance = {
-		modifier = {
-			factor = 2
-		}		
-	}
-}
-music = {
 	song = "SPECIALZ"
 	chance = {
 		modifier = {

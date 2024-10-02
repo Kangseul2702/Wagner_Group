@@ -6,11 +6,6 @@ music = {
 	volume = 1
 }
 music = {
-	name = "Akari"
-	file = "Akari.ogg"
-	volume = 1
-}
-music = {
 	name = "SPECIALZ"
 	file = "SPECIALZ.ogg"
 	volume = 1
