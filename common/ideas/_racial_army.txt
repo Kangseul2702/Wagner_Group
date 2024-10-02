@@ -1,0 +1,271 @@
+ideas = {
+
+	racial_army = {
+		use_list_view = yes
+
+		Kivotosian_army = {
+
+			cost = -1
+			removal_cost = -1
+
+			available = {
+				has_idea = Kivotosian_army
+			}
+
+			modifier = {
+				army_morale_factor = 0.15
+				army_org_factor = 0.15
+				army_defence_factor = 0.1
+				land_night_attack = -0.10
+				custom_modifier_tooltip = Kivotosian_tt
+			}
+
+
+			cancel_if_invalid = no
+		}
+
+		Umamusume_army = {		
+			cost = -1
+			removal_cost = -1
+
+			available = {
+				has_idea = Umamusume_army
+			}
+
+			modifier = {
+				army_morale_factor = 0.05
+				army_speed_factor = 0.50
+				army_attack_factor = 0.30
+				breakthrough_factor = 0.1
+				custom_modifier_tooltip = umamusume_tt
+			}
+			cancel_if_invalid = no
+		}
+
+		Bioroid_army = {
+			cost = -1
+			removal_cost = -1
+			available = {
+				has_idea = Bioroid_army
+			}
+			on_add = {
+				country_lock_all_division_template = yes
+			}
+			on_remove = {
+				country_lock_all_division_template = no 
+			}
+			modifier = {
+				army_attack_factor = 0.5
+				army_defence_factor = 0.5
+    			custom_modifier_tooltip = Bioroid_army_tt
+			}
+
+
+
+			cancel_if_invalid = no
+		}
+		
+		Bangdream_army = {
+			cost = -1
+			removal_cost = -1
+			available = {
+				has_idea = Bangdream_army
+			}
+			
+			modifier = {
+				army_infantry_attack_factor = -0.15
+				army_infantry_defence_factor = -0.15
+				army_org_factor = -0.10
+				army_morale_factor = -0.10
+				custom_modifier_tooltip = Bangdream_army_tt
+			}
+	
+			cancel_if_invalid = no
+		}
+
+		arcanists_army = {
+			#리버스 1999
+			cost = -1
+			removal_cost = -1
+
+			available = {
+				has_idea = arcanists_army
+			}
+			
+			modifier = {
+				army_org_factor = -0.1
+				dig_in_speed_factor = -0.1
+				max_planning_factor = 0.2
+				terrain_penalty_reduction = 0.1
+				custom_modifier_tooltip = arcanists_army_tt
+			}
+	
+			cancel_if_invalid = no
+		}
+
+		gensokyo_human_army = {
+			cost = -1
+			removal_cost = -1
+
+			available = {
+				has_idea = gensokyo_human_army
+			}
+			
+			modifier = {
+				research_speed_factor = 0.05
+				custom_modifier_tooltip = gensokyo_humankind_army_tt
+			}
+	
+			cancel_if_invalid = no
+		}
+
+		gensokyo_non_human_army = {
+			cost = -1
+			removal_cost = -1
+
+			available = {
+				has_idea = gensokyo_non_human_army
+			}
+			
+			modifier = {
+				industrial_capacity_dockyard = -0.60
+				minimum_training_level = -0.90
+				max_training = -0.15
+				research_speed_factor = -0.50
+				out_of_supply_factor = -0.60
+				supply_combat_penalties_on_core_factor = 0.90
+				recruitable_population = -0.50
+				non_core_manpower = -0.90
+				terrain_penalty_reduction = 0.15
+				custom_modifier_tooltip = gensokyo_non_human_army_tt
+			}
+	
+			cancel_if_invalid = no
+		}
+
+		seraph_army = {
+			cost = -1
+			removal_cost = -1
+
+			available = {
+				has_idea = seraph_army
+			}
+			
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				army_org_factor = 0.15
+				army_morale_factor = 0.15
+				conscription_factor = -0.5
+				production_factory_efficiency_gain_factor = -0.3
+				terrain_penalty_reduction = 0.3
+				winter_attrition_factor = -0.75
+				heat_attrition_factor = -0.75
+				custom_modifier_tooltip = seraph_army_tt
+			}
+	
+			cancel_if_invalid = no
+		}
+
+		idol_army = {
+			cost = -1
+			removal_cost = -1
+
+			available = {
+				has_idea = idol_army
+			}
+			
+			modifier = {
+				army_org_factor = -0.15
+				army_morale_factor = 0.1
+				army_defence_factor = -0.15
+				conscription = 0.015
+				custom_modifier_tooltip = idol_army_tt
+			}
+	
+			cancel_if_invalid = no
+		}
+
+		nikke_army = {
+			cost = -1
+			removal_cost = -1
+
+			available = {
+				has_idea = nikke_army
+			}
+			
+			modifier = {
+				custom_modifier_tooltip = nikke_army_tt
+			}
+	
+			cancel_if_invalid = no
+		}
+
+
+		generic_human_army = {
+			default = yes
+
+			cost = -1
+			removal_cost = -1
+
+			available = {
+				has_idea = generic_human_army
+			}
+			
+			modifier = {
+				army_attack_factor = -0.2
+				army_defence_factor = -0.2
+				army_org_factor = -0.2
+				army_morale_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.5
+				custom_modifier_tooltip = generic_human_army_tt
+			}
+	
+			cancel_if_invalid = no
+		}
+
+		generic_non_human_army = {
+			cost = -1
+			removal_cost = -1
+
+			available = {
+				has_idea = generic_non_human_army
+			}
+			
+			modifier = {
+				army_attack_factor = -0.2
+				army_defence_factor = -0.2
+				army_org_factor = -0.2
+				army_morale_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.5
+				custom_modifier_tooltip = generic_non_human_army_tt
+			}
+	
+			cancel_if_invalid = no
+		}
+		#### WG mod fix
+		Wagner_army = {
+			allowed = { always = no }
+			available = { tag = WAG }
+			allowed_to_remove = { always = no }
+
+			cost = -1
+			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = 0.15
+				army_org_factor = -0.05
+				army_defence_factor = 0.1
+				army_attack_factor = 0.15
+				land_night_attack = 0.5
+				army_speed_factor = 0.15
+				breakthrough_factor = 0.1
+				conscription_factor = -0.25
+				custom_modifier_tooltip = Wagner_army_tt
+			}
+			
+			cancel_if_invalid = no
+		}
+		#### WG mod fix
+	}
+}

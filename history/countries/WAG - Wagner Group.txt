@@ -1,0 +1,29 @@
+oob = "WAG_3230"
+
+capital = 195
+
+add_ideas = {
+	Wagner_army
+	closed_economy
+}
+
+set_technology = {
+
+    infantry_weapons_0 = 1
+    carriage = 1
+
+}
+
+set_research_slots = 1
+
+recruit_character = WAG_Prigozhin
+
+set_politics = {
+	ruling_party = Wagner_ideologies
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	loyal_pop = 100
+}

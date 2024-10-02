@@ -1,0 +1,853 @@
+ideologies = {
+
+	loyal_pop = { #충성파1
+		types = {
+			#### WG MOD FIX
+			Wagner_ideologies = {
+				can_be_randomly_selected = no
+				color = { 31 32 35 }
+			}
+			#### WG MOD FIX
+			example_1 = {
+				can_be_randomly_selected = no # If no, the subideology will not be randomly selected when creating a new random leader.
+				color = { 88 101 147 } # Optional - if dont has, subideology has color of ideology.
+			}
+			SEV_noctchill_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 140 163 181 }
+			}
+			MyGO_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 167 227 254 }
+			}
+			#보스토키아 충성파1
+			VTK_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 145  31  31 }
+			}
+			PRV_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 145  31  31 }
+			}
+			#블루 아카이브 충성파1
+			TRI_loyal_subtype = {
+				can_be_randomly_selected = no
+				color = { 209 167 73 }
+			}
+			GEH_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 122 34 34 }
+			}
+			GEP_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 142 34 34 }
+			}
+			ABY_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = {110  165 181 }
+			}
+			SHA_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 110 150 181 }
+			}
+			TRC_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 209 167 73 }
+			}
+			RWN_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 145  31  31 }
+			}
+			ISD_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 178  81  98 }
+			}
+			# 기타 충성파1
+
+			NPC_loyal_pop_subtype = {
+				
+			}
+
+			#동방 프로젝트
+			Touhou_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 80 150 80 }
+			}
+
+			#아마네?(담당자가 주석 수정할 것)
+			Amane_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 255 242 225}
+			}
+			#우마무스메 충성파1
+			UMA_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 96 188 35 }
+			}
+
+			#헤번레계 충성파1
+			HBR_loyal_pop_subtype_nomal = { #기본 (시라카와 유이나)
+				can_be_randomly_selected = no
+				color = { 218 32 50 }
+			}
+
+			HBR_loyal_pop_subtype_ruka = { #기본 (카야모리 루카)
+				can_be_randomly_selected = no
+				color = { 218 32 50 }
+			}
+
+			HBR_loyal_pop_subtype_yuki = { #유키
+				can_be_randomly_selected = no
+				color = { 218 32 50 }
+			}
+			
+			HBR_loyal_pop_subtype_charlotta = { #샬로타
+				can_be_randomly_selected = no
+				color = { 218 32 50 }
+			}
+			
+			HBR_loyal_pop_subtype_higumin = { #히구밍
+				can_be_randomly_selected = no
+				color = { 218 32 50 }
+			}
+			
+			HBR_loyal_pop_subtype_megumin = { #아이카와 메구미
+				can_be_randomly_selected = no
+				color = { 218 32 50 }
+			}
+			# 걸판계 충성파1
+			ANZ_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 171 198 151 }
+			}
+			STG_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 143 39 76 }
+			}
+			BLD_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 55 105 161 }
+			}
+			STR_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 62 70 118 }
+			}
+			SND_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 231 175 102 }
+			}
+			CHT_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 180 189 139 }
+			}
+			BCF_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 145 154 187 }
+			}
+
+			#니케계 충성파
+			PNR_NVL_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 247 200 100 }
+			}
+			PNR_MDN_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 224 4 0 }
+			}
+			PNR_EXI_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 96 96 127 }
+			}
+			PNR_SNW_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 220 220 231 }
+			}
+			PNR_SCR_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 88 101 147 }
+			}
+			PNR_RPZ_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 88 101 147 }
+			}
+			PNR_CRW_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 201 188 158 }
+			}
+			PNR_CHM_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 88 101 147 }
+			}
+			PNR_KIL_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 88 101 147 }
+			}
+
+			# 사슴국
+			SHK_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 121 88 71 }
+			}
+			# 아메리카 합중국
+			USA_loyal_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 179 25 66 }
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_NONALIGNED_1"
+		}
+		
+		color = { 88 101 147 }
+		
+		rules = { # Rules for the ideology.  (yes/no)
+			can_force_government = no
+			can_generate_female_country_leaders  = yes
+			can_generate_female_unit_leaders  = yes
+			can_generate_female_aces = yes
+			can_join_factions = no
+			can_create_factions = no
+		}
+		
+		can_host_government_in_exile = no #Can host a government in exile
+		
+		modifiers = {
+			civilian_intel_to_others = 40.0
+			army_intel_to_others = 15.0
+			navy_intel_to_others = 15.0
+			airforce_intel_to_others = 15.0
+			hidden_modifier = { female_random_army_leader_chance = 1000.0 }
+			hidden_modifier = { female_random_admiral_chance = 1000.0 }
+			hidden_modifier = { female_divisional_commander_chance = 1000.0 }
+			hidden_modifier = { female_random_operative_chance = 1000.0 }
+			hidden_modifier = { female_random_country_leader_chance = 1000.0 }
+		}
+		
+		can_be_boosted = no # Can you boost this ideologies popularity in another country (yes/no)
+		
+		can_collaborate = yes # Can create collaboration governments
+		
+		faction_modifiers = {
+		
+		}
+	}
+
+	radical_pop = { #급진파1
+		types = {
+			example_2 = { # Used when assigning ideologies to leaders. Eg. democratic has conservatism, liberalism, and socialism. One value can be defined (yes/no)
+				can_be_randomly_selected = no # If no, the subideology will not be randomly selected when creating a new random leader.
+				color = { 0 0 0 } # Optional - if dont has, subideology has color of ideology.
+			}
+			NPC_radical_pop_subtype = {
+			}
+			#블루 아카이브 급진파
+			SHA_radical_pop_subtype = { #카야
+				can_be_randomly_selected = no
+				color = { 92 114 140 }
+			}
+			# 미쳐버린 마도카
+			SEV_noctchill_radical_pop_subtype = { # 히구치 마도카
+				can_be_randomly_selected = no
+				color = { 38 23 68 }
+			}
+
+			SEV_satsuki_radical_pop_subtype = { # 사츠키
+				can_be_randomly_selected = no
+				color = { 156 120 26 }
+			}
+
+			Xion_radical_pop_subtype = { # 시온 더 다크불릿
+				can_be_randomly_selected = no
+				color = { 53 64 71 }
+			}
+			ISD_radical_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 87 40 51 }
+			}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_EXAMPLE_2" # Faction names used by the ai when an ai with this ideology creates a faction. Can be defined in any localisation file.
+		}
+		color = { 0 0 0 }
+		
+		rules = { # Rules for the ideology.  (yes/no)
+			can_force_government = no
+			can_generate_female_country_leaders  = yes
+			can_generate_female_unit_leaders  = yes
+			can_generate_female_aces = yes
+			can_join_factions = no
+			can_create_factions = no
+		}
+		
+		can_host_government_in_exile = no #Can host a government in exile
+		
+		modifiers = {
+			civilian_intel_to_others = 40.0
+			army_intel_to_others = 15.0
+			navy_intel_to_others = 15.0
+			airforce_intel_to_others = 15.0
+			hidden_modifier = { female_random_army_leader_chance = 1000.0 }
+			hidden_modifier = { female_random_admiral_chance = 1000.0 }
+			hidden_modifier = { female_divisional_commander_chance = 1000.0 }
+			hidden_modifier = { female_random_operative_chance = 1000.0 }
+			hidden_modifier = { female_random_country_leader_chance = 1000.0 }
+		}
+		
+		can_be_boosted = no # Can you boost this ideologies popularity in another country (yes/no)
+		
+		can_collaborate = yes # Can create collaboration governments
+		
+		faction_modifiers = {
+		
+		}
+	}
+
+	neutral_pop = { #중도파1
+		types = {
+			example_3 = { # Used when assigning ideologies to leaders. Eg. democratic has conservatism, liberalism, and socialism. One value can be defined (yes/no)
+				can_be_randomly_selected = no # If no, the subideology will not be randomly selected when creating a new random leader.
+				color = { 100 100 100 } # Optional - if dont has, subideology has color of ideology.
+			}
+			NPC_neutral_pop_subtype = {
+			}
+			anarchy_subtype = {
+			}
+			# 세베르 전쟁 이후 정당
+			SEV_no_tsubasa_neutral_pop_subtype = { #이카루가 루카
+				can_be_randomly_selected = no
+				color = { 119 109 99 }
+			}
+			ISD_neutral_pop_subtype = {
+				can_be_randomly_selected = no
+				color = { 197  129  141 }
+			}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_EXAMPLE_3" # Faction names used by the ai when an ai with this ideology creates a faction. Can be defined in any localisation file.
+		}
+		color = { 100 100 100 }
+		
+		rules = { # Rules for the ideology.  (yes/no)
+			can_force_government = no
+			can_generate_female_country_leaders  = yes
+			can_generate_female_unit_leaders  = yes
+			can_generate_female_aces = yes
+			can_join_factions = no
+			can_create_factions = no
+		}
+		
+		can_host_government_in_exile = no #Can host a government in exile
+		
+		modifiers = {
+			civilian_intel_to_others = 40.0
+			army_intel_to_others = 15.0
+			navy_intel_to_others = 15.0
+			airforce_intel_to_others = 15.0
+			hidden_modifier = { female_random_army_leader_chance = 1000.0 }
+			hidden_modifier = { female_random_admiral_chance = 1000.0 }
+			hidden_modifier = { female_divisional_commander_chance = 1000.0 }
+			hidden_modifier = { female_random_operative_chance = 1000.0 }
+			hidden_modifier = { female_random_country_leader_chance = 1000.0 }
+		}
+		
+		can_be_boosted = no # Can you boost this ideologies popularity in another country (yes/no)
+		
+		can_collaborate = yes # Can create collaboration governments
+		
+		faction_modifiers = {
+		
+		}
+	}
+	# ------------------------------------------------N/A-------------------------------------------------------
+
+	## 이하 청색 계층 ##
+	#class_blue_politician = { #정치인
+	#
+	#	types = {
+	#		class_blue_politician_general_council_subtype = {
+	#		}
+	#		class_blue_politician_trinity_subtype = {
+	#		}
+	#	}
+	#	
+	#	dynamic_faction_names = {
+	#		"FACTION_NAME_NONALIGNED_1"
+	#	}
+	#	
+	#	color = { 88 101 147 }
+	#	
+	#	war_impact_on_world_tension = 0.1		
+	#	faction_impact_on_world_tension = 0.1
+	#	
+	#	rules = {
+	#		can_force_government = no
+	#		can_generate_female_country_leaders  = yes
+	#		can_generate_female_unit_leaders  = yes
+	#		can_generate_female_aces = yes
+	#	}
+	#	
+	#	can_collaborate = yes
+	#	
+	#	modifiers = {
+	#		civilian_intel_to_others = 40.0
+	#		army_intel_to_others = 15.0
+	#		navy_intel_to_others = 15.0
+	#		airforce_intel_to_others = 15.0
+	#		hidden_modifier = { female_random_army_leader_chance = 1000.0 }
+	#		hidden_modifier = { female_random_admiral_chance = 1000.0 }
+	#		hidden_modifier = { female_divisional_commander_chance = 1000.0 }
+	#		hidden_modifier = { female_random_operative_chance = 1000.0 }
+	#		hidden_modifier = { female_random_country_leader_chance = 1000.0 }
+	#	}
+	#}
+	#class_blue_politician_2 = { #정치인 - 게헨나
+	#
+	#	types = {
+	#		class_blue_politician_2_council_subtype = {
+	#		}
+	#	}
+	#	
+	#	dynamic_faction_names = {
+	#		"FACTION_NAME_NONALIGNED_1"
+	#	}
+	#	
+	#	color = { 63 74 112 }
+	#	
+	#	war_impact_on_world_tension = 0.1		
+	#	faction_impact_on_world_tension = 0.1
+	#	
+	#	rules = {
+	#		can_force_government = no
+	#		can_generate_female_country_leaders  = yes
+	#		can_generate_female_unit_leaders  = yes
+	#		can_generate_female_aces = yes
+	#	}
+	#	
+	#	can_collaborate = yes
+	#	
+	#	modifiers = {
+	#		civilian_intel_to_others = 40.0
+	#		army_intel_to_others = 15.0
+	#		navy_intel_to_others = 15.0
+	#		airforce_intel_to_others = 15.0
+	#		hidden_modifier = { female_random_army_leader_chance = 1000.0 }
+	#		hidden_modifier = { female_random_admiral_chance = 1000.0 }
+	#		hidden_modifier = { female_divisional_commander_chance = 1000.0 }
+	#		hidden_modifier = { female_random_operative_chance = 1000.0 }
+	#		hidden_modifier = { female_random_country_leader_chance = 1000.0 }
+	#	}
+	#}
+	#class_blue_bureaucrat = { #관료
+	#
+	#	types = {
+	#		class_blue_bureaucrat_subtype = {
+	#		}
+	#	}
+	#	
+	#	dynamic_faction_names = {
+	#		"FACTION_NAME_NONALIGNED_1"
+	#	}
+	#	
+	#	color = { 78 91 136 }
+	#	
+	#	war_impact_on_world_tension = 0.2	
+	#	faction_impact_on_world_tension = 0.2
+	#	
+	#	rules = {
+	#		can_puppet = no
+	#		can_send_volunteers = no
+	#		can_force_government = no
+	#		can_generate_female_country_leaders  = yes
+	#		can_generate_female_unit_leaders  = yes
+	#		can_generate_female_aces = yes
+	#	}
+	#	
+	#	can_collaborate = yes
+	#	
+	#	modifiers = {
+	#		civilian_intel_to_others = 40.0
+	#		army_intel_to_others = 15.0
+	#		navy_intel_to_others = 15.0
+	#		airforce_intel_to_others = 15.0
+	#		hidden_modifier = { female_random_army_leader_chance = 1000.0 }
+	#		hidden_modifier = { female_random_admiral_chance = 1000.0 }
+	#		hidden_modifier = { female_divisional_commander_chance = 1000.0 }
+	#		hidden_modifier = { female_random_operative_chance = 1000.0 }
+	#		hidden_modifier = { female_random_country_leader_chance = 1000.0 }
+	#	}
+	#}
+	#class_blue_soldier = { #군인
+	#
+	#	types = {
+	#		class_blue_soldier_subtype = {
+	#		}
+	#		class_blue_police_subtype = {
+	#		}
+	#		class_blue_prefect_team_subtype = {
+	#		}
+	#	}
+	#	
+	#	dynamic_faction_names = {
+	#		"FACTION_NAME_NONALIGNED_1"
+	#	}
+	#	
+	#	color = { 27 26 101 }
+	#	
+	#	war_impact_on_world_tension = 0.4		
+	#	faction_impact_on_world_tension = 0.4
+	#	
+	#	rules = {
+	#		can_generate_female_country_leaders  = yes
+	#		can_generate_female_unit_leaders  = yes
+	#		can_generate_female_aces = yes
+	#	}
+	#	
+	#	can_collaborate = yes
+	#	
+	#	modifiers = {
+	#		civilian_intel_to_others = 40.0
+	#		army_intel_to_others = 15.0
+	#		navy_intel_to_others = 15.0
+	#		airforce_intel_to_others = 15.0
+	#		hidden_modifier = { female_random_army_leader_chance = 1000.0 }
+	#		hidden_modifier = { female_random_admiral_chance = 1000.0 }
+	#		hidden_modifier = { female_divisional_commander_chance = 1000.0 }
+	#		hidden_modifier = { female_random_operative_chance = 1000.0 }
+	#		hidden_modifier = { female_random_country_leader_chance = 1000.0 }
+	#	}
+	#}
+	### 이하 회색 계층 ##
+	#class_gray_enterpriser = { #기업가
+	#
+	#	types = {
+	#		class_gray_enterpriser_subtype = {
+	#		}
+	#	}
+	#	
+	#	dynamic_faction_names = {
+	#		"FACTION_NAME_NONALIGNED_1"
+	#	}
+	#	
+	#	color = { 86 86 86 }
+	#	
+	#	war_impact_on_world_tension = 0.5			
+	#	faction_impact_on_world_tension = 0.5
+	#	
+	#	rules = {
+	#		can_force_government = no
+	#		can_generate_female_country_leaders  = yes
+	#		can_generate_female_unit_leaders  = yes
+	#		can_generate_female_aces = yes
+	#	}
+	#	
+	#	can_collaborate = yes
+	#	
+	#	modifiers = {
+	#		civilian_intel_to_others = 40.0
+	#		army_intel_to_others = 15.0
+	#		navy_intel_to_others = 15.0
+	#		airforce_intel_to_others = 15.0
+	#		hidden_modifier = { female_random_army_leader_chance = 1000.0 }
+	#		hidden_modifier = { female_random_admiral_chance = 1000.0 }
+	#		hidden_modifier = { female_divisional_commander_chance = 1000.0 }
+	#		hidden_modifier = { female_random_operative_chance = 1000.0 }
+	#		hidden_modifier = { female_random_country_leader_chance = 1000.0 }
+	#	}
+	#}
+	#class_gray_cleric = { #성직자
+	#
+	#	types = {
+	#		class_gray_cleric_subtype = {
+	#		}
+	#	}
+	#	
+	#	dynamic_faction_names = {
+	#		"FACTION_NAME_NONALIGNED_1"
+	#	}
+	#	
+	#	color = { 113 113 113 }
+	#	
+	#	war_impact_on_world_tension = 0.2		
+	#	faction_impact_on_world_tension = 0.2
+	#	
+	#	rules = {
+	#		can_force_government = no
+	#		can_generate_female_country_leaders  = yes
+	#		can_generate_female_unit_leaders  = yes
+	#		can_generate_female_aces = yes
+	#	}
+	#	
+	#	can_collaborate = yes
+	#	
+	#	modifiers = {
+	#		civilian_intel_to_others = 40.0
+	#		army_intel_to_others = 15.0
+	#		navy_intel_to_others = 15.0
+	#		airforce_intel_to_others = 15.0
+	#		hidden_modifier = { female_random_army_leader_chance = 1000.0 }
+	#		hidden_modifier = { female_random_admiral_chance = 1000.0 }
+	#		hidden_modifier = { female_divisional_commander_chance = 1000.0 }
+	#		hidden_modifier = { female_random_operative_chance = 1000.0 }
+	#		hidden_modifier = { female_random_country_leader_chance = 1000.0 }
+	#	}
+	#}
+	#class_gray_merchant = { #상인
+	#
+	#	types = {
+	#		class_gray_merchant_subtype = {
+	#		}
+	#	}
+	#	
+	#	dynamic_faction_names = {
+	#		"FACTION_NAME_NONALIGNED_1"
+	#	}
+	#	
+	#	color = { 55 55 55 }
+	#	
+	#	war_impact_on_world_tension = 0.5	
+	#	faction_impact_on_world_tension = 0.5
+	#	
+	#	rules = {
+	#		can_send_volunteers = no
+	#		can_force_government = no
+	#		can_generate_female_country_leaders  = yes
+	#		can_generate_female_unit_leaders  = yes
+	#		can_generate_female_aces = yes
+	#	}
+	#	
+	#	can_collaborate = yes
+	#	
+	#	modifiers = {
+	#		civilian_intel_to_others = 40.0
+	#		army_intel_to_others = 15.0
+	#		navy_intel_to_others = 15.0
+	#		airforce_intel_to_others = 15.0
+	#		hidden_modifier = { female_random_army_leader_chance = 1000.0 }
+	#		hidden_modifier = { female_random_admiral_chance = 1000.0 }
+	#		hidden_modifier = { female_divisional_commander_chance = 1000.0 }
+	#		hidden_modifier = { female_random_operative_chance = 1000.0 }
+	#		hidden_modifier = { female_random_country_leader_chance = 1000.0 }
+	#	}
+	#}
+	#class_gray_soldier = { #군인
+	#
+	#	types = {
+	#		class_gray_soldier_subtype = {
+	#		}
+	#	}
+	#	
+	#	dynamic_faction_names = {
+	#		"FACTION_NAME_NONALIGNED_1"
+	#	}
+	#	
+	#	color = { 47 47 47 }
+	#	
+	#	war_impact_on_world_tension = 0.8
+	#	faction_impact_on_world_tension = 0.8
+	#	
+	#	rules = {
+	#		can_generate_female_country_leaders  = yes
+	#		can_generate_female_unit_leaders  = yes
+	#		can_generate_female_aces = yes
+	#	}
+	#	
+	#	can_collaborate = yes
+	#	
+	#	modifiers = {
+	#		civilian_intel_to_others = 40.0
+	#		army_intel_to_others = 15.0
+	#		navy_intel_to_others = 15.0
+	#		airforce_intel_to_others = 15.0
+	#		hidden_modifier = { female_random_army_leader_chance = 1000.0 }
+	#		hidden_modifier = { female_random_admiral_chance = 1000.0 }
+	#		hidden_modifier = { female_divisional_commander_chance = 1000.0 }
+	#		hidden_modifier = { female_random_operative_chance = 1000.0 }
+	#		hidden_modifier = { female_random_country_leader_chance = 1000.0 }
+	#	}
+	#}
+	### 이하 적색 계급 ##
+	#class_red_citizen = { #소시민
+	#
+	#	types = {
+	#		class_red_citizen_subtype = {
+	#		}
+	#	}
+	#	
+	#	dynamic_faction_names = {
+	#		"FACTION_NAME_NONALIGNED_1"
+	#	}
+	#	
+	#	color = { 143 24 24 }
+	#	
+	#	war_impact_on_world_tension = 0.3
+	#	faction_impact_on_world_tension = 0.3
+	#	
+	#	rules = {
+	#		can_puppet = no
+	#		can_send_volunteers = no
+	#		can_force_government = no
+	#		can_generate_female_country_leaders  = yes
+	#		can_generate_female_unit_leaders  = yes
+	#		can_generate_female_aces = yes
+	#	}
+	#	
+	#	can_collaborate = yes
+	#	
+	#	modifiers = {
+	#		civilian_intel_to_others = 40.0
+	#		army_intel_to_others = 15.0
+	#		navy_intel_to_others = 15.0
+	#		airforce_intel_to_others = 15.0
+	#		hidden_modifier = { female_random_army_leader_chance = 1000.0 }
+	#		hidden_modifier = { female_random_admiral_chance = 1000.0 }
+	#		hidden_modifier = { female_divisional_commander_chance = 1000.0 }
+	#		hidden_modifier = { female_random_operative_chance = 1000.0 }
+	#		hidden_modifier = { female_random_country_leader_chance = 1000.0 }
+	#	}
+	#}
+	#class_red_laborer = { #노무자
+	#
+	#	types = {
+	#		class_red_laborer_subtype = {
+	#		}
+	#	}
+	#	
+	#	dynamic_faction_names = {
+	#		"FACTION_NAME_NONALIGNED_1"
+	#	}
+	#	
+	#	color = { 96 23 23 }
+	#	
+	#	war_impact_on_world_tension = 0.8
+	#	faction_impact_on_world_tension = 0.8
+	#	
+	#	rules = {
+	#		can_generate_female_country_leaders  = yes
+	#		can_generate_female_unit_leaders  = yes
+	#		can_generate_female_aces = yes
+	#	}
+	#	
+	#	can_collaborate = yes
+	#	
+	#	modifiers = {
+	#		civilian_intel_to_others = 40.0
+	#		army_intel_to_others = 15.0
+	#		navy_intel_to_others = 15.0
+	#		airforce_intel_to_others = 15.0
+	#		hidden_modifier = { female_random_army_leader_chance = 1000.0 }
+	#		hidden_modifier = { female_random_admiral_chance = 1000.0 }
+	#		hidden_modifier = { female_divisional_commander_chance = 1000.0 }
+	#		hidden_modifier = { female_random_operative_chance = 1000.0 }
+	#		hidden_modifier = { female_random_country_leader_chance = 1000.0 }
+	#	}
+	#}
+	#class_brown_slave = { #노예
+	#
+	#	types = {
+	#		class_brown_slave_subtype = {
+	#		}
+	#	}
+	#	
+	#	dynamic_faction_names = {
+	#		"FACTION_NAME_NONALIGNED_1"
+	#	}
+	#	
+	#	color = { 100 35 25 }
+	#	
+	#	war_impact_on_world_tension = 0.8
+	#	faction_impact_on_world_tension = 0.8
+	#	
+	#	rules = {
+	#		can_generate_female_country_leaders  = yes
+	#		can_generate_female_unit_leaders  = yes
+	#		can_generate_female_aces = yes
+	#	}
+	#	
+	#	can_collaborate = yes
+	#	
+	#	modifiers = {
+	#		civilian_intel_to_others = 40.0
+	#		army_intel_to_others = 15.0
+	#		navy_intel_to_others = 15.0
+	#		airforce_intel_to_others = 15.0
+	#		hidden_modifier = { female_random_army_leader_chance = 1000.0 }
+	#		hidden_modifier = { female_random_admiral_chance = 1000.0 }
+	#		hidden_modifier = { female_divisional_commander_chance = 1000.0 }
+	#		hidden_modifier = { female_random_operative_chance = 1000.0 }
+	#		hidden_modifier = { female_random_country_leader_chance = 1000.0 }
+	#	}
+	#}
+	#class_brown_evil = { 
+	#
+	#	types = {
+	#		class_brown_evil_1_subtype = {
+	#		}
+	#	}
+	#	
+	#	dynamic_faction_names = {
+	#		"FACTION_NAME_NONALIGNED_1"
+	#	}
+	#	
+	#	color = { 48 0 48 }
+	#	
+	#	war_impact_on_world_tension = 0.8
+	#	faction_impact_on_world_tension = 0.8
+	#	
+	#	rules = {
+	#		can_generate_female_country_leaders  = yes
+	#		can_generate_female_unit_leaders  = yes
+	#		can_generate_female_aces = yes
+	#	}
+	#	
+	#	can_collaborate = yes
+	#	
+	#	modifiers = {
+	#		civilian_intel_to_others = 40.0
+	#		army_intel_to_others = 15.0
+	#		navy_intel_to_others = 15.0
+	#		airforce_intel_to_others = 15.0
+	#		hidden_modifier = { female_random_army_leader_chance = 1000.0 }
+	#		hidden_modifier = { female_random_admiral_chance = 1000.0 }
+	#		hidden_modifier = { female_divisional_commander_chance = 1000.0 }
+	#		hidden_modifier = { female_random_operative_chance = 1000.0 }
+	#		hidden_modifier = { female_random_country_leader_chance = 1000.0 }
+	#	}
+	#}
+	#class_brown_criminal = { 
+	#
+	#	types = {
+	#		class_brown_criminal_subtype = {
+	#		}
+	#	}
+	#	
+	#	dynamic_faction_names = {
+	#		"FACTION_NAME_NONALIGNED_1"
+	#	}
+	#	
+	#	color = { 100 35 25 }
+	#	
+	#	war_impact_on_world_tension = 0.8
+	#	faction_impact_on_world_tension = 0.8
+	#	
+	#	rules = {
+	#		can_generate_female_country_leaders  = yes
+	#		can_generate_female_unit_leaders  = yes
+	#		can_generate_female_aces = yes
+	#	}
+	#	
+	#	can_collaborate = yes
+	#	
+	#	modifiers = {
+	#		civilian_intel_to_others = 40.0
+	#		army_intel_to_others = 15.0
+	#		navy_intel_to_others = 15.0
+	#		airforce_intel_to_others = 15.0
+	#		hidden_modifier = { female_random_army_leader_chance = 1000.0 }
+	#		hidden_modifier = { female_random_admiral_chance = 1000.0 }
+	#		hidden_modifier = { female_divisional_commander_chance = 1000.0 }
+	#		hidden_modifier = { female_random_operative_chance = 1000.0 }
+	#		hidden_modifier = { female_random_country_leader_chance = 1000.0 }
+	#	}
+	#}
+}

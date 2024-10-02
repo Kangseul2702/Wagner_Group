@@ -1,0 +1,25 @@
+characters={
+	WAG_Prigozhin ={
+		name = WAG_Prigozhin
+		portraits={
+			civilian={
+				large= "gfx/leaders/WAG/Prigozhin.png"
+			}
+		}
+		
+		country_leader = {
+			ideology = Wagner_ideologies 
+			id = -1
+		}
+		
+		field_marshal={
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+		
+	}
+}

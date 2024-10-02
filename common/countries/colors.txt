@@ -1,0 +1,1950 @@
+#### WG MOD FIX
+WAG = {
+	color = rgb { 31 32 35 }
+	color_ui = rgb { 31 32 35 }
+}
+#### WG MOD FIX
+#reload countrycolors
+
+################
+
+## [키보토스계 국가] ##
+
+# 붉은겨울은 보스토키아계로 분류
+
+# 키보토스 총학생회
+SHA = {
+	color = rgb { 124 188 222 }
+	color_ui = rgb { 124 188 222 }
+}
+
+# 만마전[판데모니움 소사이어티]
+GEH = {
+	color = rgb { 150 36 36 }
+	color_ui = rgb { 150 36 36 }
+}
+
+# 트리니티 종합학원
+TRI = {
+	color = rgb { 213 163 83} 
+	color_ui = rgb { 213 163 83 }
+}
+
+# 밀레니엄 사이언스 스쿨
+MIL = {
+	color = rgb { 59 97 143 }
+	color_ui = rgb { 59 97 143 }
+}
+
+# 아비도스 고등학교
+ABY = {
+	color = rgb { 45 156 189 }
+	color_ui = rgb { 45 156 189 }
+}
+
+# 백귀야행 연합학원
+HYK = {
+	color = rgb { 163 98 107 }
+	color_ui = rgb { 163 98 107 }
+}
+
+# 백화요란 분쟁조정위원회
+HY1 = {
+	color = rgb { 163 98 107 }
+	color_ui = rgb { 163 98 107 }
+}
+
+# 화조풍월부
+HY2 = {
+	color = rgb { 163 98 107 }
+	color_ui = rgb { 163 98 107 }
+}
+
+# 음양부
+HY3= {
+	color = rgb { 163 98 107 }
+	color_ui = rgb { 163 98 107 }
+}
+
+# 현룡문
+SHJ = {
+	color = rgb { 70 162 75 }
+	color_ui = rgb { 70 162 75 }
+}
+
+# 현무상회 [모르다비아]
+SHM = {
+	color = rgb { 70 162 75 }
+	color_ui = rgb { 70 162 75 }
+}
+
+## [헬멧단 및 군소세력, 학원, 식민지 외 해외영토] ##
+
+# 퐁당퐁당 헬멧단
+JPH = {
+	color = rgb { 138 37 34 }
+	color_ui = rgb { 138 37 34 }
+}
+
+# 카타카타 헬멧단
+KTH = {
+	color = rgb { 99 73 73 }
+	color_ui = rgb { 99 73 73 }
+}
+
+# 첨벙첨벙 헬멧단
+BSH = {
+	color = rgb { 70 75 105 }
+	color_ui = rgb { 70 75 105 }
+}
+
+# 스나스나 헬멧단
+SNH = {
+	color = rgb { 70 75 105 }
+	color_ui = rgb { 70 75 105 }
+}
+
+# 블랙마켓
+BLM = {
+	color = rgb { 0 0 57 }
+	color_ui = rgb { 0 0 57 }
+}
+
+# 오디세이아 해협위원회
+ODY = {
+	color = rgb { 24 54 99 }
+	color_ui = rgb { 24 54 99 }
+}
+
+# 와일드헌트 예술학원
+WIL = { 
+	color= rgb { 150 150 150  }
+	color_ui = rgb { 150 150 150}
+}
+
+# 아리우스 분교
+ARI = {
+	color = rgb { 38 31 63 }
+	color_ui = rgb { 38 31 63 }
+}
+
+# 하이랜더 철도학원
+HGH = {
+    color = rgb { 78 137 154 }
+    color_ui = rgb { 78 137 154 }
+}
+
+## [총학생회령 영토 및 SRT] ##
+
+# 남아후리카
+SAF = {
+	color = rgb { 195 107 160 }
+	color_ui = rgb { 195 107 160 }
+}
+
+# 발키리 경찰학교
+VAL = {
+	color = rgb { 161 169 225 }
+	color_ui = rgb { 161 169 225 }
+}
+
+# SRT 특수학원
+SRT = {
+	color = rgb {  150 150 150 }
+	color_ui = rgb { 150 150 150 }
+}
+
+# FOX 소대
+FOX = {
+	color = rgb { 84 84 89  }
+	color_ui = rgb { 84 84 89 }
+}
+
+# RABBIT 소대
+RAB = {
+	color = rgb { 104 104 119}
+	color_ui = rgb {  104 104 119 }
+}
+
+## [게헨나 산하 동아리 및 식민지] ##
+
+# 선도부
+GEP = {
+	color = rgb { 155 37 37 }
+	color_ui = rgb { 155 37 37 }
+}
+
+# 흥신소 68
+BRY = {
+	color = rgb { 140 59 59 }
+	color_ui = rgb { 140 59 59  }
+}
+
+# 미식연구회
+GRS = {
+	color = rgb { 165 42 42 }
+	color_ui = rgb { 165 42 42 }
+}
+
+#온천개발부
+HSD = {
+	color = rgb { 163 56 56 }
+	color_ui = rgb { 163 56 56 }
+}
+
+# 응급의학부
+GME = {
+	color = rgb { 156 49 49 }
+	color_ui = rgb { 156 49 49 }
+}
+
+# 급양부
+GSL = {
+	color = rgb { 168 52 52 }
+	color_ui = rgb { 168 52 52 }
+}
+
+# 반짝반짝부
+GKR = {
+	color = rgb { 143 44 44 }
+	color_ui = rgb { 143 44 44 }
+}
+
+# 연안 지대
+GEA = {
+	color = rgb { 142 48 47 }
+	color_ui = rgb { 142 48 47 }
+}
+
+# 주토베스토아후리카
+GEB = {
+	color = rgb { 142 48 47 }
+	color_ui = rgb { 142 48 47 }
+}
+## [트리니티 산하 식민지] ##
+
+# 웨스토아후리카
+TRA = {
+	color = rgb { 203 163 83} 
+	color_ui = rgb { 203 163 83 }
+}
+
+# 이스토아후리카
+TRB = {
+	color = rgb { 203 163 83} 
+	color_ui = rgb { 203 163 83 }
+}
+
+# 러스트벨트 기술분교
+TRC = {
+	color = rgb { 193 153 73 } 
+	color_ui = rgb { 193 153 73 }
+}
+
+# 래브라도
+TRD = {
+	color = rgb { 193 153 73 } 
+	color_ui = rgb { 193 153 73 }
+}
+
+# 오스토라리아
+TRE = {
+	color = rgb { 193 153 73 } 
+	color_ui = rgb { 193 153 73 }
+}
+
+# 중앙아메리카
+TRF = {
+	color = rgb { 193 153 73 } 
+	color_ui = rgb { 193 153 73 }
+}
+
+## [이베리아]##
+
+# 청사단 고교
+BLD = {
+	color = rgb { 232 155 94 }
+	color_ui = rgb { 232 155 94 }
+}
+
+# 바렌시아 분교
+ALH = {
+	color = rgb { 232 135 94 }
+	color_ui = rgb { 232 115 94 }
+}
+
+# 인터네셔널
+AIT = {
+	color = rgb { 199 0 0 }
+	color_ui = rgb { 199 0 0 }
+}
+
+# 양 해협 정부
+STR = {
+	color = rgb { 199 144 80 }
+	color_ui = rgb {  199 144 80}
+}
+
+## [이탈리아 및 발칸] ##
+
+# 안치오 고교
+ANZ = {
+	color = rgb { 60 105 64 }
+	color_ui = rgb { 60 105 64 }
+}
+
+# 츠라이아인라이히
+TER = {
+	color = rgb { 184 188 205 }
+	color_ui = rgb { 184 188 205 }
+}
+
+# 스코르디스키아
+SER = {
+	color = rgb { 165 115 105 }
+	color_ui = rgb { 165 115 105 }
+}
+
+# 세레네 분견대
+SRN = {
+	color = rgb { 186 143 73 }
+	color_ui = rgb { 186 143 73 }
+}
+
+# 레기오 에디피치움
+MVD = {
+	color = rgb { 59 33 51 }
+	color_ui = rgb { 59 33 51 }
+}
+
+# 코사 노스트라
+MAF = {
+	color = rgb { 105 27 34 }
+	color_ui = rgb { 105 27 34 }
+}
+
+# 스타티 폰티비치
+PAP = {
+	color = rgb { 235 235 184 }
+	color_ui = rgb { 255 255 26 }
+}
+
+# 아페이론
+APE = {
+	color = rgb { 133 196 222 }
+	color_ui = rgb { 133 196 222 }
+}
+
+# 아르카나
+ARC = {
+	color = rgb { 59 33 51  }
+	color_ui = rgb { 59 33 51  }
+}
+
+## [키보토스 외 아후리카 국가]
+
+# 성 파블로프 재단
+SR1 = {
+	color = rgb { 186 143 73} 
+	color_ui = rgb { 186 143 73 }
+}
+
+# 보야계르
+VOY = {
+	color = rgb { 45 55 109 } 
+	color_ui = rgb { 45 55 109 }
+}
+
+# 재건의 손
+MV1 = {
+	color = rgb { 102 79 96 }
+	color_ui = rgb { 102 79 96 }
+}
+
+# 구원자
+ONE = {
+	color = rgb { 117 73 117 }
+	color_ui = rgb { 117 73 117 }
+}
+
+## [우마무스메 국가]##
+
+# 메지로
+MJR = {
+	color = rgb { 97 189 182 }
+	color_ui = rgb { 97 189 182 }
+}
+
+# 사토노
+STN = {
+	color = rgb { 118 147 13 }
+	color_ui = rgb { 118 147 13 }
+}
+
+# 사쿠라
+USK = {
+	color = rgb { 147 13 88 }
+	color_ui = rgb { 147 13 88 }
+}
+
+# 심볼리
+SBL = {
+	color = rgb { 65 120 37 }
+	color_ui = rgb {  65 120 37 }
+}
+
+# 자유 우마무스메 연합
+UFU = {
+	color = rgb { 13 76 147 }
+	color_ui = rgb { 13 76 147 }
+}
+
+
+# 다이이치
+DIC = {
+	color = rgb { 147 13 38 }
+	color_ui = rgb { 147 13 38 }
+}
+
+# 히시
+HSH = {
+	color = rgb { 179 150 173 }
+	color_ui = rgb { 179 150 173 }
+}
+
+# 마치카네
+MAT = {
+	color = rgb { 176 142 63 }
+	color_ui = rgb  { 176 142 63 }
+}
+
+## [뱅드림계 국가] ##
+
+# 츠루마키 재벌
+BGD = {
+	color = rgb { 255 247 166 }
+	color_ui = rgb { 255 247 166 }
+}
+
+# 마이고 센터
+MYG = {
+	color = rgb { 167 227 254 }
+	color_ui = rgb { 167 227 254 }
+}
+
+# 포핀 파티
+PPP = {
+	color = rgb { 241 82 90 }
+	color_ui = rgb { 241 82 90 }
+}
+
+# 요츠바-케이호 대학연합
+PST = {
+	color = rgb { 221 255 238 }
+	color_ui = rgb { 221 255 238 }
+}
+
+# 시베리아 노이즈
+MYZ = {
+    color = rgb { 0 7 20 }
+    color_ui = rgb { 0 7 20 }
+}
+
+# 일본 세라프 사회주의 인민공화국
+MY1 = {
+    color = rgb { 240 66 74 }
+    color_ui = rgb { 240 66 74 }
+}
+
+#마도학자 시베리아 탐사대
+MY2 = {
+    color = rgb { 146 94 65 }
+    color_ui = rgb { 146 94 65 }
+}
+
+#시베리안 트윈클
+MY3 = {
+    color = rgb { 250 241 207 }
+    color_ui = rgb { 250 241 207 }
+}
+
+#신 마이고 센터
+MY4 = {
+	color = rgb { 167 227 254 }
+	color_ui = rgb { 167 227 254 }
+}
+
+#개혁 레드윈터 연방학원
+MY5 = {
+	color = rgb { 102 4 4 }
+	color_ui = rgb { 102 4 4 }
+}
+
+#별의 대지
+MY6 = {
+    color = rgb { 43 2 2 }
+    color_ui = rgb { 43 2 2 }
+}
+
+## [보컬로이드계 국가] ##
+
+# 쿄쿠토 관리구역
+RSE = {
+	color = rgb { 196 157 196 }
+	color_ui = rgb { 196 157 196 }
+}
+
+# 세이큐 관리구역
+SEU = {
+	color = rgb { 100 101 108  }
+	color_ui = rgb {  100 101 108   }
+}
+
+# 우라지오 관리구역
+LTY = {
+	color = rgb { 150 151 158  }
+	color_ui = rgb {150 151 158  }
+}
+
+# 캄차카 관리구역
+ISD = {
+	color = rgb { 79 74 66 }
+	color_ui = rgb { 79 74 66 }
+}
+
+## [동방 프로젝트계 국가] ##
+
+# 환상향
+GSK = {
+	color = rgb { 194 198 215 }
+	color_ui = rgb { 194 198 215 }
+}
+
+# 홍마관
+SDM = {
+	color = rgb { 125 13 24 }
+	color_ui = rgb {  125 13 24 }
+}
+
+# 휘침성
+SNC = {
+	color = rgb { 163 63 90 }
+	color_ui = rgb { 163 63 90 }
+}
+
+# 요괴의 산
+YKM = {
+	color = rgb { 255 120 71 }
+	color_ui = rgb { 255 120 71 }
+}
+
+# 백옥루
+HKY = {
+	color = rgb { 255 145 240 }
+	color_ui = rgb { 255 145 240 }
+}
+
+# 영원정
+ENT = {
+	color = rgb { 77 90 105 }
+	color_ui = rgb { 77 90 105 }
+}
+
+# 묘렌사
+MRT = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 57 113 228 }
+}
+
+# 요정연합
+AOF = {
+	color = rgb { 65 125 65 }
+	color_ui = rgb { 65 125 65 }
+}
+
+# 인간마을
+HMV = {
+	color = rgb { 130 77 45 }
+	color_ui = rgb { 130 77 45 }
+}
+
+# 천계
+HVN = {
+	color = rgb { 76 153 153 }
+	color_ui = rgb { 76 153 153 }
+}
+
+# 지저
+UDW = {
+	color = rgb { 75 89 75 }
+	color_ui = rgb { 75 89 75 }
+}
+
+# 모리야 신사
+MRS = {
+	color = rgb { 215 196 72 }
+	color_ui = rgb { 215 196 72 }
+}
+
+## [동유럽 국가] ##
+
+# 갈레니아 공국
+GAL = {
+	color = rgb { 128 115 145 }
+	color_ui = rgb { 128 115 145 }
+}
+
+# 달의 템페스트
+TKT = {
+    color = rgb { 87 103 204 }
+    color_ui = rgb { 87 103 204 }
+}
+
+# 서니 피스
+SUP = {
+    color = rgb { 235 206 66 }
+    color_ui = rgb { 235 206 66 }
+}
+
+# 리즈누아르
+LIZ = {
+	color = rgb { 108 50 108 }
+	color_ui = rgb { 108 50 108 }
+}
+
+# 쓰리 엑스
+III = {
+	color = rgb { 205 208 33 }
+	color_ui = rgb { 205 208 33 }
+}
+
+# 트리니티 엘
+TEL = {
+	color = rgb { 201 201 201 }
+	color_ui = rgb { 201 201 201 }
+}
+
+# 클라이페다 공작령 - 클라이페다 학원
+MEM = {
+	color = rgb { 201 201 159  }
+	color_ui = rgb { 201 201 159 }
+}
+
+# 핀스크 공작령 - 핀스크 인민공화국
+PIN = {
+	color = rgb { 156 178 114 }
+	color_ui = rgb { 156 178 114 }
+}
+
+# 사르니 자치령 - 세베르나야 합체파츠
+SAR = {
+	color = rgb { 87 151 159  }
+	color_ui = rgb { 87 201 159 }
+}
+
+# 세베르나야
+SEV = {
+	color = rgb { 87 127 156 }
+	color_ui = rgb { 87 127 156 }
+}
+
+# 츠바사 프로덕션
+TBS = {
+	color = rgb { 178 81 98 }
+	color_ui = rgb { 178 81 98 }
+}
+
+# 보스토키아 연방
+VTK = {
+	color = rgb { 172 0 0 }
+	color_ui = rgb { 172 0 0 }
+}
+
+# 붉은겨울 연방학원 [레드윈터 연방학원]
+RWN = {
+	color = rgb { 172 0 0 }
+	color_ui = rgb { 172 0 0 }
+}
+
+# 케이조쿠 고교
+KZK = {
+	color = rgb { 205 212 228 }
+	color_ui = rgb { 205 212 228 }
+}
+
+# 프라우다 고교
+PRV = {
+	color = rgb { 172 0 0 }
+	color_ui = rgb { 172 0 0 }
+}
+
+# 루크사트주의 합중국 연맹 [로사트리즘 합중국 연맹]
+ROS = {
+	color = rgb { 102 20 20 }
+	color_ui = rgb { 102 20 20 }
+}
+
+# 스바로그 중공업
+SHI  = {
+	color = rgb { 142 20 20 }
+	color_ui = rgb { 142 20 20 }
+}
+# 콜도나 공화국
+CDN = {
+	color = rgb { 172 0 0 }
+	color_ui = rgb { 172 0 0 }
+}
+
+# 우르수스 제국
+URS = {
+	color = rgb { 182 50 50 }
+	color_ui = rgb { 182 50 50 }
+}
+
+# 표트르가임 학생자치단
+USG = {
+	color = rgb { 182 50 50 }
+	color_ui = rgb { 182 50 50 }
+}
+
+# 북부 연방
+NTH = {
+	color = rgb { 172 0 0 }
+	color_ui = rgb { 172 0 0 }
+}
+
+# 사후세계전선
+SSS = {
+	color = rgb { 254 172 172 }
+	color_ui = rgb { 254 172 172 }
+}
+
+## [중부 유럽 국가] ##
+
+# 랜드솔 왕국
+LDS = {
+	color = rgb { 247 179 106 }
+	color_ui = rgb { 247 179 106 }
+}
+
+# 카르파티아
+KRP = {
+	color = rgb { 247 179 106 }
+	color_ui = rgb { 247 179 106 }
+}
+
+# 베치
+VEC = {
+	color = rgb { 247 179 106 }
+	color_ui = rgb { 247 179 106 }
+}
+
+# 일리리야
+CRO = {
+	color = rgb { 230  70  180 }
+	color_ui = rgb { 230 255 122 }
+}
+
+# 포죠니토라 (포죠니+니토라)
+SLO = {
+	color = rgb { 158 161 188 }
+	color_ui = rgb { 255 255 255 }
+}
+
+# 토란시루 
+TNS = {
+	color = rgb { 252 236 142 }
+	color_ui = rgb { 252 236 142 }
+}
+
+# 로베타
+RBT = {
+	color = rgb { 237 233 234 }
+	color_ui = rgb { 237 233 234 }
+}
+
+# 쿠로모리미네 여학원
+KRM = {
+	color = rgb { 75 75 75 }
+	color_ui = rgb { 75 75 75 }
+}
+
+## [우마무스메 외 중앙아시아 국가] ##
+
+# 신속의 칸
+SSK = {
+	color = rgb { 239 124 75 }
+	color_ui = rgb { 239 124 75 }
+}
+
+# 세라프 범세계 사령부 [하나는 내전용]
+HBR = {
+	color = rgb { 218 32 50 }
+	color_ui = rgb { 218 32 50 }
+}
+HVR = {
+	color = rgb { 255 234 241 }
+	color_ui = rgb { 255 234 241 }
+}
+
+# 케르겔렌 제도
+HZZ = {
+    color = rgb { 0 7 20 }
+    color_ui = rgb { 0 7 20 }
+}
+
+## [인도 국가] ##
+
+# 랩쳐
+RAP = {
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
+}
+
+# 파이오니아 연합 스쿼드
+PNR = {
+	color = rgb { 207 195 148 }
+	color_ui = rgb { 207 195 148 }
+}
+
+# 바라트 수학자 연맹
+IND = {
+	color = rgb { 200 160 130 }
+	color_ui = rgb { 200 160 130 }
+}
+
+# 세라프 실론 회사
+EIC = {
+	color = rgb { 60 55 155 }
+	color_ui = rgb { 60 55 155 }
+}
+
+# 모르판크 연방
+MPH = {
+	color = rgb { 204 204 0 }
+	color_ui = rgb { 204 204 0 }
+}
+
+# 아마네 십자군
+MIG = {
+	color = rgb { 255 242 225 }
+	color_ui = rgb { 255 242 225 }
+}
+
+# 아무도 없는 세카이
+NTD = {
+    	color = rgb { 53 27 60}
+    	color_ui = rgb { 53 27 60 }
+}
+
+## [일본 국가] ##
+
+# 사가 (최고다 사쿠라짱)
+SAG = {
+	color = rgb { 0 98 100 }
+	color_ui = rgb { 0 98 100 }
+}
+
+# 오토노키자카 학원
+MYU = {
+	color = rgb { 228 85 166 }
+	color_ui = rgb { 228 85 166}
+}
+
+# 우라노호시 여학원
+AQU = {
+	color = rgb { 160 207 255 }
+	color_ui = rgb { 160 207 255 }
+}
+
+# 니지가사키 학원
+NIJ = {
+	color = rgb { 255 203 115 }
+	color_ui = rgb { 255 203 115 }
+}
+
+# 유이가오카 여자고등학교
+LEL = {
+	color = rgb { 153 68 136 }
+	color_ui = rgb { 153 68 136 }
+}
+
+# 하스노소라 여학원
+HAS = {
+	color = rgb { 251 139 156 }
+	color_ui = rgb { 251 139 156 }
+}
+
+# 하츠보시 학원
+HTB = {
+	color = rgb { 243 152 0 }
+	color_ui = rgb { 243 152 0 }
+}
+
+# 타카기
+TKG = {
+	color = rgb { 116 225 240 }
+	color_ui = rgb { 116 225 240 }
+}
+
+# 키보카미네 학원
+KIB = {
+	color = rgb { 153 0 0 }
+	color_ui = rgb { 153 0 0 }
+}
+
+# 사이슈 학원
+SAS = {
+	color = rgb { 225 202 113 }
+	color_ui = rgb { 225 202 113 }
+}
+
+# 미야기
+MIY =  {
+	color = rgb { 16 103 36 }
+	color_ui = rgb { 16 103 36 }
+}
+
+# 미에 (에는 뭐가있어? 내가 있어)
+MIE = {
+	color = rgb { 241 207 178 }
+	color_ui = rgb { 241 207 178 }
+}
+
+# 마술 선배
+TJN = {
+    	color = rgb { 169 158 172 }
+    	color_ui = rgb { 169 158 172 }
+}
+
+# 아키타 (의 잿빛늑대)
+AKT = {
+	color = rgb { 205 199 209 }
+	color_ui = rgb { 205 199 209 }
+}
+
+# 탁트 오퍼스
+TKO =  {
+	color = rgb { 187 49 64 }
+	color_ui = rgb { 187 49 64 }
+}
+
+# 레오 니드
+LEO =  {
+	color = rgb { 68 85 221 }
+	color_ui = rgb { 68 85 221 }
+}
+
+# 챔잼
+BDK =  {
+	color = rgb { 251 175 152 }
+	color_ui = rgb { 251 175 152}
+}
+
+# 아나스타샤(아이마스)
+ANA =  {
+	color = rgb { 31 44 92 }
+	color_ui = rgb { 31 44 92 }
+}
+
+# UTX 학원
+UTX =  {
+	color = rgb { 160 91 226 }
+	color_ui = rgb { 160 91 226 }
+}
+
+# 코즈 여자고등학교
+KOZ =  {
+	color = rgb { 255 143 112 }
+	color_ui = rgb { 255 143 112 }
+}
+
+# 세이센 여자고등학교
+SEN =  {
+	color = rgb { 104 69 136 }
+	color_ui = rgb { 104 69 136 }
+}
+
+# 슈치인 학원
+SHU =  {
+	color = rgb { 56 43 50 }
+	color_ui = rgb { 56 43 50 }
+}
+
+## [서구 열강의 일본 조계지] ##
+
+# 트리니티 조계지
+CO1 =  {
+	color = rgb { 251 175 152 }
+	color_ui = rgb { 251 175 152}
+}
+
+# 게헨나 조계지
+CO2 =  {
+	color = rgb { 142 48 47 }
+	color_ui = rgb { 142 48 47 }
+}
+
+# 세라프 조계지
+CO3 =  {
+	color = rgb { 228 42 60 }
+	color_ui = rgb { 228 42 60 }
+}
+
+# 재건 조계지
+CO4 =  {
+	color = rgb { 112 89 106 }
+	color_ui = rgb { 112 89 106 }
+}
+
+## [침수된 간토 국가] ##
+
+# 일본인민공화국
+JPR =  {
+	color = rgb { 200 19 46 }
+	color_ui = rgb { 200 19 46 }
+}
+
+# B코마치
+BKM =  {
+	color = rgb { 227 90 170 }
+	color_ui = rgb { 227 90 170 }
+}
+
+# 오아라이 여학원
+OAR =  {
+	color = rgb { 9 37 105 }
+	color_ui = rgb { 9 37 105 }
+}
+
+## [침수지역] ##
+
+# 침수된 간토
+FLA = {
+	color = rgb { 0 7 20 }
+	color_ui = rgb { 0 7 20 }
+}
+
+# 침수된 루손
+FLB = {
+	color = rgb { 0 7 20 }
+	color_ui = rgb { 0 7 20 }
+}
+
+# 침수된 만주
+FLC = {
+	color = rgb { 0 7 20 }
+	color_ui = rgb { 0 7 20 }
+}
+
+# 침수된 남큐슈
+FLD = {
+	color = rgb { 0 7 20 }
+	color_ui = rgb { 0 7 20 }
+}
+
+# 침수된 아비도스
+FLE = {
+	color = rgb { 0 7 20 }
+	color_ui = rgb { 0 7 20 }
+}
+
+## [아메리카] ##
+
+# 아메리카 합중국
+USA = {
+	color = rgb { 20 133 237 }
+	color_ui = rgb { 20 133 237 }
+}
+
+# 오야시오 주둔지
+OYA = {
+	color = rgb { 133 144 216 }
+	color_ui = rgb { 133 144 216 }
+}
+
+# 나이트 시티
+NTC= {
+    	color = rgb { 51 33 84}
+    	color_ui = rgb { 51 33 84 }
+}
+
+# 아라사카 코퍼레이션
+ARA= {
+    	color = rgb { 110 20 30 }
+    	color_ui = rgb { 110 20 30 }
+}
+
+# 단풍나무
+MPL= {
+    	color = rgb { 110 105 111 }
+    	color_ui = rgb { 110 105 111 }
+}
+
+# 아이자와 고원국
+AIZ = {
+    	color = rgb { 225 198 99 }
+    	color_ui = rgb { 225 198 99 }
+}
+
+# 초텐의 아이들
+CHO = {
+    	color = rgb { 226 193 243 }
+    	color_ui = rgb { 226 193 243 }
+}
+
+# 쥬라 템페스트
+SLI = {
+    	color = rgb { 65 109 255 }
+    	color_ui = rgb { 65 109 255 }
+}
+
+#소아온
+SAO = {
+    	color = rgb { 106 193 255 }
+    	color_ui = rgb { 106 193 255 }
+}
+
+#치하탄
+CHT = {
+    	color = rgb { 162 162 162 }
+    	color_ui = rgb { 162 162 162 }
+}
+
+# 선더스 대학 부속고
+SND = {
+    	color = rgb { 44 44 160 }
+    	color_ui = rgb { 44 44 160 }
+}
+
+# 세인트 글로리아나
+STG = {
+	color = rgb { 129 48 39 }
+	color_ui = rgb { 129 48 39 }
+}
+
+# 신죠 신계
+SNJ = {
+	color = rgb { 231 194 222 }
+	color_ui = rgb { 231 194 222 }
+}
+
+# 플라네튠
+NPT = {
+	color = rgb { 171 83 185 }
+	color_ui = rgb { 171 83 185 }
+}
+
+# 라스테이션
+LTT = {
+	color = rgb { 78 78 78 }
+	color_ui = rgb { 78 78 78 }
+}
+
+# 르위
+LWE = {
+	color = rgb { 219 234 234 }
+	color_ui = rgb { 219 234 234 }
+}
+
+# 린박스
+LBX = {
+	color = rgb { 130 202 150 }
+	color_ui = rgb { 130 202 150 }
+}
+
+
+## [아메리카 미개척 국가 - WIP] ##
+
+# 솔트레이크
+AM1 = {
+	color = rgb { 79 74 66}
+	color_ui = rgb { 79 74 66 }
+}
+
+# 나바호
+AM2 = {
+	color = rgb { 79 74 66}
+	color_ui = rgb { 79 74 66 }
+}
+
+# 알류트
+AM3 = {
+	color = rgb { 79 74 66}
+	color_ui = rgb { 79 74 66 }
+}
+
+# 세쿼이야
+AM4 = {
+	color = rgb { 79 74 66}
+	color_ui = rgb { 79 74 66 }
+}
+
+# 콜로라도
+AM5 = {
+	color = rgb { 79 74 66}
+	color_ui = rgb { 79 74 66 }
+}
+
+# 캔자스
+AM6 = {
+	color = rgb { 79 74 66}
+	color_ui = rgb { 79 74 66 }
+}
+
+# 와이오밍
+AM7 = {
+	color = rgb { 79 74 66}
+	color_ui = rgb { 79 74 66 }
+}
+
+# 몬타나
+AM8 = {
+	color = rgb { 79 74 66}
+	color_ui = rgb { 79 74 66 }
+}
+
+# 옐로나이프
+AM9 = {
+	color = rgb { 79 74 66}
+	color_ui = rgb { 79 74 66 }
+}
+
+# 누나부트
+AMA = {
+	color = rgb { 79 74 66}
+	color_ui = rgb { 79 74 66 }
+}
+
+# 미네소타
+AMB = {
+	color = rgb { 79 74 66}
+	color_ui = rgb { 79 74 66 }
+}
+
+# 아이오와
+AMC = {
+	color = rgb { 79 74 66}
+	color_ui = rgb { 79 74 66 }
+}
+
+# 매니토바
+AMD = {
+	color = rgb { 79 74 66}
+	color_ui = rgb { 79 74 66 }
+}
+
+# 파타고니아
+AME = {
+	color = rgb { 79 74 66}
+	color_ui = rgb { 79 74 66 }
+}
+
+## [ 중남미 ] ##
+
+#레스카티에 교국
+LES = {
+    	color = rgb { 108 30 140 }
+    	color_ui = rgb { 108 30 140 }
+}
+
+#용황국 드래고니아
+DRG = {
+    	color = rgb { 175 46 22}
+    	color_ui = rgb { 175 46 22}
+}
+
+# 사신국
+TK1 = {
+    	color = rgb { 117 135 234 }
+    	color_ui = rgb { 117 135 234 }
+}
+
+# 사흉국
+TK2 = {
+    	color = rgb { 117 155 254 }
+    	color_ui = rgb { 117 155 254 }
+}
+
+# 사령국
+TK3 = {
+    	color = rgb { 117 115 214 }
+    	color_ui = rgb { 117 115 214 }
+}
+
+# 지팡구
+JPG = {
+    	color = rgb { 235 235 235}
+    	color_ui = rgb { 235 235 235}
+}
+
+# 바포메트 사바트국
+SBT = {
+    	color = rgb { 95 30 55 }
+    	color_ui = rgb { 95 30 55 }
+}
+
+# 비시 자유 학원 (비시도 아니고 자유롭지도 않으며 학원도 아님)
+BCF = {
+    	color = rgb { 47 53 208 }
+    	color_ui = rgb { 47 53 208 }
+}
+
+# 포로벤 
+PRB = {
+    	color = rgb { 184 174 40 }
+    	color_ui = rgb { 184 174 40 }
+}
+
+# 뷔미나리에 교국 
+VYM = {
+    	color = rgb { 227 208 131 }
+    	color_ui = rgb { 227 208 131 }
+}
+
+# 마계 
+DEM = {
+    	color = rgb { 100 0 0 }
+    	color_ui = rgb { 100 0 0 }
+}
+
+# 아국
+AAA = {
+    	color = rgb { 140 167 170 }
+    	color_ui = rgb { 140 167 170 }
+}
+
+# 라우국
+RAU = {
+    	color = rgb { 134 177 55 }
+    	color_ui = rgb { 134 177 55 }
+}
+
+# 키키모라
+KKM = {
+    	color = rgb { 79 74 66 }
+    	color_ui = rgb { 79 74 66 }
+}
+
+
+## [동남아시아 오세아니아] ##
+
+# 림 빌리턴
+RBM = {
+	color = rgb { 191 104  46 }
+	color_ui = rgb { 191 104  46 }
+}
+
+# 로도스 아일랜드
+RHO = {
+    	color = rgb { 93 93 203 }
+    	color_ui = rgb { 93 93 203}
+}
+
+# 사르곤
+SRG = {
+    	color = rgb { 75 126 73 }
+    	color_ui = rgb { 75 126 73 }
+}
+
+# 고곤 (북조)
+GOG = {
+    	color = rgb { 175 78 76 }
+    	color_ui = rgb { 175 78 76 }
+}
+
+# 미츠모토 (남조)
+MTU = {
+    	color = rgb { 95 149 177 }
+    	color_ui = rgb { 95 149 177 }
+}
+
+# 염국
+YAN = {
+    	color = rgb { 175 175 185 }
+    	color_ui = rgb { 175 175 185 }
+}
+
+# 용문
+LUN = {
+    	color = rgb { 175 175 185 }
+    	color_ui = rgb { 175 175 185 }
+}
+
+# 퍼리 비이치 리조토
+KOM = {
+	color = rgb { 126 195 96 }
+	color_ui = rgb { 126 195 96 }
+}
+
+# 엘리아스
+ELA = {
+	color = rgb { 126 195 96 }
+	color_ui = rgb { 126 195 96 }
+}
+
+# 불길과 물길의 터
+DRA = {
+	color = rgb { 126 195 96 }
+	color_ui = rgb { 126 195 96 }
+}
+
+# 벨리티엔
+VLT = {
+	color = rgb { 126 195 96 }
+	color_ui = rgb { 126 195 96 }
+}
+
+# 모타니엄
+ELF = {
+	color = rgb { 233 117 117 }
+	color_ui = rgb { 233 117 117 }
+}
+
+# 모타니엄 25 (어서오세요 모나티엄 25입니다)
+EL1 = {
+	color = rgb { 126 195 96 }
+	color_ui = rgb { 126 195 96 }
+}
+
+# 정령산
+SPI = {
+	color = rgb { 126 195 96 }
+	color_ui = rgb { 126 195 96 }
+}
+
+# 수인마을 (버터는 참지 않을거야!)
+FUR = {
+	color = rgb { 126 195 96 }
+	color_ui = rgb { 126 195 96 }
+}
+
+# 유령 숲
+GHO = {
+	color = rgb { 126 195 96 }
+	color_ui = rgb { 126 195 96 }
+}
+
+# 사슴국 (ㅅㅋㄴㅋㄴㅋㄴㅋㅋㅅㅌㅌ)
+SHK = {
+	color = rgb { 166 201 43 }
+	color_ui = rgb { 166 201 43 }
+}
+
+## [아라비아] ##
+
+# 가이노스 왕국
+QNS = {
+	color = rgb { 227 112 114 }
+	color_ui = rgb { 227 112 114 }
+}
+
+# 라스트 크레이들
+# LaSt craDle이라 주장 중인데, 누가봐도 리세르그산 디에틸아미드의 LSD다
+LSD = {
+	color = rgb { 95 86 153 }
+	color_ui = rgb { 95 86 153 }
+}
+
+# 아라비아
+SAU = {
+	color = rgb { 100 172 100 }
+	color_ui = rgb { 100 172 100 }
+}
+
+## [아나톨리아] ##
+
+# 세베르나야 아나톨리아 개척지
+SAT = {
+	color = rgb { 147 187 216 }
+	color_ui = rgb { 147 187 216 }
+}
+
+# 망량즈 - 이매일좌
+ICZ = {
+	color = rgb { 174 142 158 }
+	color_ui = rgb { 174 142 158 }
+}
+
+# 학원도시 재건위원회
+RAI = {
+	color = rgb { 234 207 172 }
+	color_ui = rgb { 234 207 172 }
+}
+
+## [ 아프리카 미개척 국가 ] ##
+
+AF1 = {
+	color = rgb {79 74 66}
+	color_ui = rgb {79 74 66 }
+}
+AF2 = {
+	color = rgb {79 74 66 }
+	color_ui = rgb { 79 74 66 }
+}
+AF3 = {
+	color = rgb { 79 74 66 }
+	color_ui = rgb { 79 74 66 }
+}
+AF4 = {
+	color = rgb {79 74 66 }
+	color_ui = rgb { 79 74 66 }
+}
+AF5 = {
+	color = rgb { 79 74 66 }
+	color_ui = rgb {  79 74 66  }
+}
+AF6 = {
+	color = rgb { 79 74 66 }
+	color_ui = rgb { 79 74 66 }
+}
+AF7 = {
+	color = rgb { 79 74 66 }
+	color_ui = rgb { 79 74 66 }
+}
+AF8 = {
+	color = rgb { 79 74 66 }
+	color_ui = rgb { 79 74 66 }
+}
+AF9 = {
+	color = rgb { 79 74 66 }
+	color_ui = rgb { 79 74 66 }
+}
+
+## [기타 미개척 국가] ##
+
+# 엘리아스 이상기후지대
+AS1 = {
+	color = rgb { 79 74 66 }
+	color_ui = rgb { 79 74 66 }
+}
+
+# 카라후토
+JP1 = {
+	color = rgb { 79 74 66 }
+	color_ui = rgb { 79 74 66 }
+}
+
+## [내전]##
+
+D01 = {
+	color = rgb { 122 179 97 }
+	color_ui = rgb { 159 233 126 }
+}
+D02 = {
+	color = rgb { 194 140 86 }
+	color_ui = rgb { 252 182 112 }
+}
+D03 = {
+	color = rgb { 200 100 31 }
+	color_ui = rgb { 245 123 38 }
+}
+D04 = {
+	color = rgb { 80 150 179 }
+	color_ui = rgb { 89 219 220 }
+}
+D05 = {
+	color = rgb { 92 92 197 }
+	color_ui = rgb { 116 116 247 }
+}
+D06 = {
+	color = rgb { 154 69 116 }
+	color_ui = rgb { 200 90 151 }
+}
+D07 = {
+	color = rgb { 195 149 155 }
+	color_ui = rgb { 254 194 202 }
+}
+D08 = {
+	color = rgb { 210 106 47 }
+	color_ui = rgb { 255 138 61 }
+}
+D09 = {
+	color = rgb { 105 147 86 }
+	color_ui = rgb { 149 210 123 }
+}
+D10 = {
+	color = rgb { 175 162 108 }
+	color_ui = rgb { 221 203 135 }
+}
+D11 = {
+	color = rgb { 124 140 162 }
+	color_ui = rgb { 161 182 211 }
+}
+D12 = {
+	color = rgb { 187 79 86 }
+	color_ui = rgb { 243 103 112 }
+}
+D13 = {
+	color = rgb { 69 157 208 }
+	color_ui = rgb { 90 204 255 }
+}
+D14 = {
+	color = rgb { 142 79 200 }
+	color_ui = rgb { 176 98 249 }
+}
+D15 = {
+	color = rgb { 122 179 97 }
+	color_ui = rgb { 159 233 126 }
+}
+D16 = {
+	color = rgb { 194 140 86 }
+	color_ui = rgb { 252 182 112 }
+}
+D17 = {
+	color = rgb { 200 100 31 }
+	color_ui = rgb { 245 123 38 }
+}
+D18 = {
+	color = rgb { 80 150 179 }
+	color_ui = rgb { 89 219 220 }
+}
+D19 = {
+	color = rgb { 92 92 197 }
+	color_ui = rgb { 116 116 247 }
+}
+D20 = {
+	color = rgb { 154 69 116 }
+	color_ui = rgb { 200 90 151 }
+}
+D21 = {
+	color = rgb { 195 149 155 }
+	color_ui = rgb { 254 194 202 }
+}
+D22 = {
+	color = rgb { 210 106 47 }
+	color_ui = rgb { 255 138 61 }
+}
+D23 = {
+	color = rgb { 105 147 86 }
+	color_ui = rgb { 149 210 123 }
+}
+D24 = {
+	color = rgb { 175 162 108 }
+	color_ui = rgb { 221 203 135 }
+}
+D25 = {
+	color = rgb { 124 140 162 }
+	color_ui = rgb { 161 182 211 }
+}
+D26 = {
+	color = rgb { 187 79 86 }
+	color_ui = rgb { 243 103 112 }
+}
+D27 = {
+	color = rgb { 69 157 208 }
+	color_ui = rgb { 90 204 255 }
+}
+D28 = {
+	color = rgb { 142 79 200 }
+	color_ui = rgb { 176 98 249 }
+}
+D29 = {
+	color = rgb { 122 179 97 }
+	color_ui = rgb { 159 233 126 }
+}
+D30 = {
+	color = rgb { 194 140 86 }
+	color_ui = rgb { 252 182 112 }
+}
+D31 = {
+	color = rgb { 200 100 31 }
+	color_ui = rgb { 245 123 38 }
+}
+D32 = {
+	color = rgb { 80 150 179 }
+	color_ui = rgb { 89 219 220 }
+}
+D33 = {
+	color = rgb { 92 92 197 }
+	color_ui = rgb { 116 116 247 }
+}
+D34 = {
+	color = rgb { 154 69 116 }
+	color_ui = rgb { 200 90 151 }
+}
+D35 = {
+	color = rgb { 195 149 155 }
+	color_ui = rgb { 254 194 202 }
+}
+D36 = {
+	color = rgb { 210 106 47 }
+	color_ui = rgb { 255 138 61 }
+}
+D37 = {
+	color = rgb { 105 147 86 }
+	color_ui = rgb { 149 210 123 }
+}
+D38 = {
+	color = rgb { 175 162 108 }
+	color_ui = rgb { 221 203 135 }
+}
+D39 = {
+	color = rgb { 124 140 162 }
+	color_ui = rgb { 161 182 211 }
+}
+D40 = {
+	color = rgb { 187 79 86 }
+	color_ui = rgb { 243 103 112 }
+}
+D41 = {
+	color = rgb { 69 157 208 }
+	color_ui = rgb { 90 204 255 }
+}
+D42 = {
+	color = rgb { 142 79 200 }
+	color_ui = rgb { 176 98 249 }
+}
+D43 = {
+	color = rgb { 122 179 97 }
+	color_ui = rgb { 159 233 126 }
+}
+D44 = {
+	color = rgb { 194 140 86 }
+	color_ui = rgb { 252 182 112 }
+}
+D45 = {
+	color = rgb { 200 100 31 }
+	color_ui = rgb { 245 123 38 }
+}
+D46 = {
+	color = rgb { 80 150 179 }
+	color_ui = rgb { 89 219 220 }
+}
+D47 = {
+	color = rgb { 92 92 197 }
+	color_ui = rgb { 116 116 247 }
+}
+D48 = {
+	color = rgb { 154 69 116 }
+	color_ui = rgb { 200 90 151 }
+}
+D49 = {
+	color = rgb { 195 149 155 }
+	color_ui = rgb { 254 194 202 }
+}
+D50 = {
+	color = rgb { 210 106 47 }
+	color_ui = rgb { 255 138 61 }
+}
+
+## [두렵도다 두렵ㄷ]##
+
+SV1 = {
+	color = rgb { 72 72 90 }
+	color_ui = rgb { 72 72 90 }
+}
+
+SV2 = {
+	color = rgb { 66 117 255 }
+	color_ui = rgb { 66 117 255 }
+}
+
+SV3 = {
+	color = rgb { 155 45 45 }
+	color_ui = rgb { 155 45 45 }
+}
+
+SV4 = {
+	color = rgb { 141 157 176 }
+	color_ui = rgb { 141 157 176 }
+}
+
+SV5 = {
+	color = rgb { 85 85 100 }
+	color_ui = rgb { 85 85 100 }
+}
+
+SV6 = {
+	color = rgb { 109 165 126 }
+	color_ui = rgb { 109 165 126 }
+}
+
+SV7 = {
+	color = rgb { 104 111 191 }
+	color_ui = rgb { 104 111 191 }
+}
+
+SV8 = {
+	color = rgb { 174 147 113 }
+	color_ui = rgb { 174 147 113 }
+}
+
+SV9 = {
+	color = rgb { 107 64 118 }
+	color_ui = rgb { 107 64 118 }
+}
+
+SVA = {
+	color = rgb { 240 215 108 }
+	color_ui = rgb { 240 215 108 }
+}
+
+SVB = {
+	color = rgb { 166 196 110 }
+	color_ui = rgb { 166 196 110 }
+}
+
+SVC = {
+	color = rgb { 243 171 94 }
+	color_ui = rgb { 243 171 94 }
+}
+
+SVD = {
+	color = rgb { 141 173 194 }
+	color_ui = rgb { 141 173 194 }
+}
+
+SVE = {
+	color = rgb { 63 63 51 }
+	color_ui = rgb { 63 63 51 }
+}
+
+TB1 = {
+	color = rgb { 170 53 53 }
+	color_ui = rgb { 170 53 53 }
+}
+
+TB2 = {
+	color = rgb { 184 57 57 }
+	color_ui = rgb { 184 57 57 }
+}
+
+TB3 = {
+	color = rgb { 210 47 47 }
+	color_ui = rgb { 210 47 47 }
+}
+
+TB4 = {
+	color = rgb { 158 5 5 }
+	color_ui = rgb { 158 5 5 }
+}
+
+TB5 = {
+	color = rgb { 225 35 35 }
+	color_ui = rgb { 225 35 35 }
+}
+
+TB6 = {
+	color = rgb { 122 0 0 }
+	color_ui = rgb { 122 0 0 }
+}
+
+TB7 = {
+	color = rgb { 238 167 137 }
+	color_ui = rgb { 238 167 137 }
+}
+
+TB8 = {
+	color = rgb { 117 43 31 }
+	color_ui = rgb { 117 43 31 }
+}
+
+TB9 = {
+	color = rgb { 57 165 163 }
+	color_ui = rgb { 57 165 163 }
+}
+
+TBA = {
+	color = rgb { 59 40 87 }
+	color_ui = rgb { 59 40 87 }
+}
+
+TBB = {
+	color = rgb { 183 130 180 }
+	color_ui = rgb { 183 130 180 }
+}
+
+GA1 = {
+	color = rgb { 160 165 189 }
+	color_ui = rgb { 160 165 189 }
+}
+
+
+## [중국 성]##
+
+# 쓰촨
+SIC = {
+	color = rgb { 178 81 98 }
+	color_ui = rgb { 178 81 98 }
+}
+
+# 구이저우
+GUZ = {
+	color = rgb { 178 81 98 }
+	color_ui = rgb { 178 81 98 }
+}
+
+# 후난 (HuNan Province)
+HNP = {
+	color = rgb { 178 81 98 }
+	color_ui = rgb { 178 81 98 }
+}
+
+# 후베이
+HBE = {
+	color = rgb { 178 81 98 }
+	color_ui = rgb { 178 81 98 }
+}
+
+# 장시
+JIX = {
+	color = rgb { 178 81 98 }
+	color_ui = rgb { 178 81 98 }
+}
+
+# 저장
+ZHE = {
+	color = rgb { 178 81 98 }
+	color_ui = rgb { 178 81 98 }
+}
+
+# 안후이
+ANH = {
+	color = rgb { 178 81 98 }
+	color_ui = rgb { 178 81 98 }
+}
+
+# 허베이
+HEB = {
+	color = rgb { 178 81 98 }
+	color_ui = rgb { 178 81 98 }
+}
+
+# 허난
+HEN = {
+	color = rgb { 178 81 98 }
+	color_ui = rgb { 178 81 98 }
+}
+
+# 산둥
+SHD = {
+	color = rgb { 178 81 98 }
+	color_ui = rgb { 178 81 98 }
+}
+
+# 장쑤
+JIS = {
+	color = rgb { 178 81 98 }
+	color_ui = rgb { 178 81 98 }
+}
+
+# 광동
+GUD = {
+	color = rgb { 178 81 98 }
+	color_ui = rgb { 178 81 98 }
+}
+
+# 푸젠
+FUJ = {
+	color = rgb { 178 81 98 }
+	color_ui = rgb { 178 81 98 }
+}
+
+##[무정부]##
+
+ZZZ = {
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
+}
+

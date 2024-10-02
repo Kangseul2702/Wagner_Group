@@ -1,0 +1,17 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_event_Wagner_picture_1"
+		texturefile = "gfx/event_pictures/WAG/Wagner_picture_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_Wagner_army"
+		texturefile = "gfx/wagner_gfx/Wagner_idea.png"
+		legacy_lazy_load = no
+	}
+	spriteType = { 
+		name = "GFX_Wagner_tt"
+		texturefile = "gfx/wagner_gfx/Wagner_tt.png"
+		legacy_lazy_load = no
+	}
+}
