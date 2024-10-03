@@ -1,0 +1,19 @@
+on_actions = {
+	on_state_control_changed = {
+		
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						has_completed_focus = WAG_lets_go_moskva
+						original_tag = WAG
+					}
+					FROM.FROM = { state = 219 }
+				}
+				WAG = {
+					
+				}
+			}
+		}
+	}
+}

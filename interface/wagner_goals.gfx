@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = { 
+		name = "GFX_goal_Z"
+		texturefile = "gfx/wagner_gfx/Z.png" 
+	}
+	spriteType = {
+		name = "GFX_goal_March_of_justice"
+		texturefile = "gfx/wagner_gfx/March_of_justice.png" 
+	}
+	spriteType = {
+		name = "GFX_goal_Where_is_oil"
+		texturefile = "gfx/wagner_gfx/Where_is_oil.png" 
+	}
+	spriteType = {
+		name = "GFX_goal_Where_is_ammo"
+		texturefile = "gfx/wagner_gfx/Where_is_ammo.png" 
+	}
+	spriteType = {
+		name = "GFX_goal_thatplanisgood"
+		texturefile = "gfx/wagner_gfx/thatplanisgood.png" 
+	}
+}

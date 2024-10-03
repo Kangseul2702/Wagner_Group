@@ -62,5 +62,67 @@ ideas = {
 				production_speed_buildings_factor = -0.40
             }
         }
+        WAG_march_of_justice = { 
+            allowed = { 
+                tag = WAG
+                always = no
+            }
+            allowed_civil_war = { always = yes  }
+            on_add = { log = "[GetDateText]: [Root.GetName] add idea WAG_march_of_justice " }
+            modifier = {
+                production_factory_start_efficiency_factor = -0.4
+				industrial_capacity_factory = -0.40
+				production_speed_buildings_factor = -0.40
+            }
+        }
+        WAG_many_oil = { 
+            allowed = { 
+                tag = WAG
+                always = no
+            }
+            allowed_civil_war = { always = yes  }
+            on_add = { log = "[GetDateText]: [Root.GetName] add idea WAG_many_oil " }
+            cancel = {
+                ROOT = { owns_state = 219 }
+            }
+            modifier = {
+				supply_consumption_factor = -0.75
+			    army_fuel_consumption_factor = -0.75
+			    air_fuel_consumption_factor = -0.75
+                custom_modifier_tooltip = Cancel_when_condition
+                custom_modifier_tooltip = WAG_many_oil_cancel_condition
+            }
+        }
+        WAG_many_ammo = { 
+            allowed = { 
+                tag = WAG
+                always = no
+            }
+            allowed_civil_war = { always = yes  }
+            on_add = { log = "[GetDateText]: [Root.GetName] add idea WAG_many_ammo " }
+            cancel = {
+                ROOT = { owns_state = 219 }
+            }
+            modifier = {
+                army_speed_factor = 0.5
+                army_attack_speed_factor = 0.5
+                custom_modifier_tooltip = Cancel_when_condition
+                custom_modifier_tooltip = WAG_many_oil_cancel_condition
+            }
+        }
+        VTK_We_cant_win_to_wagner = { 
+            picture = chi_wargaming_division
+            allowed = { 
+                tag = VTK
+            }
+            allowed_civil_war = { always = yes  }
+            on_add = { log = "[GetDateText]: [Root.GetName] add idea VTK_We_cant_win_to_wagner " }
+            cancel = {
+                NOT = { has_war_with = WAG }
+            }
+            modifier = {
+                army_defence_factor = -0.75
+            }
+        }
     }
 }

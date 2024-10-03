@@ -1,4 +1,5 @@
 add_namespace = wagtrip
+add_namespace = wagmidgame
 # country event
 
 country_event = {
@@ -16,6 +17,9 @@ country_event = {
 		log = "[GetDateText]: [Root.GetName]: event wagtrip.1.a"
 		add_ideas = WAG_NoStepBack
 		country_event = { id = wagtrip.2 days = 04 }
+		set_country_flag = WAG_asdasdasd
+		effect_tooltip = { unlock_national_focus = WAG_New_world }
+		hidden_effect = { scoped_play_song = "they_are_not_there" }
 	}
 }
 
@@ -32,9 +36,9 @@ country_event = {
 	option = {
 		name = wagtrip.2.a
 		log = "[GetDateText]: [Root.GetName]: event wagtrip.2.a"
-		hidden_effect = { scoped_play_song = "they_are_not_there" }
 		add_ideas = WAG_bad_bureaucracy
 		add_country_leader_trait = RUS_dictator
+		country_event = { id = wagtrip.3 days = 04 }
 	}
 }
 
@@ -49,10 +53,155 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = wagtrip.2.a
+		name = wagtrip.3.a
 		log = "[GetDateText]: [Root.GetName]: event wagtrip.3.a"
 		add_ideas = WAG_bad_industry
 	}
 }
 
+country_event = {
+	id = wagmidgame.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wagmidgame.1" }
+	title = wagmidgame.1.t
+	desc = wagmidgame.1.desc
+	picture = GFX_event_wagner_picture_2
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = wagmidgame.1.a
+		log = "[GetDateText]: [Root.GetName]: event wagmidgame.1.a"
+		hidden_effect = {
+			country_event = { id = wagmidgame.3 days = 04 }
+		}
+	}
+}
+
+country_event = {
+	id = wagmidgame.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wagmidgame.2" }
+	title = wagmidgame.2.t
+	desc = wagmidgame.2.desc
+	picture = GFX_event_wagner_picture_3
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = wagmidgame.2.a
+		log = "[GetDateText]: [Root.GetName]: event wagmidgame.2.a"
+		every_country = {
+			limit = {
+				OR = { 
+					tag = PRV
+					tag = VTK
+				}
+			}
+			ROOT = {
+				declare_war_on = {
+					target = PREV
+					type = annex_everything
+				}
+			}
+		}
+		VTK = {
+			add_timed_idea = {
+				idea = VTK_We_cant_win_to_wagner
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {
+	id = wagmidgame.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wagmidgame.2" }
+	title = wagmidgame.3.t
+	desc = wagmidgame.3.desc
+	picture = GFX_event_wagner_picture_2
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = wagmidgame.3.a
+		log = "[GetDateText]: [Root.GetName]: event wagmidgame.3.a"
+		complete_national_focus = WAG_ithinkthatplanisgood
+		army_experience = 50
+		air_experience = 50
+		add_command_power = 25
+	}
+}
+
 # news event
+
+add_namespace = wagnews
+news_event  = {
+	id = wagnews.1
+	immediate = { log = "[GetLogInfo] news event wagnews.1" }
+	title = wagnews.1.t
+	desc = wagnews.1.desc
+	picture = GFX_event_wagner_news_1
+	
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = wagnews.1.a
+		trigger = { tag = WAG }
+	}
+	option = {
+		name = wagnews.1.b
+		trigger = { 
+			OR = {
+				tag = VTK
+				is_puppet_of = VTK
+			}
+		}
+	}
+	option = {
+		name = wagnews.1.c
+		trigger = { 
+			NOT = {
+				tag = VTK
+				is_puppet_of = VTK
+				tag = WAG
+			}
+		}
+	}
+}
+news_event  = {
+	id = wagnews.2
+	immediate = { log = "[GetLogInfo] news event wagnews.2" }
+	title = wagnews.2.t
+	desc = wagnews.2.desc
+	picture = GFX_event_fall_of_moskva
+	
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = wagnews.2.a
+		trigger = { tag = WAG }
+	}
+	option = {
+		name = wagnews.2.b
+		trigger = { 
+			OR = {
+				tag = VTK
+				is_puppet_of = VTK
+			}
+		}
+	}
+	option = {
+		name = wagnews.2.c
+		trigger = { 
+			NOT = {
+				tag = VTK
+				is_puppet_of = VTK
+				tag = WAG
+			}
+		}
+	}
+}

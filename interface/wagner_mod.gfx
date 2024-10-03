@@ -1,4 +1,17 @@
 spriteTypes = {
+	# 뉴스
+	spriteType = {
+		name = "GFX_event_fall_of_moskva"
+		texturefile = "gfx/event_pictures/WAG/fall_of_moskva.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_wagner_news_1"
+		texturefile = "gfx/event_pictures/WAG/wagner_news_1.png"
+		legacy_lazy_load = no
+	}
+
+	# 사건
 	spriteType = {
 		name = "GFX_event_Wagner_picture_1"
 		texturefile = "gfx/event_pictures/WAG/Wagner_picture_1.png"
@@ -9,6 +22,12 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/WAG/wagner_picture_2.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_event_wagner_picture_3"
+		texturefile = "gfx/event_pictures/WAG/wagner_picture_3.png"
+		legacy_lazy_load = no
+	}
+	# 모드 종족 군대
 	spriteType = {
 		name = "GFX_idea_Wagner_army"
 		texturefile = "gfx/wagner_gfx/Wagner_idea.png"
@@ -32,5 +51,17 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_WAG_bad_bureaucracy"
 		texturefile = "gfx/wagner_gfx/WAG_bad_bureaucracy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_WAG_bad_industry"
+		texturefile = "gfx/wagner_gfx/Wagner_bad_indutsry.png"
+	}
+	spriteType = {
+		name = "GFX_idea_WAG_many_oil"
+		texturefile = "gfx/wagner_gfx/WAG_many_oil.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_WAG_many_ammo"
+		texturefile = "gfx/wagner_gfx/WAG_many_ammo.png"
 	}
 }

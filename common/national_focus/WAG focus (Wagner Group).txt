@@ -1,0 +1,131 @@
+###########################
+# Wagner Group Focus Tree
+# By Kangseul2702
+###########################
+
+focus_tree = {
+	id = WAG_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = WAG
+		}
+	}
+
+	reset_on_civilwar = no
+	default = no
+	continuous_focus_position = { x = 100 y = 90000 }
+
+	focus = {
+		id = WAG_New_world
+		icon = GFX_goal_Z
+		cost = 5
+
+		available = {
+			has_country_flag = WAG_asdasdasd	
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		x = 7
+		y = 0
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_New_world"
+			country_event = { id = wagmidgame.1 }
+		}
+	}
+
+	focus = {
+		id = WAG_ithinkthatplanisgood
+		icon = GFX_goal_thatplanisgood
+		cost = 5
+
+		available = {
+			always = no
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {
+			focus = WAG_New_world
+		}
+		relative_position_id = WAG_New_world
+		x = 0
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_ithinkthatplanisgood"
+			effect_tooltip = {
+				army_experience = 50
+				air_experience = 50 
+				add_command_power = 25
+			}
+		}
+	}
+
+	focus = {
+		id = WAG_where_is_oil
+		icon = GFX_goal_Where_is_oil
+		cost = 5
+
+		available = { }
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {
+			focus = WAG_ithinkthatplanisgood
+		}
+		relative_position_id = WAG_ithinkthatplanisgood
+		x = 3
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_where_is_oil"
+			add_ideas = WAG_many_oil
+		}
+	}
+
+	focus = {
+		id = WAG_where_is_ammo
+		icon = GFX_goal_Where_is_ammo
+		cost = 5
+
+		available = {  }
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {
+			focus = WAG_ithinkthatplanisgood
+		}
+		relative_position_id = WAG_ithinkthatplanisgood
+		x = -3
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_where_is_oil"
+			add_ideas = WAG_many_ammo
+		}
+	}
+
+	focus = {
+		id = WAG_lets_go_moskva
+		icon = GFX_goal_March_of_justice
+		cost = 5
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_where_is_oil }
+		prerequisite = { focus = WAG_where_is_ammo }
+		relative_position_id = WAG_where_is_ammo
+		x = 3
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_lets_go_moskva"
+			country_event = { id = wagmidgame.2 }
+		}
+	}
+}
+
