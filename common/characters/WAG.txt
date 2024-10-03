@@ -11,6 +11,7 @@ characters={
 			desc = WAG_Prigozhin_desc
 			ideology = Wagner_ideologies 
 			id = -1
+			traits = {  }
 		}
 		
 		field_marshal={
