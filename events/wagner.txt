@@ -199,6 +199,12 @@ news_event  = {
 	major = yes
 	is_triggered_only = yes
 
+	immediate = {
+		hidden_effect = {
+			news_event = { id = wagnews.3 days = 03 }
+		}
+	}
+
 	option = {
 		name = wagnews.2.a
 		trigger = { tag = WAG }
@@ -214,6 +220,40 @@ news_event  = {
 	}
 	option = {
 		name = wagnews.2.c
+		trigger = { 
+			NOT = {
+				tag = VTK
+				is_puppet_of = VTK
+				tag = WAG
+			}
+		}
+	}
+}
+news_event  = {
+	id = wagnews.3
+	immediate = { log = "[GetLogInfo] news event wagnews.3" }
+	title = wagnews.3.t
+	desc = wagnews.3.desc
+	picture = GFX_event_fall_of_moskva
+	
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = wagnews.3.a
+		trigger = { tag = WAG }
+	}
+	option = {
+		name = wagnews.3.b
+		trigger = { 
+			OR = {
+				tag = VTK
+				is_puppet_of = VTK
+			}
+		}
+	}
+	option = {
+		name = wagnews.3.c
 		trigger = { 
 			NOT = {
 				tag = VTK

@@ -6,14 +6,12 @@ characters={
 				large= "gfx/leaders/WAG/Prigozhin.png"
 			}
 		}
-		
 		country_leader = {
 			desc = WAG_Prigozhin_desc
 			ideology = Wagner_ideologies 
 			id = -1
 			traits = {  }
 		}
-		
 		field_marshal={
 			skill=3
 			attack_skill=3
@@ -22,6 +20,59 @@ characters={
 			logistics_skill=2
 			legacy_id=-1
 		}
-		
+	}
+	WAG_dmitry_utkin ={
+		name = WAG_dmitry_utkin
+		portraits={
+			civilian={
+				large= "gfx/leaders/WAG/Dmitry_Utkin.png"
+			}
+		}
+		country_leader = {
+			desc = WAG_dmitry_utkin_desc
+			ideology = Wagner_ideologies 
+			id = -1
+			traits = {  }
+		}
+		field_marshal={
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	WAG_Vitaly_Gerasimov ={
+		name = WAG_Vitaly_Gerasimov
+		portraits={
+			civilian={
+				large= "gfx/leaders/WAG/비탈리_게라시모프_portrait.png"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	WAG_Andrey_Mordvichev ={
+		name = WAG_Andrey_Mordvichev
+		portraits={
+			civilian={
+				large= "gfx/leaders/WAG/안드레이_모르드비체프_portrait.png"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
 	}
 }

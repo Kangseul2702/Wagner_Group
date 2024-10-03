@@ -42,6 +42,9 @@ country_event = {
 set_research_slots = 1
 
 recruit_character = WAG_Prigozhin
+recruit_character = WAG_dmitry_utkin
+recruit_character = WAG_Vitaly_Gerasimov
+recruit_character = WAG_Andrey_Mordvichev
 
 set_politics = {
 	ruling_party = Wagner_ideologies
