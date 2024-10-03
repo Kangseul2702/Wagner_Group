@@ -245,10 +245,15 @@ news_event  = {
 	}
 	option = {
 		name = wagnews.3.b
-		trigger = { 
+		trigger = {
 			OR = {
+				tag = NTH
+				tag = RWN
+				tag = CDN
+				tag = SHI
+				tag = URS
+				tag = PRV
 				tag = VTK
-				is_puppet_of = VTK
 			}
 		}
 	}
@@ -256,8 +261,13 @@ news_event  = {
 		name = wagnews.3.c
 		trigger = { 
 			NOT = {
+				tag = NTH
+				tag = RWN
+				tag = CDN
+				tag = SHI
+				tag = URS
+				tag = PRV
 				tag = VTK
-				is_puppet_of = VTK
 				tag = WAG
 			}
 		}
