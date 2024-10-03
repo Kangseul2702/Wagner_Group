@@ -64,4 +64,8 @@ spriteTypes = {
 		name = "GFX_idea_WAG_many_ammo"
 		texturefile = "gfx/wagner_gfx/WAG_many_ammo.png"
 	}
+	spriteType = {
+		name = "GFX_idea_WAG_general_staff_saintpetersburg"
+		texturefile = "gfx/wagner_gfx/Saintpetersburg.png"
+	}
 }

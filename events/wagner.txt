@@ -36,6 +36,8 @@ country_event = {
 	option = {
 		name = wagtrip.2.a
 		log = "[GetDateText]: [Root.GetName]: event wagtrip.2.a"
+		set_country_flag = WAG_saint_visiable
+		add_ideas = WAG_general_staff_saintpetersburg
 		add_ideas = WAG_bad_bureaucracy
 		add_country_leader_trait = RUS_dictator
 		country_event = { id = wagtrip.3 days = 04 }
@@ -116,7 +118,7 @@ country_event = {
 
 country_event = {
 	id = wagmidgame.3
-	immediate = { log = "[GetDateText]: [Root.GetName]: event wagmidgame.2" }
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wagmidgame.3" }
 	title = wagmidgame.3.t
 	desc = wagmidgame.3.desc
 	picture = GFX_event_wagner_picture_2
@@ -131,6 +133,22 @@ country_event = {
 		army_experience = 50
 		air_experience = 50
 		add_command_power = 25
+	}
+}
+
+country_event = { # 모스크바 점령시 이 이벤트
+	id = wagmidgame.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wagmidgame.4" }
+	title = wagmidgame.4.t
+	desc = wagmidgame.4.desc
+	picture = GFX_event_wagner_picture_2
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = wagmidgame.4.a
+		log = "[GetDateText]: [Root.GetName]: event wagmidgame.4.a"
 	}
 }
 
