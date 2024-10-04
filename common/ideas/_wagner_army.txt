@@ -49,5 +49,25 @@ ideas = {
 				political_power_factor = 0.1
 			}
 		}
+
+		WAG_general_staff_Dmitry_utkin = {
+			allowed = {
+				original_tag = WAG
+			}
+
+			visible = {
+
+			}
+
+			allowed_to_remove = {
+				always = no
+			}
+
+			#picture = Advisor_GEH_kyougoku_satsuki
+
+			modifier = {
+				war_support_factor = 0.1
+			}
+		}
 	}
 }

@@ -1,5 +1,8 @@
 #reload countrycolors
-
+WAG_russia_state = {
+	color = rgb { 0 127 14 }
+	color_ui = rgb { 0 127 14 }
+}
 ################
 
 ## [통일 국가] ##

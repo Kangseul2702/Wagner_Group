@@ -113,6 +113,7 @@ country_event = {
 				days = 30
 			}
 		}
+		news_event = wagnews.1
 	}
 }
 
@@ -149,6 +150,28 @@ country_event = { # 모스크바 점령시 이 이벤트
 	option = {
 		name = wagmidgame.4.a
 		log = "[GetDateText]: [Root.GetName]: event wagmidgame.4.a"
+		custom_effect_tooltip = WAG_every_state_change
+		219 = {
+        	set_province_name = {
+        		id = 6380
+        		name = VICTORY_POINTS_6380_WAG
+	        }
+        	set_state_name = STATE_219_WAG
+		}
+		242 = {
+			set_state_name = STATE_242_WAG
+			set_province_name ={
+				id = 306
+				name = VICTORY_POINTS_306_WAG
+			}
+		}
+
+	}
+
+	option = {
+		name = wagmidgame.4.b
+		log = "[GetDateText]: [Root.GetName]: event wagmidgame.4.b"
+		custom_effect_tooltip = WAG_every_state_NOT_change
 	}
 }
 

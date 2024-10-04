@@ -127,5 +127,28 @@ focus_tree = {
 			country_event = { id = wagmidgame.2 }
 		}
 	}
+
+	focus = {
+		id = WAG_take_back_moskva
+		icon = GFX_goal_moskva
+		cost = 5
+
+		available = {
+			owns_state = 219
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_lets_go_moskva }
+		relative_position_id = WAG_lets_go_moskva
+		x = 0
+		y = 2
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_take_back_moskva"
+			set_capital = { state = 219 remember_old_captial = no }
+			country_event = { id = wagmidgame.4 }
+			set_cosmetic_tag = WAG_russia_state
+		}
+	}
 }
 

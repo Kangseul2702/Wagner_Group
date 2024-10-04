@@ -5,6 +5,7 @@ capital = 195
 add_ideas = {
 	Wagner_army
 	closed_economy
+	WAG_general_staff_Dmitry_utkin
 
 	WAG_Russia_Tactics
 }
@@ -16,7 +17,18 @@ set_party_name = {
 
 set_technology = {
     infantry_weapons_0 = 1
+	infantry_weapons_1 = 1
+	infantry_weapons_2 = 1
+	infantry_weapons_3 = 1
+	rifling_tech = 1
+	magagine_tech = 1
     carriage = 1
+	basic_train = 1
+	tech_support = 1
+	support_weapons_3 = 1
+	support_weapons_2 = 1
+	support_weapons_1 = 1
+	support_weapons = 1
 	# Ground Forces Technology
 	Wagner_Tank_Tech = 1
 	Wagner_mechanized_Tech = 1

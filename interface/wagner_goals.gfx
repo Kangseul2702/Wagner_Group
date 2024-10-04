@@ -19,4 +19,8 @@ spriteTypes = {
 		name = "GFX_goal_thatplanisgood"
 		texturefile = "gfx/wagner_gfx/thatplanisgood.png" 
 	}
+	spriteType = {
+		name = "GFX_goal_moskva"
+		texturefile = "gfx/wagner_gfx/moskva.png" 
+	}
 }

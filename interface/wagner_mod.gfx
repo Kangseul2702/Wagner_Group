@@ -70,6 +70,10 @@ spriteTypes = {
 		texturefile = "gfx/wagner_gfx/people/Saintpetersburg.png"
 	}
 	spriteType = {
+		name = "GFX_idea_WAG_general_staff_Dmitry_utkin"
+		texturefile = "gfx/wagner_gfx/people/드미트리_웃킨.png"
+	}
+	spriteType = {
 		name = "GFX_idea_WAG_Vitaly_Gerasimov"
 		texturefile = "gfx/wagner_gfx/people/비탈리_게라시모프.png"
 	}
