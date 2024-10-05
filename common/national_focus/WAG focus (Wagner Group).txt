@@ -21,7 +21,7 @@ focus_tree = {
 
 	focus = {
 		id = WAG_New_world
-		icon = GFX_goal_Z
+		icon = GFX_goal_we_are_in_the_hell
 		cost = 5
 
 		available = {
@@ -30,7 +30,7 @@ focus_tree = {
 		ai_will_do = {
 			base = 4000
 		}
-		x = 7
+		x = 3
 		y = 0
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_New_world"
@@ -147,7 +147,338 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_take_back_moskva"
 			set_capital = { state = 219 remember_old_captial = no }
 			country_event = { id = wagmidgame.4 }
+			custom_effect_tooltip = tooltip_white_line
 			set_cosmetic_tag = WAG_russia_state
+			add_state_core = 219
+		}
+	}
+	
+
+	focus = {
+		id = WAG_fucking_gwanryu
+		icon = GFX_goal_fucking_gwanryu
+		cost = 10
+
+		available = {
+			has_completed_focus = WAG_take_back_moskva
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		x = 14
+		y = 0
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_fucking_gwanryu"
+			
+		}
+	}
+	
+
+	focus = {
+		id = WAG_whatistheproblem
+		icon = GFX_goal_whatistheproblem
+		cost = 10
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {
+			focus = WAG_fucking_gwanryu
+		}
+		relative_position_id = WAG_fucking_gwanryu
+		x = -1
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_whatistheproblem"
+			
+		}
+	}
+	
+
+	focus = {
+		id = WAG_hiring_local_administrator
+		icon = GFX_goal_local_admin
+		cost = 10
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {
+			focus = WAG_i_found_it
+		}
+		mutually_exclusive = { focus = WAG_military_administrator }
+		relative_position_id = WAG_i_found_it
+		x = -1
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_hiring_local_administrator"
+			
+		}
+	}
+	
+	focus = {
+		id = WAG_military_administrator
+		icon = GFX_goal_army_admin
+		cost = 10
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_i_found_it }
+		mutually_exclusive = { focus = WAG_hiring_local_administrator }
+		relative_position_id = WAG_i_found_it
+		x = 1
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_military_administrator"
+			
+		}
+	}
+
+	focus = {
+		id = WAG_how_do_i_slove_it
+		icon = GFX_goal_fucking_gwanryu
+		cost = 10
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {
+			focus = WAG_fucking_gwanryu
+		}
+		relative_position_id = WAG_fucking_gwanryu
+		x = 1
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_how_do_i_slove_it"
+			
+		}
+	}
+
+	focus = {
+		id = WAG_lets_slove_it_together
+		icon = GFX_goal_fucking_gwanryu
+		cost = 10
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {
+			focus = WAG_how_do_i_slove_it
+		}
+		mutually_exclusive = { focus = WAG_i_slove_it }
+		relative_position_id = WAG_how_do_i_slove_it
+		x = 1
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_lets_slove_it_together"
+			
+		}
+	}
+
+	focus = {
+		id = WAG_i_slove_it
+		icon = GFX_goal_thatplanisgood
+		cost = 10
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {
+			focus = WAG_how_do_i_slove_it
+		}
+		mutually_exclusive = { focus = WAG_lets_slove_it_together }
+		relative_position_id = WAG_how_do_i_slove_it
+		x = -1
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_i_slove_it"
+			
+		}
+	}
+
+	focus = {
+		id = WAG_i_found_it
+		icon = GFX_goal_i_have_slove
+		cost = 10
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {
+			focus = WAG_i_slove_it
+			focus = WAG_lets_slove_it_together
+		}
+		prerequisite = {
+			focus = WAG_whatistheproblem
+		}
+		relative_position_id = WAG_lets_slove_it_together
+		x = -3
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_i_slove_it"
+			
+		}
+	}
+	
+
+	focus = {
+		id = WAG_industry_focus
+		icon = GFX_goal_industry_focus
+		cost = 5
+
+		available = {
+			has_completed_focus = WAG_take_back_moskva
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		relative_position_id = WAG_fucking_gwanryu
+		x = 7
+		y = 0
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_industry_focus"
+			
+		}
+	}
+
+	focus = {
+		id = WAG_mingong_focus
+		icon = GFX_goal_industry_focus
+		cost = 5
+
+		available = {
+			
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_industry_focus }
+		relative_position_id = WAG_industry_focus
+		x = 2
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_mingong_focus"
+			
+		}
+	}
+
+	focus = {
+		id = WAG_mingong_focus_2
+		icon = GFX_goal_industry_focus
+		cost = 5
+
+		available = {
+			
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_mingong_focus }
+		relative_position_id = WAG_mingong_focus
+		x = 0
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_mingong_focus_2"
+			
+		}
+	}
+
+	focus = {
+		id = WAG_gungong_focus
+		icon = GFX_goal_industry_focus
+		cost = 5
+
+		available = {
+			
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_industry_focus }
+		relative_position_id = WAG_industry_focus
+		x = 0
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_gungong_focus"
+			
+		}
+	}
+
+	focus = {
+		id = WAG_gungong_focus_2
+		icon = GFX_goal_industry_focus
+		cost = 5
+
+		available = {
+			
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_gungong_focus }
+		relative_position_id = WAG_gungong_focus
+		x = 0
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_gungong_focus_2"
+			
+		}
+	}
+
+	focus = {
+		id = WAG_based_focus
+		icon = GFX_goal_industry_focus
+		cost = 5
+
+		available = {
+			
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_industry_focus }
+		relative_position_id = WAG_industry_focus
+		x = -2
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_based_focus"
+			
+		}
+	}
+
+	focus = {
+		id = WAG_based_focus_2
+		icon = GFX_goal_industry_focus
+		cost = 5
+
+		available = {
+			
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_based_focus }
+		relative_position_id = WAG_based_focus
+		x = 0
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_based_focus_2"
+			
 		}
 	}
 }

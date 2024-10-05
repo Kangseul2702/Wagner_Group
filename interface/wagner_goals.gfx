@@ -23,4 +23,32 @@ spriteTypes = {
 		name = "GFX_goal_moskva"
 		texturefile = "gfx/wagner_gfx/moskva.png" 
 	}
+	spriteType = {
+		name = "GFX_goal_we_are_in_the_hell"
+		texturefile = "gfx/wagner_gfx/we_are_in_the_hell.png" 
+	}
+	spriteType = {
+		name = "GFX_goal_fucking_gwanryu"
+		texturefile = "gfx/wagner_gfx/fucking_gwanryu.png" 
+	}
+	spriteType = {
+		name = "GFX_goal_whatistheproblem"
+		texturefile = "gfx/wagner_gfx/whatistheproblem.png" 
+	}
+	spriteType = {
+		name = "GFX_goal_i_have_slove"
+		texturefile = "gfx/wagner_gfx/i_have_slove.png" 
+	}
+	spriteType = {
+		name = "GFX_goal_local_admin"
+		texturefile = "gfx/wagner_gfx/local_admin.png" 
+	}
+	spriteType = {
+		name = "GFX_goal_army_admin"
+		texturefile = "gfx/wagner_gfx/army_admin.png" 
+	}
+	spriteType = {
+		name = "GFX_goal_industry_focus"
+		texturefile = "gfx/wagner_gfx/industry_focus.png" 
+	}
 }

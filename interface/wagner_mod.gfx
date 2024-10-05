@@ -38,6 +38,16 @@ spriteTypes = {
 		texturefile = "gfx/wagner_gfx/Wagner_tt.png"
 		legacy_lazy_load = no
 	}
+	spriteType = { 
+		name = "GFX_TNO_OpeningScreen_Poster_WAG"
+		texturefile = "gfx/wagner_gfx/Wagner_intro.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_russia_texticon"
+		texturefile = "gfx/wagner_gfx/russia_texticon.png"
+		legacy_lazy_load = no
+	}
 
 	#국민정신 
 	spriteType = { 

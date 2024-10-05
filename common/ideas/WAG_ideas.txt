@@ -47,6 +47,25 @@ ideas = {
 				political_power_factor = -0.25
 				consumer_goods_factor = 0.25
 				production_factory_max_efficiency_factor = -0.35
+                production_factory_efficiency_gain_factor = -0.35
+                production_factory_start_efficiency_factor = -0.35
+            }
+        }
+        WAG_too_bad_bureaucracy = { 
+            #name = WAG_bad_bureaucracy
+            picture = WAG_bad_bureaucracy
+            allowed = { 
+                tag = WAG
+                always = no
+            }
+            allowed_civil_war = { always = yes  }
+            on_add = { log = "[GetDateText]: [Root.GetName] add idea WAG_too_bad_bureaucracy " }
+            modifier = {
+				political_power_factor = -0.30
+				consumer_goods_factor = 0.30
+				production_factory_max_efficiency_factor = -0.40
+                production_factory_efficiency_gain_factor = -0.40
+                production_factory_start_efficiency_factor = -0.40
             }
         }
         WAG_bad_industry = { 
@@ -57,9 +76,21 @@ ideas = {
             allowed_civil_war = { always = yes  }
             on_add = { log = "[GetDateText]: [Root.GetName] add idea WAG_bad_industry " }
             modifier = {
-                production_factory_start_efficiency_factor = -0.4
 				industrial_capacity_factory = -0.40
 				production_speed_buildings_factor = -0.40
+            }
+        }
+        WAG_not_bad_industry = { 
+            picture = WAG_bad_industry
+            allowed = { 
+                tag = WAG
+                always = no
+            }
+            allowed_civil_war = { always = yes  }
+            on_add = { log = "[GetDateText]: [Root.GetName] add idea WAG_not_bad_industry " }
+            modifier = {
+				industrial_capacity_factory = -0.20
+				production_speed_buildings_factor = -0.20
             }
         }
         WAG_march_of_justice = { 

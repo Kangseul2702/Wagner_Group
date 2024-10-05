@@ -2,12 +2,12 @@ ideologies = {
 
 	loyal_pop = { #충성파1
 		types = {
-			#### WG MOD FIX
+			#### WG_MOD_FIX
 			Wagner_ideologies = {
 				can_be_randomly_selected = no
 				color = { 31 32 35 }
 			}
-			#### WG MOD FIX
+			#### WG_MOD_FIX
 			example_1 = {
 				can_be_randomly_selected = no # If no, the subideology will not be randomly selected when creating a new random leader.
 				color = { 88 101 147 } # Optional - if dont has, subideology has color of ideology.

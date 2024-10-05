@@ -16,6 +16,8 @@ replace_path="gfx/fonts/aldrich_16_outline.fnt"
 replace_path="gfx/fonts/aldrich_16_outline.dds"
 replace_path="gfx/fonts/aldrich_18_outline.fnt"
 replace_path="gfx/fonts/aldrich_18_outline.dds"
+replace_path="gfx/fonts/aldrich_20_outline.fnt"
+replace_path="gfx/fonts/aldrich_20_outline.dds"
 tags={
 	"Historical"
 	"Gameplay"
