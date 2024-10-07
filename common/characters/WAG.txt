@@ -75,4 +75,127 @@ characters={
 			legacy_id=-1
 		}
 	}
+	WAG_Pavel_Gubarev_Field = {
+		name = WAG_pavel_gubarev
+		portraits = {
+			army = { large = "gfx/leaders/WAG/Pavel_Gubarev_portrait.png"}
+	    }
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 1276
+		}
+
+	}
+	
+	WAG_Igor_Strelkov_Field = {
+		name = WAG_igor_strelkov
+		portraits = {
+			army = { large = "gfx/leaders/WAG/Igor_Strelkov.png"}
+	    }
+		field_marshal = {
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 3
+			legacy_id = 1450
+		}
+	}
+	WAG_Alexey_Milchakov_Corps = {
+		name = WAG_alexey_milchakov
+		portraits = {
+		civilian = { large = "gfx/leaders/WAG/Alexey_Milchakov.png" 
+			small = "gfx/leaders/WAG_advisors/Alexey_Milchakov.png"}
+			army = { large = "gfx/leaders/WAG/Alexey_Milchakov.png"}
+	    }
+			advisor = {
+			slot = political_advisor
+			traits = { loyal_friend }
+			idea_token = Alexey_Milchakov
+			allowed  = { original_tag = OMS}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			}
+		corps_commander = {
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = 8411
+		}
+	}
+	WAG_Mikhail_Misincev_Corps = {
+		name = WAG_mikhail_misincev
+		portraits = {
+		civilian = { large = "gfx/leaders/WAG/Mikhail_Misincev.png" 
+			small = "gfx/leaders/WAG_advisors/Mikhail_Misincev.png"}
+			army = { large = "gfx/leaders/WAG/Mikhail_Misincev.png"}
+	    }
+			advisor = {
+			slot = political_advisor
+			traits = { reckless_warrior }
+			idea_token = Mikhail_Misincev
+			allowed  = { original_tag = OMS}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			}
+		corps_commander = {
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = 8410
+		}
+
+	}
+    WAG_Yuri_Nesterenko = {
+		name = WAG_yuri_nesterenko
+		portraits = {
+			civilian = { large = "gfx/leaders/WAG/yuri_nesterenko.png" 
+			small = "gfx/leaders/WAG_advisors/Mikhail_Misincev.png"}
+			army = { large = "gfx/leaders/WAG/yuri_nesterenko.png"}
+	    }
+			advisor = {
+			slot = political_advisor
+			traits = { master_of_shadows }
+			idea_token = Yuri_Nesterenko
+			allowed  = { original_tag = OMS}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			}
+		corps_commander = {
+		traits = {  }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 8043
+		}
+	}
+	WAG_Yevgeny_Rasskazov = {
+		name = WAG_yevgeny_rasskazov
+		portraits = {
+			civilian = { large = "gfx/leaders/WAG/yevgeny_rasskazov.png"}
+			army = { large = "gfx/leaders/WAG/yevgeny_rasskazov.png"}
+	    }
+		corps_commander = {
+		traits = {  }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 8042
+		}
+	}
 }
