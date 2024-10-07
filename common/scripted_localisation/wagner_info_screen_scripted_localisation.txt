@@ -81,6 +81,20 @@ defined_text = {
 	}
 }
 
+#### WG_MOD_FIX
+defined_text = {
+	name = GET_CLOSEBUTTON_TT
+	text = {
+		trigger = { NOT = { original_tag = WAG } }
+		localization_key = TMC_original_INFO_BUTTON_TT
+	}
+	text = {
+		trigger = { original_tag = WAG }
+		localization_key = Wagner_INFO_BUTTON_TT
+	}
+
+}
+
 # 2. Poster_image
 defined_text = {
 	name = GET_POSTER

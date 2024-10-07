@@ -165,7 +165,7 @@ focus_tree = {
 		ai_will_do = {
 			base = 4000
 		}
-		x = 14
+		x = 19
 		y = 0
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_fucking_gwanryu"
@@ -338,7 +338,7 @@ focus_tree = {
 
 	focus = {
 		id = WAG_industry_focus
-		icon = GFX_goal_industry_focus
+		icon = GFX_goal_industry_focus_2
 		cost = 5
 
 		available = {
@@ -347,11 +347,124 @@ focus_tree = {
 		ai_will_do = {
 			base = 4000
 		}
+		prerequisite = {
+			focus = WAG_fucking_gwanryu
+		}
 		relative_position_id = WAG_fucking_gwanryu
-		x = 7
-		y = 0
+		x = -6
+		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_industry_focus"
+			add_political_power = 25
+			random_owned_controlled_state = {
+				limit = {
+					industrial_complex > 0
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = WAG_infrastructure_effort
+		icon = GFX_goal_improve_railway_network
+		cost = 5
+
+		available = {
+			
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_industry_focus }
+		relative_position_id = WAG_industry_focus
+		x = -3
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_based_focus"
+			if = {
+				limit = {
+					all_owned_state = {
+						infrastructure > 2
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes						
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}				
+			}
+			random_owned_controlled_state = {
+				limit = {
+					infrastructure < 3
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					infrastructure < 3
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					infrastructure < 3
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					infrastructure < 3
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 			
 		}
 	}
@@ -369,7 +482,67 @@ focus_tree = {
 		}
 		prerequisite = { focus = WAG_industry_focus }
 		relative_position_id = WAG_industry_focus
-		x = 2
+		x = -1
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_mingong_focus"
+				random_owned_controlled_state = {
+					limit = {
+						industrial_complex > 0
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+						NOT = { has_state_flag = SOV_finish_five_year_plan_2IC }
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						industrial_complex > 0
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			
+		}
+	}
+
+	focus = {
+		id = WAG_Industrial_reconstruction_completed
+		icon = GFX_goal_industry_focus
+		cost = 5
+
+		available = {
+			OR = {
+				has_completed_focus = WAG_military_administrator
+				has_completed_focus = WAG_hiring_local_administrator
+			}
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { 
+			focus = WAG_mingong_focus 
+			focus = WAG_infrastructure_effort
+		}
+		relative_position_id = WAG_mingong_focus
+		x = -1
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_mingong_focus"
@@ -378,8 +551,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = WAG_mingong_focus_2
-		icon = GFX_goal_industry_focus
+		id = WAG_improve_railway_network
+		icon = GFX_goal_improve_railway_network
 		cost = 5
 
 		available = {
@@ -388,81 +561,41 @@ focus_tree = {
 		ai_will_do = {
 			base = 4000
 		}
-		prerequisite = { focus = WAG_mingong_focus }
-		relative_position_id = WAG_mingong_focus
-		x = 0
-		y = 1
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_mingong_focus_2"
-			
-		}
-	}
-
-	focus = {
-		id = WAG_gungong_focus
-		icon = GFX_goal_industry_focus
-		cost = 5
-
-		available = {
-			
-		}
-		ai_will_do = {
-			base = 4000
-		}
-		prerequisite = { focus = WAG_industry_focus }
-		relative_position_id = WAG_industry_focus
-		x = 0
-		y = 1
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_gungong_focus"
-			
-		}
-	}
-
-	focus = {
-		id = WAG_gungong_focus_2
-		icon = GFX_goal_industry_focus
-		cost = 5
-
-		available = {
-			
-		}
-		ai_will_do = {
-			base = 4000
-		}
-		prerequisite = { focus = WAG_gungong_focus }
-		relative_position_id = WAG_gungong_focus
-		x = 0
-		y = 1
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_gungong_focus_2"
-			
-		}
-	}
-
-	focus = {
-		id = WAG_based_focus
-		icon = GFX_goal_industry_focus
-		cost = 5
-
-		available = {
-			
-		}
-		ai_will_do = {
-			base = 4000
-		}
-		prerequisite = { focus = WAG_industry_focus }
-		relative_position_id = WAG_industry_focus
+		
+		relative_position_id = WAG_Industrial_reconstruction_completed
+		prerequisite = { focus = WAG_Industrial_reconstruction_completed }
 		x = -2
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_based_focus"
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_improve_railway_network"
 			
 		}
 	}
 
 	focus = {
-		id = WAG_based_focus_2
+		id = WAG_first_five_year_plan
+		icon = GFX_goal_five_year_plan
+		cost = 10
+
+		available = {
+			
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		
+		relative_position_id = WAG_Industrial_reconstruction_completed
+		prerequisite = { focus = WAG_Industrial_reconstruction_completed }
+		x = 0
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_first_five_year_plan"
+			
+		}
+	}
+
+	focus = {
+		id = WAG_increase_state_reserves
 		icon = GFX_goal_industry_focus
 		cost = 5
 
@@ -472,12 +605,182 @@ focus_tree = {
 		ai_will_do = {
 			base = 4000
 		}
-		prerequisite = { focus = WAG_based_focus }
-		relative_position_id = WAG_based_focus
+		
+		relative_position_id = WAG_first_five_year_plan
+		prerequisite = { focus = WAG_first_five_year_plan }
 		x = 0
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_based_focus_2"
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_increase_state_reserves"
+			
+		}
+	}
+
+	focus = {
+		id = WAG_reorganize_the_pc_of_heavy_industry
+		icon = GFX_goal_industry_focus
+		cost = 10
+
+		available = {
+			
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		
+		relative_position_id = WAG_first_five_year_plan
+		prerequisite = { focus = WAG_first_five_year_plan }
+
+		mutually_exclusive = { focus = WAG_shift_to_armaments_production}
+		x = -2
+		y = 2
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_reorganize_the_pc_of_heavy_industry"
+			
+		}
+	}
+
+	focus = {
+		id = WAG_shift_to_armaments_production
+		icon = GFX_goal_industry_focus
+		cost = 10
+
+		available = {
+			
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		
+		relative_position_id = WAG_first_five_year_plan
+		prerequisite = { focus = WAG_first_five_year_plan }
+
+		mutually_exclusive = { focus = WAG_reorganize_the_pc_of_heavy_industry}
+		x = 2
+		y = 2
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_shift_to_armaments_production"
+			
+		}
+	}
+
+	focus = {
+		id = WAG_national_specialists
+		icon = GFX_goal_national_specialists
+		cost = 10
+
+		available = {
+			
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		
+		relative_position_id = WAG_industry_focus
+		prerequisite = { focus = WAG_industry_focus }
+
+		mutually_exclusive = { focus = WAG_foreign_experts}
+		x = 1
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_national_specialists"
+			
+		}
+	}
+
+	focus = {
+		id = WAG_foreign_experts
+		icon = GFX_goal_foreign_experts
+		cost = 10
+
+		available = {
+			
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		
+		relative_position_id = WAG_industry_focus
+		prerequisite = { focus = WAG_industry_focus }
+
+		mutually_exclusive = { focus = WAG_national_specialists}
+		x = 3
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_foreign_experts"
+			
+		}
+	}
+
+	focus = {
+		id = WAG_develop_the_urals
+		icon = GFX_goal_industry_focus
+		cost = 10
+
+		available = {
+			
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		
+		relative_position_id = WAG_foreign_experts
+		prerequisite = { 
+			focus = WAG_foreign_experts 
+			focus = WAG_national_specialists
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_develop_the_urals"
+			
+		}
+	}
+
+	focus = {
+		id = WAG_eastern_development
+		icon = GFX_goal_industry_focus
+		cost = 10
+
+		available = {
+			
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		
+		relative_position_id = WAG_national_specialists
+		prerequisite = { 
+			focus = WAG_foreign_experts 
+			focus = WAG_national_specialists
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_eastern_development"
+			
+		}
+	}
+
+	focus = {
+		id = WAG_the_wagner_academy_of_sciences
+		icon = GFX_goal_industry_focus
+		cost = 10
+
+		available = {
+			
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		
+		relative_position_id = WAG_eastern_development
+		prerequisite = { focus = WAG_develop_the_urals }
+		prerequisite = { focus = WAG_eastern_development }
+		x = 1
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_eastern_development"
 			
 		}
 	}

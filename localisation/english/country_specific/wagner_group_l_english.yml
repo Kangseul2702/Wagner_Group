@@ -128,9 +128,22 @@
  WAG_i_slove_it: "내가 해결 해야해"
  WAG_i_found_it: "나한테 좋은 아이디어가 있어"
  WAG_hiring_local_administrator: "현지 행정가 등용"
- WAG_military_administrator: "군 행정가"
+ WAG_military_administrator: "군인 행정가"
  WAG_lets_slove_it_together: "다 같이 고민해보자"
  WAG_industry_focus: "개같은 산업 문제"
+ WAG_mingong_focus: "중공업"
+ WAG_Industrial_reconstruction_completed: "산업 재건 완료"
+ WAG_infrastructure_effort: "기반시설 주력"
+ WAG_first_five_year_plan: "제 1차 5개년 계획"
+ WAG_improve_railway_network: "철도망 개선"
+ WAG_increase_state_reserves: "국가 비축량 증대"
+ WAG_reorganize_the_pc_of_heavy_industry: "산업부 재편"
+ WAG_shift_to_armaments_production: "무기 생산으로 전환"
+ WAG_national_specialists: "국내 전문가"
+ WAG_foreign_experts: "해외 전문가"
+ WAG_eastern_development: "프라우다 개발"
+ WAG_develop_the_urals: "스바로그 개발"
+ WAG_the_wagner_academy_of_sciences: "바그너 과학 아카데미"
  # 결정
 
  # Equipments

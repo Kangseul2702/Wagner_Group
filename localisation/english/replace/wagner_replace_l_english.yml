@@ -1,8 +1,10 @@
 ﻿l_english:
 
- TMC_menu_tt:0 "The Moe Chronicles Wagner Submod - \n피, 명예, 정의, 조국, 용기"
- TNO_COUNTRY_INFO_BUTTON_TT:0 "§R죽음이 당신을 기다리고 있습니다..§!"
-
+ TMC_menu_tt:0 "PMC Wagner Group SubMode - \n피, 명예, 정의, 조국, 용기"
+ TMC_label_version:0 "PMC Wagner Group SubMode - 피, 명예, 정의, 조국, 용기"
+ TNO_COUNTRY_INFO_BUTTON_TT:0 "[GET_CLOSEBUTTON_TT]"
+ TMC_original_INFO_BUTTON_TT:0 "§G끝 없는 이야기§!§Y가 당신을 기다리고 있습니다!§!"
+ Wagner_INFO_BUTTON_TT:0 "§R죽음이 당신을 기다리고 있습니다..§!"
  STATE_195:0 "상트페테르부르크"
  VICTORY_POINTS_3151:0 "상트페테르부르크"
  STATE_208:0 "루가"

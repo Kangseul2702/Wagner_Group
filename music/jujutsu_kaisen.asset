@@ -30,3 +30,18 @@ music = {
 	file = "they_are_not_there.ogg"
 	volume = 0.6
 }
+music = {
+	name = "Tomorrow_youll_be_luckier"
+	file = "Tomorrow_youll_be_luckier.ogg"
+	volume = 0.6
+}
+music = {
+	name = "ammo"
+	file = "ammo.ogg"
+	volume = 0.6
+}
+music = {
+	name = "nyzyra"
+	file = "nyzyra.ogg"
+	volume = 0.6
+}

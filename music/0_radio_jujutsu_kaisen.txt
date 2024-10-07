@@ -48,3 +48,27 @@ music = {
 		}		
 	}
 }
+music = {
+	song = "Tomorrow_youll_be_luckier"
+	chance = {
+		modifier = {
+			factor = 2
+		}		
+	}
+}
+music = {
+	song = "ammo"
+	chance = {
+		modifier = {
+			factor = 2
+		}		
+	}
+}
+music = {
+	song = "nyzyra"
+	chance = {
+		modifier = {
+			factor = 2
+		}		
+	}
+}

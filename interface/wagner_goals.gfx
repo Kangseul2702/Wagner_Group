@@ -51,4 +51,24 @@ spriteTypes = {
 		name = "GFX_goal_industry_focus"
 		texturefile = "gfx/wagner_gfx/industry_focus.png" 
 	}
+	spriteType = {
+		name = "GFX_goal_industry_focus_2"
+		texturefile = "gfx/wagner_gfx/industry_focus_2.png" 
+	}
+	spriteType = {
+		name = "GFX_goal_improve_railway_network"
+		texturefile = "gfx/wagner_gfx/improve_railway_network.png" 
+	}
+	spriteType = {
+		name = "GFX_goal_five_year_plan"
+		texturefile = "gfx/wagner_gfx/five_year_plan.png" 
+	}
+	spriteType = {
+		name = "GFX_goal_foreign_experts"
+		texturefile = "gfx/wagner_gfx/foreign_experts.png" 
+	}
+	spriteType = {
+		name = "GFX_goal_national_specialists"
+		texturefile = "gfx/wagner_gfx/national_specialists.png" 
+	}
 }
