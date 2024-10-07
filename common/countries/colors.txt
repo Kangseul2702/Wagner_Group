@@ -3,6 +3,10 @@ WAG = {
 	color = rgb { 31 32 35 }
 	color_ui = rgb { 31 32 35 }
 }
+GOJ = {
+	color = rgb { 0 206 209 }
+	color_ui = rgb { 0 206 209 }
+}
 #### WG_MOD_FIX
 #reload countrycolors
 

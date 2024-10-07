@@ -1,5 +1,6 @@
 add_namespace = wagtrip
 add_namespace = wagmidgame
+add_namespace = waglast
 # country event
 
 country_event = {
@@ -169,7 +170,7 @@ country_event = { # 모스크바 점령시 이 이벤트
 
 country_event = { # 불행중 다행
 	id = wagmidgame.5
-	immediate = { log = "[GetDateText]: [Root.GetName]: event wagmidgame.4" }
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wagmidgame.5" }
 	title = wagmidgame.5.t
 	desc = wagmidgame.5.desc
 	picture = GFX_event_wagner_picture_2
@@ -184,6 +185,26 @@ country_event = { # 불행중 다행
 			add_idea = WAG_not_bad_industry
 			remove_idea = WAG_bad_industry
 		}
+	}
+}
+
+country_event = { # 일어나, 마더 러시아.
+	id = waglast.1
+	immediate = { 
+		log = "[GetDateText]: [Root.GetName]: event waglast.1" 
+		hidden_effect = { scoped_play_song = "Sunny" }
+	}
+	title = waglast.1.t
+	desc = waglast.1.desc
+	picture = GFX_event_wakeuprussia
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = waglast.1.a
+		log = "[GetDateText]: [Root.GetName]: event waglast.1.a"
+		set_cosmetic_tag = WAG_Russia_Federation
 	}
 }
 
@@ -304,6 +325,60 @@ news_event  = {
 				tag = PRV
 				tag = VTK
 				tag = WAG
+			}
+		}
+	}
+}
+news_event  = {
+	id = wagnews.4
+	immediate = { log = "[GetLogInfo] news event wagnews.4" }
+	title = wagnews.4.t
+	desc = wagnews.4.desc
+	picture = GFX_event_moskva_gov
+	
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = wagnews.4.a
+		trigger = { tag = WAG }
+		set_cosmetic_tag = WAG_russia_state
+	}
+	option = {
+		name = wagnews.4.b
+		trigger = {
+			OR = {
+				tag = NTH
+				tag = RWN
+				tag = CDN
+				tag = SHI
+				tag = URS
+				tag = PRV
+				tag = VTK
+			}
+		}
+	}
+	option = {
+		name = wagnews.4.d
+		trigger = { tag = HBR }
+	}
+	option = {
+		name = wagnews.4.e
+		trigger = { tag = SEV }
+	}
+	option = {
+		name = wagnews.4.c
+		trigger = { 
+			NOT = {
+				tag = WAG
+				tag = SEV
+				tag = HBR
+				tag = RWN
+				tag = CDN
+				tag = SHI
+				tag = URS
+				tag = PRV
+				tag = VTK
 			}
 		}
 	}

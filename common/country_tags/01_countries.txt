@@ -1,1 +1,2 @@
 WAG = "countries/eastern_european.txt"
+GOJ = "countries/eastern_european.txt"

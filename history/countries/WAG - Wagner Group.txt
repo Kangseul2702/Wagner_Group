@@ -56,7 +56,11 @@ set_research_slots = 1
 recruit_character = WAG_Prigozhin
 recruit_character = WAG_dmitry_utkin
 recruit_character = WAG_Vitaly_Gerasimov
-recruit_character = WAG_Andrey_Mordvichev
+recruit_character = WAG_Pavel_Gubarev_Field
+recruit_character = WAG_Alexey_Milchakov_Corps
+recruit_character = WAG_Mikhail_Misincev_Corps
+recruit_character = WAG_Yuri_Nesterenko
+recruit_character = WAG_Yevgeny_Rasskazov
 
 set_politics = {
 	ruling_party = Wagner_ideologies

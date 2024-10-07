@@ -10,6 +10,11 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/WAG/wagner_news_1.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_event_moskva_gov"
+		texturefile = "gfx/event_pictures/WAG/moskva_gov.png"
+		legacy_lazy_load = no
+	}
 
 	# 사건
 	spriteType = {
@@ -25,6 +30,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_event_wagner_picture_3"
 		texturefile = "gfx/event_pictures/WAG/wagner_picture_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_wakeuprussia"
+		texturefile = "gfx/event_pictures/WAG/wakeuprussia.png"
 		legacy_lazy_load = no
 	}
 	# 모드 종족 군대
