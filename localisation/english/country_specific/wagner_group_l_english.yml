@@ -27,9 +27,12 @@
  Wagner_party: "바그너 그룹"
  Wagner_party_long: "민간군사기업 바그너 그룹"
 
+ # 국민정신
+ WAG_second_five_year_plan: "신 5개년 계획"
+ WAG_second_five_year_plan_desc: "신 5개년 계획은 과거 소비에트 사회주의 공화국 연방에서 시행했던 계획경제를 모티브로 삼아 추진하는 경제 발전 전략입니다. 과거의 5개년 계획과 마찬가지로 국가가 주도하는 방식이라는 점에서는 유사하지만, 이번 계획은 그보다 더 유연한 접근을 취하고 있습니다. 국가가 전반적인 방향을 설정하는 건 동일하지만, 세부적인 운영에 있어서는 시장 경제의 자율성을 어느 정도 인정하며, 부분적으로 자유로운 방식이 적용될 예정입니다.\n\n이는 국가의 강력한 통제 속에서도 경제 주체들이 스스로 움직일 수 있는 여지를 두어, 과거의 계획보다 더욱 효율적이고 실질적인 성과를 기대하는 방향입니다."
+ WAG_second_five_year_plan_idea: "$WAG_second_five_year_plan$"
  Wagner_army: "바그너 용병대"
  Wagner_army_tt: "\n\n\n£GFX_Wagner_tt\n\n\n\n\n러시아의 민간 군사기업은 §Y예브게니 프리고진§!과 러시아 특수부대 지휘관 출신인 §Y드미트리 우트킨§!이 공동 설립한 것으로 알려져 있습니다. 이 회사는 전직 스페츠나츠 출신의 인물들이 주로 지휘를 맡고 있으며, 러시아 정부의 지원 덕분에 상당한 수준의 정예화와 기계화를 이루어냈습니다.\n\n하지만, §Y용병§!이라는 특성상 가장 큰 문제는 인력 수급에 있습니다. 군사 전문성을 갖춘 인재들이 부족하고, 전투 상황에서의 높은 위험성 때문에 인력 충원이 원활하지 않다는 한계에 직면해 있습니다."
-
  WAG_NoStepBack: "조국이 우리 뒤에 있다"
  WAG_NoStepBack_desc: "우리가 전이 사태를 겪으면서, 상트페테르부르크는 이 낯선 세계에서 가장 중요한 요충지가 되었습니다. 이 도시는 단순한 과거의 유산이나 상징이 아닙니다. 우리가 알던 현실과 이 이상한 세계를 잇는 최전선입니다. 여기서 우리가 한 발짝이라도 물러선다면, 모든 것이 무너질 것입니다. 상트페테르부르크를 지키는 것은 단순한 방어전이 아니라, 우리의 존재와 미래를 지키는 싸움입니다.\n\n§R한 발짝도 물러서지 마라!§! 상트페테르부르크는 우리가 지켜야 할 마지막 보루다. 지금 우리가 서 있는 이 땅이 바로 우리의 미래다."
  WAG_Russia_Tactics: "러시아군의 작전 전술"
@@ -154,6 +157,9 @@
  WAG_increase_state_reserves: "국가 비축량 증대"
  WAG_reorganize_the_pc_of_heavy_industry: "산업부 재편"
  WAG_shift_to_armaments_production: "무기 생산으로 전환"
+ WAG_steel_casting_industry: "제강업"
+ WAG_synthetic_rubber: "합성 고무"
+ WAG_oil_production: "석유 생산"
  WAG_industrial_modernization: "산업 현대화"
  WAG_optimize_production_lines: "생산 라인 최적화"
  WAG_national_specialists: "국내 전문가"

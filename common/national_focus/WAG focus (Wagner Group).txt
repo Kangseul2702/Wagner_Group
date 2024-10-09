@@ -156,7 +156,7 @@ focus_tree = {
 	focus = {
 		id = WAG_fucking_gwanryu
 		icon = GFX_goal_fucking_gwanryu
-		cost = 10
+		cost = 6.9
 
 		available = {
 			has_completed_focus = WAG_take_back_moskva
@@ -176,7 +176,7 @@ focus_tree = {
 	focus = {
 		id = WAG_whatistheproblem
 		icon = GFX_goal_whatistheproblem
-		cost = 10
+		cost = 6.9
 
 		available = {
 		}
@@ -199,7 +199,7 @@ focus_tree = {
 	focus = {
 		id = WAG_hiring_local_administrator
 		icon = GFX_goal_local_admin
-		cost = 10
+		cost = 6.9
 
 		available = {
 		}
@@ -222,7 +222,7 @@ focus_tree = {
 	focus = {
 		id = WAG_military_administrator
 		icon = GFX_goal_army_admin
-		cost = 10
+		cost = 6.9
 
 		available = {
 		}
@@ -243,7 +243,7 @@ focus_tree = {
 	focus = {
 		id = WAG_how_do_i_slove_it
 		icon = GFX_goal_fucking_gwanryu
-		cost = 10
+		cost = 6.9
 
 		available = {
 		}
@@ -265,7 +265,7 @@ focus_tree = {
 	focus = {
 		id = WAG_lets_slove_it_together
 		icon = GFX_goal_we_all_worry_together
-		cost = 10
+		cost = 6.9
 
 		available = {
 		}
@@ -288,7 +288,7 @@ focus_tree = {
 	focus = {
 		id = WAG_i_slove_it
 		icon = GFX_goal_thatplanisgood
-		cost = 10
+		cost = 6.9
 
 		available = {
 		}
@@ -311,7 +311,7 @@ focus_tree = {
 	focus = {
 		id = WAG_i_found_it
 		icon = GFX_goal_i_have_slove
-		cost = 10
+		cost = 6.9
 
 		available = {
 		}
@@ -604,7 +604,7 @@ focus_tree = {
 	focus = {
 		id = WAG_first_five_year_plan
 		icon = GFX_goal_five_year_plan
-		cost = 10
+		cost = 6.9
 
 		available = {
 			
@@ -625,9 +625,10 @@ focus_tree = {
 				uses = 2
 				category = construction_tech
 			}
-			add_dynamic_modifier = {
-				#modifier
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = WAG_second_five_year_plan }
 			}
+			effect_tooltip = { add_ideas = WAG_second_five_year_plan_idea }
 		}
 	}
 
@@ -649,14 +650,38 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_increase_state_reserves"
-			
+			set_variable = { WAG_fyp_local_resources_factor = 0.1 }
+			effect_tooltip = { # swap ns tooltip
+				swap_ideas = {
+					add_idea = WAG_increase_state_reserve_idea
+					remove_idea = WAG_second_five_year_plan_idea
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { infrastructure < 2 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { infrastructure < 2 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = WAG_reorganize_the_pc_of_heavy_industry
 		icon = GFX_goal_industry_focus
-		cost = 10
+		cost = 6.9
 
 		available = {
 			
@@ -674,6 +699,25 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_reorganize_the_pc_of_heavy_industry"
 			
+			add_to_variable = { WAG_fyp_consumer_goods_factor = -0.02 }
+			effect_tooltip = {
+				swap_ideas = {
+					add_idea = WAG_reorganize_the_pc_of_heavy_industry_idea
+					remove_idea = WAG_second_five_year_plan_idea
+				}
+			}
+			add_tech_bonus = {
+				name = WAG_reorganize_the_pc_of_heavy_industry
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+			add_tech_bonus = {
+				name = WAG_reorganize_the_pc_of_heavy_industry
+				bonus = 1.0
+				uses = 2
+				category = electronics
+			}
 		}
 	}
 
@@ -683,15 +727,22 @@ focus_tree = {
 		icon = GFX_goal_industry_focus
 		prerequisite = { focus = WAG_reorganize_the_pc_of_heavy_industry }
 		x = 0
-		y = 2
+		y = 3
 		relative_position_id = WAG_reorganize_the_pc_of_heavy_industry
-		cost = 10
+		cost = 6.9
 
 		available = {
 		}
 
 		completion_reward = {
-
+			add_to_variable = { WAG_fyp_production_factory_max_efficiency_factor = 0.05 }
+			add_to_variable = { WAG_fyp_line_change_production_efficiency_factor = 0.1 }
+			effect_tooltip = {
+				swap_ideas = {
+					add_idea = WAG_industrial_modernization_idea
+					remove_idea = WAG_second_five_year_plan_idea
+				}
+			}
 			add_tech_bonus = {
 				name = WAG_industrial_modernization
 				ahead_reduction = 2
@@ -705,7 +756,7 @@ focus_tree = {
 	focus = {
 		id = WAG_shift_to_armaments_production
 		icon = GFX_goal_industry_focus
-		cost = 10
+		cost = 6.9
 
 		available = {
 			
@@ -722,7 +773,14 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_shift_to_armaments_production"
-			
+			set_variable = { WAG_fyp_production_speed_industrial_complex_factor = 0 }
+			set_variable = { WAG_fyp_production_speed_industrial_complex_factor = 0.10 }
+			effect_tooltip = {
+				swap_ideas = {
+					add_idea = WAG_shift_to_armaments_production_idea
+					remove_idea = WAG_second_five_year_plan_idea
+				}
+			}
 		}
 	}
 
@@ -732,20 +790,141 @@ focus_tree = {
 		icon = GFX_goal_industry_focus
 		prerequisite = { focus = WAG_shift_to_armaments_production }
 		x = 0
-		y = 2
+		y = 3
 		relative_position_id = WAG_shift_to_armaments_production
-		cost = 10
+		cost = 6.9
 
 		available = {
 		}
 
 		completion_reward = {
+			add_to_variable = { WAG_fyp_production_factory_efficiency_gain_factor = 0.05 } #Add efficiency gain
+			add_to_variable = { WAG_fyp_production_factory_start_efficiency_factor = 0.05 } #Add efficiency start
+			add_to_variable = { WAG_fyp_industrial_capacity_factory = 0.02 } #Add small output bonus
+
+			effect_tooltip = {
+				swap_ideas = {
+					add_idea = WAG_optimize_production_lines_ideas
+					remove_idea = WAG_second_five_year_plan_idea
+				}
+			}
 
 			add_tech_bonus = {
-				name = SOV_optimize_production_lines
+				name = WAG_optimize_production_lines
 				bonus = 1
 				uses = 2
 				category = cat_production
+			}
+		}
+	}
+	
+
+	focus = {
+		id = WAG_steel_casting_industry
+		icon = GFX_goal_industry_focus
+		cost = 6.9
+
+		available = {
+			
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		
+		relative_position_id = WAG_reorganize_the_pc_of_heavy_industry
+		prerequisite = { 
+			 focus = WAG_reorganize_the_pc_of_heavy_industry
+			focus = WAG_shift_to_armaments_production 
+		}
+		x = 2
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_steel_casting_industry"
+			
+			set_variable = { WAG_fyp_industrial_capacity_factory = 0.05 }
+			set_variable = { WAG_fyp_industrial_capacity_dockyard = 0.05 }
+			effect_tooltip = {
+				swap_ideas = {
+					add_idea = WAG_steel_casting_industry_idea
+					remove_idea = WAG_second_five_year_plan_idea
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = WAG_synthetic_rubber
+
+		icon = GFX_SOV_synthetic_rubber_ccp_2d_sov_compatibility
+		prerequisite = { focus = WAG_steel_casting_industry }
+		x = -1
+		y = 1
+		relative_position_id = WAG_steel_casting_industry
+		cost = 5
+
+		available = {
+			has_tech = rubber_processing
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_full_control_of_state = 260 #VORONEZH
+				}
+				260 = { #VORONEZH
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			add_tech_bonus = {
+				name = SOV_synthetic_rubber
+				bonus = 0.75
+				uses = 2
+				category = cat_synth_rubber
+			}
+		}
+	}
+
+	focus = {
+		id = WAG_oil_production
+
+		icon = GFX_SOV_oil_production_ccp_2d_sov_compatibility
+		prerequisite = { focus = WAG_steel_casting_industry }
+		x = 1
+		y = 1
+		relative_position_id = WAG_steel_casting_industry
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			set_variable = { WAG_fyp_fuel_gain_factor_from_states = 0.05 }
+			set_variable = { WAG_fyp_production_oil_factor = 0.05 }
+			effect_tooltip = {
+				swap_ideas = {
+					add_idea = WAG_oil_production_idea
+					remove_idea = WAG_second_five_year_plan_idea
+				}
+			}
+			every_owned_state = {
+				limit ={
+					is_fully_controlled_by = ROOT
+					has_resources_amount = {
+						resource = oil
+						amount > 0
+					}
+					infrastructure < 3
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes						
+				}
 			}
 		}
 	}
@@ -753,7 +932,7 @@ focus_tree = {
 	focus = {
 		id = WAG_national_specialists
 		icon = GFX_goal_national_specialists
-		cost = 10
+		cost = 6.9
 
 		available = {
 			
@@ -777,7 +956,7 @@ focus_tree = {
 	focus = {
 		id = WAG_foreign_experts
 		icon = GFX_goal_foreign_experts
-		cost = 10
+		cost = 6.9
 
 		available = {
 			
@@ -801,7 +980,7 @@ focus_tree = {
 	focus = {
 		id = WAG_develop_the_urals
 		icon = GFX_goal_industry_focus
-		cost = 10
+		cost = 6.9
 
 		available = {
 			
@@ -826,7 +1005,7 @@ focus_tree = {
 	focus = {
 		id = WAG_eastern_development
 		icon = GFX_goal_industry_focus
-		cost = 10
+		cost = 6.9
 
 		available = {
 			
@@ -851,7 +1030,7 @@ focus_tree = {
 	focus = {
 		id = WAG_the_russia_university
 		icon = GFX_goal_moskva_university
-		cost = 10
+		cost = 6.9
 
 		available = {
 			
@@ -875,7 +1054,7 @@ focus_tree = {
 	focus = {
 		id = WAG_the_russia_academy_of_sciences
 		icon = GFX_goal_industry_focus
-		cost = 10
+		cost = 6.9
 
 		available = { }
 		ai_will_do = {

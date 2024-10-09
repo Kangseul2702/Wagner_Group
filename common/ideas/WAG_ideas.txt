@@ -155,5 +155,163 @@ ideas = {
                 army_defence_factor = -0.75
             }
         }
+
+
+        ## 5개년 국민정신
+        WAG_second_five_year_plan_idea = {
+            picture = WAG_Five_Year
+            allowed = { 
+                tag = WAG
+                always = no
+            }
+            allowed_civil_war = { always = yes  }
+            on_add = { log = "[GetDateText]: [Root.GetName] add idea WAG_second_five_year_plan_idea " }
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.075
+                production_factory_max_efficiency_factor = 0.05 
+                consumer_goods_factor = 0.1
+                production_speed_industrial_complex_factor = 0.05
+            }
+        }
+        WAG_increase_state_reserve_idea = {
+            name = WAG_second_five_year_plan_idea
+            picture = WAG_Five_Year
+            allowed = { 
+                tag = WAG
+                always = no
+            }
+            allowed_civil_war = { always = yes  }
+            on_add = { log = "[GetDateText]: [Root.GetName] add idea WAG_second_five_year_plan_idea " }
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.075
+                production_factory_max_efficiency_factor = 0.05 
+                consumer_goods_factor = 0.1
+                production_speed_industrial_complex_factor = 0.05
+                local_resources_factor = 0.1
+            }
+        }
+        WAG_reorganize_the_pc_of_heavy_industry_idea = {
+            name = WAG_second_five_year_plan_idea
+            picture = WAG_Five_Year
+            allowed = { 
+                tag = WAG
+                always = no
+            }
+            allowed_civil_war = { always = yes  }
+            on_add = { log = "[GetDateText]: [Root.GetName] add idea WAG_second_five_year_plan_idea " }
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.075
+                production_factory_max_efficiency_factor = 0.05 
+                consumer_goods_factor = 0.08
+                production_speed_industrial_complex_factor = 0.05
+            }
+        }
+        WAG_steel_casting_industry_idea = {
+            name = WAG_second_five_year_plan_idea
+            picture = WAG_Five_Year
+            allowed = { 
+                tag = WAG
+                always = no
+            }
+            allowed_civil_war = { always = yes  }
+            on_add = { log = "[GetDateText]: [Root.GetName] add idea WAG_second_five_year_plan_idea " }
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.075
+                production_factory_max_efficiency_factor = 0.05 
+                consumer_goods_factor = 0.1
+                production_speed_industrial_complex_factor = 0.05
+                industrial_capacity_factory = 0.05 
+                industrial_capacity_dockyard = 0.05
+            }
+        }
+        WAG_oil_production_idea = {
+            name = WAG_second_five_year_plan_idea
+            picture = WAG_Five_Year
+            allowed = { 
+                tag = WAG
+                always = no
+            }
+            allowed_civil_war = { always = yes  }
+            on_add = { log = "[GetDateText]: [Root.GetName] add idea WAG_second_five_year_plan_idea " }
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.075
+                production_factory_max_efficiency_factor = 0.05 
+                consumer_goods_factor = 0.1
+                production_speed_industrial_complex_factor = 0.05
+                fuel_gain_factor_from_states = 0.05
+                production_oil_factor = 0.05
+            }
+        }
+        WAG_shift_to_armaments_production_idea = {
+            name = WAG_second_five_year_plan_idea
+            picture = WAG_Five_Year
+            allowed = { 
+                tag = WAG
+                always = no
+            }
+            allowed_civil_war = { always = yes  }
+            on_add = { log = "[GetDateText]: [Root.GetName] add idea WAG_second_five_year_plan_idea " }
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.075
+                production_factory_max_efficiency_factor = 0.05 
+                consumer_goods_factor = 0.1
+                #production_speed_industrial_complex_factor = 0.05
+                production_speed_arms_factory_factor = 0.10
+            }
+        }
+        WAG_optimize_production_lines_ideas = {
+            name = WAG_second_five_year_plan_idea
+            picture = WAG_Five_Year
+            allowed = { 
+                tag = WAG
+                always = no
+            }
+            allowed_civil_war = { always = yes  }
+            on_add = { log = "[GetDateText]: [Root.GetName] add idea WAG_second_five_year_plan_idea " }
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.025
+                production_factory_max_efficiency_factor = 0.05 
+                consumer_goods_factor = 0.1
+                production_speed_industrial_complex_factor = 0.05
+                industrial_capacity_factory = 0.02
+                production_factory_start_efficiency_factor = 0.05
+            }
+        }
+        WAG_industrial_modernization_idea = {
+            name = WAG_second_five_year_plan_idea
+            picture = WAG_Five_Year
+            allowed = { 
+                tag = WAG
+                always = no
+            }
+            allowed_civil_war = { always = yes  }
+            on_add = { log = "[GetDateText]: [Root.GetName] add idea WAG_second_five_year_plan_idea " }
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.075
+                production_factory_max_efficiency_factor = 0.1
+                consumer_goods_factor = 0.1
+                production_speed_industrial_complex_factor = 0.05
+                line_change_production_efficiency_factor = 0.1
+            }
+        }
+        WAG_debug_idea = {
+            name = WAG_second_five_year_plan_idea
+            picture = WAG_Five_Year
+            allowed = { 
+                tag = WAG
+                always = no
+            }
+            allowed_civil_war = { always = yes  }
+            on_add = { log = "[GetDateText]: [Root.GetName] add idea WAG_second_five_year_plan_idea " }
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.075
+                production_factory_max_efficiency_factor = 0.05 
+                consumer_goods_factor = 0.1
+                production_speed_industrial_complex_factor = 0.05
+                industrial_capacity_factory = 0.02
+                production_factory_start_efficiency_factor = 0.05
+                production_factory_efficiency_gain_factor = 0.05
+            }
+        }
     }
 }

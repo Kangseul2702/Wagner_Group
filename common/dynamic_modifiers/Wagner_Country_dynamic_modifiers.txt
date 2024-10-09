@@ -1,9 +1,9 @@
 
 
-WAG_second_five_year_plan = { #5개년 계획 강화
+WAG_second_five_year_plan = { #5개년 
 	enable = { always = yes }
 
-	icon = GFX_idea_SOV_third_five_year_plan
+	icon = GFX_idea_WAG_Five_Year
 
 	#PREVIOUS
 	production_factory_efficiency_gain_factor = WAG_fyp_production_factory_efficiency_gain_factor
@@ -19,6 +19,9 @@ WAG_second_five_year_plan = { #5개년 계획 강화
 	industrial_capacity_factory = WAG_fyp_industrial_capacity_factory
 	industrial_capacity_dockyard = WAG_fyp_industrial_capacity_dockyard
 	global_building_slots_factor = WAG_fyp_global_building_slots_factor
+	local_resources_factor = WAG_fyp_local_resources_factor #0.10 -> Increase State Reserves
+	production_oil_factor = WAG_fyp_production_oil_factor
+	fuel_gain_factor_from_states = WAG_fyp_fuel_gain_factor_from_states
 
 	#INITIAL
 	industry_repair_factor = WAG_fyp_industry_repair_factor
