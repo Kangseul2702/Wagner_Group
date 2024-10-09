@@ -21,6 +21,26 @@ music = {
 	volume = 1
 }
 music = {
+	name = "GREEN_APPLE"
+	file = "GREEN_APPLE.ogg"
+	volume = 1
+}
+music = {
+	name = "GREEN_APPLE"
+	file = "GREEN_APPLE.ogg"
+	volume = 1
+}
+music = {
+	name = "KICK_BACK"
+	file = "KICK_BACK.ogg"
+	volume = 1
+}
+music = {
+	name = "TIMELEFT"
+	file = "TIMELEFT.ogg"
+	volume = 1
+}
+music = {
 	name = "Idideverything_ai_gojo"
 	file = "Idideverything_aigojo.ogg"
 	volume = 1
