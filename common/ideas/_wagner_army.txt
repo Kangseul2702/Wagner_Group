@@ -2,8 +2,6 @@ ideas = {
 
 	racial_army = {
 		use_list_view = yes
-		
-		#### WG_MOD_FIX
 		Wagner_army = {
 			allowed = { always = no }
 			available = { tag = WAG }
@@ -26,7 +24,6 @@ ideas = {
 			
 			cancel_if_invalid = no
 		}
-		#### WG_MOD_FIX
 	}
 	government_base = {
 

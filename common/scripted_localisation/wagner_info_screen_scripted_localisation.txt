@@ -33,7 +33,6 @@ defined_text = {
 		trigger = { tag = WAG }
 		localization_key = TNO_COUNTRY_INFO_BUTTON_TEXT_WAG
 	}
-    #### WG_MOD_FIX
 	text = {
 		trigger = { tag = SHA }
 		localization_key = TNO_COUNTRY_INFO_BUTTON_TEXT_SHA
@@ -103,7 +102,6 @@ defined_text = {
 		trigger = { tag = WAG }
 		localization_key = "GFX_TNO_OpeningScreen_Poster_WAG"
     }
-    #### WG_MOD_FIX
 	text = {
 		trigger = { tag = SHA }
 		localization_key = "GFX_TNO_OpeningScreen_Poster_SHA"
@@ -176,7 +174,6 @@ defined_text = {
         trigger = {  original_tag = WAG } 
         localization_key = "[Get_FolderLoc_WAG]"
     }
-    #### WG_MOD_FIX
 	text = {
 		trigger = {
 			original_tag = SHA
@@ -251,7 +248,6 @@ defined_text = {
 		    localization_key = WAG_CountryInfo_Folder.102
 	    }
 	}
-    #### WG_MOD_FIX
 	## Folder_ScriptedLoc_SHA
 	defined_text = {
 		name = Get_FolderLoc_SHA
@@ -451,7 +447,6 @@ defined_text = {
 		trigger = { original_tag = WAG }
 		localization_key = "[Get_ContentLoc_WAG]"
 	}
-    #### WG_MOD_FIX
 	text = {
 		trigger = {
 			original_tag = SHA
@@ -804,7 +799,6 @@ defined_text = {
 		trigger = { original_tag = WAG }
 		localization_key = "[Get_ContentLoc_desc_WAG]"
 	}
-    #### WG_MOD_FIX
 	text = {
 		trigger = {
 			original_tag = SHA
