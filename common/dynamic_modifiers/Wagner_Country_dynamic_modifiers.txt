@@ -1,0 +1,25 @@
+
+
+WAG_second_five_year_plan = { #5개년 계획 강화
+	enable = { always = yes }
+
+	icon = GFX_idea_SOV_third_five_year_plan
+
+	#PREVIOUS
+	production_factory_efficiency_gain_factor = WAG_fyp_production_factory_efficiency_gain_factor
+	production_factory_max_efficiency_factor = WAG_fyp_production_factory_max_efficiency_factor
+	consumer_goods_factor = WAG_fyp_consumer_goods_factor
+	production_speed_industrial_complex_factor = WAG_fyp_production_speed_industrial_complex_factor
+	industrial_concern_cost_factor = WAG_fyp_industrial_concern_cost_factor
+
+	#OPTIONAL IMPROVEMENTS
+	production_speed_arms_factory_factor = WAG_fyp_production_speed_arms_factory_factor
+	line_change_production_efficiency_factor = WAG_fyp_line_change_production_efficiency_factor
+	production_factory_start_efficiency_factor = WAG_fyp_production_factory_start_efficiency_factor
+	industrial_capacity_factory = WAG_fyp_industrial_capacity_factory
+	industrial_capacity_dockyard = WAG_fyp_industrial_capacity_dockyard
+	global_building_slots_factor = WAG_fyp_global_building_slots_factor
+
+	#INITIAL
+	industry_repair_factor = WAG_fyp_industry_repair_factor
+}

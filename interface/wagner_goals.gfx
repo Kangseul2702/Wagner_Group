@@ -71,4 +71,12 @@ spriteTypes = {
 		name = "GFX_goal_national_specialists"
 		texturefile = "gfx/wagner_gfx/national_specialists.png" 
 	}
+	spriteType = {
+		name = "GFX_goal_we_all_worry_together"
+		texturefile = "gfx/wagner_gfx/we_all_worry_together.png" 
+	}
+	spriteType = {
+		name = "GFX_goal_moskva_university"
+		texturefile = "gfx/wagner_gfx/moskva_university.png" 
+	}
 }

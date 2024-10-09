@@ -115,6 +115,7 @@ country_event = {
 			}
 		}
 		news_event = wagnews.1
+		activate_mission = wagner_take_moskva
 	}
 }
 

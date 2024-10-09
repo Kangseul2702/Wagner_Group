@@ -1,0 +1,256 @@
+killing_field_state = {
+
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	recruitable_population_factor = -0.9
+	state_resources_factor = -0.5
+	state_production_speed_buildings_factor = -0.5
+}
+MIL_eridu_broken = {
+
+	enable = { always = yes }
+
+	icon = GFX_modifiers_FIN_motti_tactics_modifier
+	
+	state_resources_factor = -0.2
+	state_production_speed_buildings_factor = -0.2
+}
+MIL_repurposed_factory = {
+
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_defense
+	
+	recruitable_population_factor = 0.15
+	army_core_defence_factor = 0.1
+	local_factories = -0.35
+	supply_factor = 0.15
+}
+MIL_unmanned_turret_ground = {
+
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	disable_strategic_redeployment = 1
+	local_building_slots_factor = -0.3
+	local_factories = -0.6
+	recruitable_population_factor = -0.8
+	state_resources_factor = -0.6
+	state_production_speed_buildings_factor = -0.6
+}
+MIL_ruination = {
+
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+	
+	local_building_slots_factor = -0.3
+	recruitable_population_factor = -0.2
+	state_resources_factor = -0.2
+	state_production_speed_buildings_factor = -0.1
+}
+TRN_eden_railway_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_railways
+
+	state_production_speed_rail_way_factor = 0.25
+    production_speed_infrastructure_factor = 0.1
+}
+GEH_state_government = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_GEH_state_government
+	
+	recruitable_population_factor = -0.50
+	state_resources_factor = -0.50
+	state_production_speed_buildings_factor = -0.25
+}
+GEH_defend_states = { # 주 모디파이어
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_defend_moscow
+	
+	recruitable_population_factor = 0.25
+	army_core_defence_factor = 0.1
+	local_factories = -1
+	supply_factor = 0.15
+}
+GEH_attack_states = { # 주 모디파이어
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_defend_moscow
+	
+	army_core_attack_factor = 0.15
+	local_factories = -1
+	supply_factor = 0.15
+	resistance_damage_to_garrison = 0.15
+	resistance_activity = 0.2
+	resistance_growth = 0.5
+	resistance_target = 0.8
+}
+GEH_ucantusefactory = { # 주 모디파이어
+	enable = { always = yes }
+
+	icon = GFX_modifiers_conscription_exemptions_granted
+
+	compliance_growth = -0.05
+	resistance_growth = 0.05
+	resistance_target = 0.20
+	resistance_decay = -0.20
+	state_resources_factor = -0.33
+	disable_strategic_redeployment = 1
+}
+GEH_ucantusefactory_2 = { # 주 모디파이어
+	enable = { always = yes }
+
+	icon = GFX_modifiers_conscription_exemptions_granted
+
+	recruitable_population_factor = -0.3
+	state_resources_factor = -0.15
+	state_production_speed_buildings_factor = -0.15
+}
+KSP_wakamo_sabotage_state = {
+	icon = none
+
+	enable = { always = yes }
+
+	remove_trigger = { NOT = { has_state_flag = KSP_no_wakamo_here } }
+
+	industry_repair_factor = 0.30 #수리 속도
+	recruitable_population_factor = -0.25
+}
+MIL_special_economic_zone_modifier = {
+	icon = GFX_decision_faction_gre_fascist
+
+	enable = { always = yes }
+
+	local_building_slots_factor = 0.3
+	local_resources = 0.3
+	local_manpower = -0.5
+}
+TRM_Reichsland = {
+	icon = "GFX_idea_TRM_Trinity_Grande_Armee"
+	remove_trigger = {
+		NOT = { is_owned_by = TRM }
+	}
+	state_production_speed_buildings_factor = 0.2
+	local_resources_factor = 0.1
+    local_building_slots_factor = 0.1
+}
+TRM_Reichsland_2 = {
+	icon = "GFX_idea_TRM_Trinity_Grande_Armee"
+	remove_trigger = {
+		NOT = { is_owned_by = TRM }
+	}
+	state_production_speed_buildings_factor = 0.1
+	local_resources_factor = 0.1
+    local_building_slots_factor = 0.1
+    compliance_growth = 0.05
+}
+TRM_Military_occupation = {
+	icon = "GFX_decision_SWE_set_army_budget"
+
+	compliance_growth = 0.03
+	resistance_growth = -0.03
+}
+GEH_Senter_aggressive = { # 중앙구 공세
+	enable = { always = yes }
+
+	icon = GFX_decision_generic_coastal_fortification
+	
+	army_attack_factor = 0.1
+    breakthrough_factor = 0.05
+}
+ABY_abydos_sandstorm = { # 모래바람
+	enable = { always = yes }
+
+	icon = GFX_modifiers_ABY_abydos_sandstorm
+	
+	recruitable_population_factor = -0.10
+	state_production_speed_buildings_factor = -0.10
+	state_resources_factor = -0.50
+}
+ABY_modifier_czech_resistance = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_ABY_abydos_sandstorm    #누가 바꿔줘요 응애
+
+	disable_strategic_redeployment = 1
+	modifier_army_sub_unit_halo_infantry_attack_factor = -0.25
+	modifier_army_sub_unit_halo_infantry_defence_factor = -0.25
+}
+ABY_modifier_anti_army_coup = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_ABY_abydos_sandstorm    #누가 바꿔줘요 응애
+
+	disable_strategic_redeployment = 1
+	army_attack_factor = -0.5
+	army_defence_factor = -0.5
+	state_production_speed_buildings_factor = -1
+}
+FRA_algeria_resistance = {
+	icon = GFX_unplanned_offensive
+	attacker_modifier = yes
+	
+	air_cas_present_factor = -0.75
+	army_attack_factor = -0.9
+	army_speed_factor = -0.75
+	ground_attack_factor = -0.75
+	local_org_regain = -0.5
+}
+RED_bunker_modifier = {
+	icon = GFX_unplanned_offensive
+	attacker_modifier = yes
+	air_cas_present_factor = -0.1
+	army_attack_factor = -0.1
+	army_speed_factor = -0.1
+	ground_attack_factor = -0.1
+	local_org_regain = -0.1
+}
+TRM_unplanned_offensive = {
+	icon = GFX_unplanned_offensive
+	attacker_modifier = yes
+	
+	air_cas_present_factor = -0.75
+	army_attack_factor = -0.9
+	army_speed_factor = -0.75
+	ground_attack_factor = -0.75
+	local_org_regain = -0.5
+}
+TRM_government_plan_good = {
+	icon = GFX_modifiers_increased_metal_production
+	
+	state_production_speed_buildings_factor = 0.02
+}
+TRM_government_plan_bad = {
+	icon = GFX_modifiers_increased_metal_production
+	
+	state_production_speed_buildings_factor = -0.10
+}
+TRM_occupied_state_government = {
+	icon = GFX_modifiers_increased_metal_production
+	
+	recruitable_population_factor = -0.50
+	state_resources_factor = -0.50
+	state_production_speed_buildings_factor = -0.25
+}
+TRM_anti_geh_emotion = {
+	icon = GFX_decision_generic_ignite_civil_war
+	
+	remove_trigger = { NOT = { is_owned_by = TRM } }
+	local_manpower = -0.5
+	state_production_speed_buildings_factor = 0.05
+	local_factories = -0.5
+}
+ENG_we_will_win = {
+	icon = GFX_idea_CZE_planning_bonus
+	remove_trigger = {
+		NOT = { is_owned_by = ENG }
+	}
+	
+	army_speed_factor = 0.75
+}

@@ -1,0 +1,7 @@
+WAG_take_a_moskva_categories = {
+    icon = GFX_decision_category_assault
+    #picture = GFX_wagner_decision_categories_picture
+	priority = 999999
+    allowed = { original_tag = WAG }
+    available = { original_tag = WAG }
+}

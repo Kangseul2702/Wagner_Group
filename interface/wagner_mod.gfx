@@ -37,6 +37,12 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/WAG/wakeuprussia.png"
 		legacy_lazy_load = no
 	}
+	# 결정
+	spriteType = {
+		name = "GFX_wagner_decision_categories_picture"
+		texturefile = "gfx/wagner_gfx/wagner_decision_categories.png"
+		legacy_lazy_load = no 
+	}
 	# 모드 종족 군대
 	spriteType = {
 		name = "GFX_idea_Wagner_army"

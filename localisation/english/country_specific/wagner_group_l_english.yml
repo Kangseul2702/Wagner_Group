@@ -154,12 +154,20 @@
  WAG_increase_state_reserves: "국가 비축량 증대"
  WAG_reorganize_the_pc_of_heavy_industry: "산업부 재편"
  WAG_shift_to_armaments_production: "무기 생산으로 전환"
+ WAG_industrial_modernization: "산업 현대화"
+ WAG_optimize_production_lines: "생산 라인 최적화"
  WAG_national_specialists: "국내 전문가"
  WAG_foreign_experts: "해외 전문가"
  WAG_eastern_development: "프라우다 개발"
  WAG_develop_the_urals: "스바로그 개발"
- WAG_the_wagner_academy_of_sciences: "바그너 과학 아카데미"
+ WAG_the_russia_university: "모스크바 국립대학교 설립"
+ WAG_the_russia_academy_of_sciences: "러시아 과학 아카데미"
+ 
  # 결정
+ WAG_take_a_moskva_categories: "정의의 행진"
+ WAG_take_a_moskva_categories_desc: "\n\n£GFX_wagner_decision_categories_picture\n\n\n\n\n\n정의의 행진이 이제 시작되었습니다. 이 행진은 단순한 군사 작전 그 이상입니다. 전 세계에 우리의 의지를 알리는 동시에, 잃어버린 조국 러시아를 되찾기 위한 필연적인 첫걸음입니다. 우리는 이 위대한 여정 속에서 한 발짝도 실수할 여유가 없습니다. 이번 작전은 우리의 모든 것을 걸고 실행하는 최초이자 최후의 승부입니다.\n\n러시아의 미래가 우리 손에 달려 있습니다. 우리의 조국을 위해, 우리의 후손을 위해, 반드시 이 싸움에서 승리해야만 합니다. 우리는 단지 영토를 되찾는 것이 아닙니다. 조국의 영광을 되살리고, 러시아의 자주성과 위대한 역사를 다시 세우는 것입니다. 이 정의로운 싸움은 우리 스스로에게도, 그리고 세상 모두에게도 러시아가 결코 무너지지 않는다는 것을 증명할 것입니다. 이제 우리의 심장은 하나로 뛰고, 그 심장은 러시아를 위해 고동칩니다."
+ wagner_take_moskva: "모스크바 점령"
+ Wagner_fali_frist_mission_tt: "\"일곱 번 재고 한 번 자르라\" - 러시아 속담\n$GAME_OVER_TT$"
 
 
 

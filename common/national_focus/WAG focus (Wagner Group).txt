@@ -264,7 +264,7 @@ focus_tree = {
 
 	focus = {
 		id = WAG_lets_slove_it_together
-		icon = GFX_goal_fucking_gwanryu
+		icon = GFX_goal_we_all_worry_together
 		cost = 10
 
 		available = {
@@ -341,7 +341,6 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			has_completed_focus = WAG_take_back_moskva
 		}
 		ai_will_do = {
 			base = 4000
@@ -620,7 +619,15 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_first_five_year_plan"
-			
+			add_tech_bonus = {
+				name = WAG_first_five_year_plan
+				bonus = 0.75
+				uses = 2
+				category = construction_tech
+			}
+			add_dynamic_modifier = {
+				#modifier
+			}
 		}
 	}
 
@@ -671,6 +678,31 @@ focus_tree = {
 	}
 
 	focus = {
+		id = WAG_industrial_modernization
+
+		icon = GFX_goal_industry_focus
+		prerequisite = { focus = WAG_reorganize_the_pc_of_heavy_industry }
+		x = 0
+		y = 2
+		relative_position_id = WAG_reorganize_the_pc_of_heavy_industry
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+
+			add_tech_bonus = {
+				name = WAG_industrial_modernization
+				ahead_reduction = 2
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+
+	focus = {
 		id = WAG_shift_to_armaments_production
 		icon = GFX_goal_industry_focus
 		cost = 10
@@ -691,6 +723,30 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_shift_to_armaments_production"
 			
+		}
+	}
+
+	focus = {
+		id = WAG_optimize_production_lines
+
+		icon = GFX_goal_industry_focus
+		prerequisite = { focus = WAG_shift_to_armaments_production }
+		x = 0
+		y = 2
+		relative_position_id = WAG_shift_to_armaments_production
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+
+			add_tech_bonus = {
+				name = SOV_optimize_production_lines
+				bonus = 1
+				uses = 2
+				category = cat_production
+			}
 		}
 	}
 
@@ -793,8 +849,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = WAG_the_wagner_academy_of_sciences
-		icon = GFX_goal_industry_focus
+		id = WAG_the_russia_university
+		icon = GFX_goal_moskva_university
 		cost = 10
 
 		available = {
@@ -808,10 +864,31 @@ focus_tree = {
 		prerequisite = { focus = WAG_develop_the_urals }
 		prerequisite = { focus = WAG_eastern_development }
 		x = 1
-		y = 1
+		y = 2
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_eastern_development"
-			
+			add_research_slot = 1
+			# 넣고 싶은 효과 작성하기.
+		}
+	}
+
+	focus = {
+		id = WAG_the_russia_academy_of_sciences
+		icon = GFX_goal_industry_focus
+		cost = 10
+
+		available = { }
+		ai_will_do = {
+			base = 4000
+		}
+		
+		relative_position_id = WAG_the_russia_university
+		prerequisite = { focus = WAG_the_russia_university }
+		x = 0
+		y = 2
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_the_russia_university"
+			add_research_slot = 1
 		}
 	}
 }
