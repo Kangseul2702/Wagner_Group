@@ -171,10 +171,9 @@ focus_tree = {
 			
 		}
 	}
-	
 
 	focus = {
-		id = WAG_whatistheproblem
+		id = WAG_how_do_i_slove_it
 		icon = GFX_goal_whatistheproblem
 		cost = 6.9
 
@@ -187,74 +186,7 @@ focus_tree = {
 			focus = WAG_fucking_gwanryu
 		}
 		relative_position_id = WAG_fucking_gwanryu
-		x = -1
-		y = 1
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_whatistheproblem"
-			
-		}
-	}
-	
-
-	focus = {
-		id = WAG_hiring_local_administrator
-		icon = GFX_goal_local_admin
-		cost = 6.9
-
-		available = {
-		}
-		ai_will_do = {
-			base = 4000
-		}
-		prerequisite = {
-			focus = WAG_i_found_it
-		}
-		mutually_exclusive = { focus = WAG_military_administrator }
-		relative_position_id = WAG_i_found_it
-		x = -1
-		y = 1
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_hiring_local_administrator"
-			
-		}
-	}
-	
-	focus = {
-		id = WAG_military_administrator
-		icon = GFX_goal_army_admin
-		cost = 6.9
-
-		available = {
-		}
-		ai_will_do = {
-			base = 4000
-		}
-		prerequisite = { focus = WAG_i_found_it }
-		mutually_exclusive = { focus = WAG_hiring_local_administrator }
-		relative_position_id = WAG_i_found_it
-		x = 1
-		y = 1
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_military_administrator"
-			
-		}
-	}
-
-	focus = {
-		id = WAG_how_do_i_slove_it
-		icon = GFX_goal_fucking_gwanryu
-		cost = 6.9
-
-		available = {
-		}
-		ai_will_do = {
-			base = 4000
-		}
-		prerequisite = {
-			focus = WAG_fucking_gwanryu
-		}
-		relative_position_id = WAG_fucking_gwanryu
-		x = 1
+		x = 3
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_how_do_i_slove_it"
@@ -264,7 +196,7 @@ focus_tree = {
 
 	focus = {
 		id = WAG_lets_slove_it_together
-		icon = GFX_goal_we_all_worry_together
+		icon = GFX_goal_read_of_the_state_government
 		cost = 6.9
 
 		available = {
@@ -276,12 +208,165 @@ focus_tree = {
 			focus = WAG_how_do_i_slove_it
 		}
 		mutually_exclusive = { focus = WAG_i_slove_it }
+		mutually_exclusive = { focus = WAG_utkin_plan }
 		relative_position_id = WAG_how_do_i_slove_it
-		x = 1
+		x = -1
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_lets_slove_it_together"
+			custom_effect_tooltip = Letsgorussiafed
+		}
+	}
+
+	focus = {
+		id = WAG_Removal_of_Vostokia
+		icon = GFX_goal_fucking_gwanryu
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {
+			focus = WAG_lets_slove_it_together
+		}
+		relative_position_id = WAG_lets_slove_it_together
+		x = -1
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_Removal_of_Vostokia"
 			
+		}
+	}
+
+	focus = {
+		id = WAG_Russian_language_spread
+		icon = GFX_goal_fucking_gwanryu
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {
+			focus = WAG_Removal_of_Vostokia
+		}
+		relative_position_id = WAG_Removal_of_Vostokia
+		x = 0
+		y = 2
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_Russian_language_spread"
+			
+		}
+	}
+
+	focus = {
+		id = WAG_Duma_established
+		icon = GFX_goal_fucking_gwanryu
+		cost = 8
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {
+			focus = WAG_lets_slove_it_together
+		}
+		relative_position_id = WAG_lets_slove_it_together
+		x = 1
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_Duma_established"
+			
+		}
+	}
+
+	focus = {
+		id = WAG_writing_constitution
+		icon = GFX_goal_fucking_gwanryu
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {
+			focus = WAG_Duma_established
+		}
+		relative_position_id = WAG_Duma_established
+		x = 1
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_writing_constitution"
+			
+		}
+	}
+
+	focus = {
+		id = WAG_Declaration_of_Acting_Authority
+		icon = GFX_goal_fucking_gwanryu
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {
+			focus = WAG_Duma_established
+		}
+		relative_position_id = WAG_Duma_established
+		x = -1
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_Declaration_of_Acting_Authority"
+			
+		}
+	}
+
+	focus = {
+		id = WAG_Constitution_Announcement
+		icon = GFX_goal_fucking_gwanryu
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_Declaration_of_Acting_Authority }
+		prerequisite = { focus = WAG_writing_constitution }
+		relative_position_id = WAG_Declaration_of_Acting_Authority
+		x = 1
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_Constitution_Announcement"
+			
+		}
+	}
+
+	focus = {
+		id = WAG_Focus_Russia_Federation
+		icon = GFX_goal_Russia_Federation
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_Constitution_Announcement }
+		prerequisite = { focus = WAG_Russian_language_spread }
+		relative_position_id = WAG_Constitution_Announcement
+		x = -1
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_Focus_Russia_Federation"
+			set_cosmetic_tag = WAG_Russia_Federation
 		}
 	}
 
@@ -299,18 +384,19 @@ focus_tree = {
 			focus = WAG_how_do_i_slove_it
 		}
 		mutually_exclusive = { focus = WAG_lets_slove_it_together }
+		mutually_exclusive = { focus = WAG_utkin_plan }
 		relative_position_id = WAG_how_do_i_slove_it
-		x = -1
+		x = 3
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_i_slove_it"
-			
+			custom_effect_tooltip = Letsgorussiastate
 		}
 	}
 
 	focus = {
-		id = WAG_i_found_it
-		icon = GFX_goal_i_have_slove
+		id = WAG_utkin_plan
+		icon = GFX_goal_focus_utkin
 		cost = 6.9
 
 		available = {
@@ -319,18 +405,16 @@ focus_tree = {
 			base = 4000
 		}
 		prerequisite = {
-			focus = WAG_i_slove_it
-			focus = WAG_lets_slove_it_together
+			focus = WAG_how_do_i_slove_it
 		}
-		prerequisite = {
-			focus = WAG_whatistheproblem
-		}
-		relative_position_id = WAG_lets_slove_it_together
-		x = -3
+		mutually_exclusive = { focus = WAG_lets_slove_it_together }
+		mutually_exclusive = { focus = WAG_i_slove_it }
+		relative_position_id = WAG_how_do_i_slove_it
+		x = 7
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_i_slove_it"
-			
+			custom_effect_tooltip = Letsgossrussia
 		}
 	}
 	
@@ -349,7 +433,7 @@ focus_tree = {
 			focus = WAG_fucking_gwanryu
 		}
 		relative_position_id = WAG_fucking_gwanryu
-		x = -6
+		x = -5
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_industry_focus"
