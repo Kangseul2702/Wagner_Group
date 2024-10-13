@@ -13,6 +13,7 @@ characters={
 			traits = {  }
 		}
 		field_marshal={
+			desc = WAG_Prigozhin_desc
 			skill=3
 			attack_skill=3
 			defense_skill=4
@@ -28,19 +29,22 @@ characters={
 				large= "gfx/leaders/WAG/Dmitry_Utkin.png"
 			}
 		}
-		country_leader = {
-			desc = WAG_dmitry_utkin_desc
-			ideology = Wagner_ideologies 
-			id = -1
-			traits = {  }
-		}
 		field_marshal={
+			desc = WAG_dmitry_utkin_desc
 			skill=3
 			attack_skill=3
 			defense_skill=4
 			planning_skill=3
 			logistics_skill=2
 			legacy_id=-1
+		}
+	}
+	WAG_Alexei_Navalny ={
+		name = WAG_Alexei_Navalny
+		portraits={
+			civilian={
+				large= "gfx/leaders/WAG/Alexei_Navalny.png"
+			}
 		}
 	}
 	WAG_Vitaly_Gerasimov ={

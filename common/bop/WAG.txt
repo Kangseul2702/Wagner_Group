@@ -1,0 +1,68 @@
+WAG_power_balance = {
+	initial_value = 0.00
+	left_side = WAG_power_balance_prigozhin_winning
+	right_side = WAG_power_balance_prigozhin_losing
+	#decision_category = WAG_balance_of_power_category
+
+	### Equilibrium of Power ###
+	range = {
+		id = WAG_bop_neutral
+		min = -0.10
+		max = 0.10
+		modifier = {
+
+		}
+	}
+
+	### prigozhin PoV ###
+	side = {
+		id = WAG_power_balance_prigozhin_winning
+		icon = GFX_bop_WAG_prigozhin_side
+		range = {
+			id = WAG_bop_stage_0_prigozhin
+			min = -1
+			max = -0.75
+			modifier = {
+			}
+		}
+		range = {
+			id = WAG_bop_stage_1_prigozhin
+			min = -0.75
+			max = -0.50
+			modifier = {
+			}
+		}
+		range = {
+			id = WAG_bop_stage_2_prigozhin
+			min = -0.50
+			max = -0.20
+			modifier = {
+			}
+		}
+	}
+	side = {
+		id = WAG_power_balance_prigozhin_losing
+		icon = GFX_bop_WAG_captain_side
+		range = {
+			id = WAG_bop_stage_4_prigozhin
+			min = 0.20
+			max = 0.50
+			modifier = {
+			}
+		}
+		range = {
+			id = WAG_bop_stage_5_prigozhin
+			min = 0.50
+			max = 0.75
+			modifier = {
+			}
+		}
+		range = {
+			id = WAG_bop_stage_6_prigozhin
+			min = 0.75
+			max = 1
+			modifier = {
+			}
+		}
+	}
+}

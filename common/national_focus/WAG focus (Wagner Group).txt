@@ -33,7 +33,6 @@ focus_tree = {
 		x = 3
 		y = 0
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_New_world"
 			country_event = { id = wagmidgame.1 }
 		}
 	}
@@ -56,7 +55,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_ithinkthatplanisgood"
 			effect_tooltip = {
 				army_experience = 50
 				air_experience = 50 
@@ -81,7 +79,6 @@ focus_tree = {
 		x = 3
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_where_is_oil"
 			add_ideas = WAG_many_oil
 		}
 	}
@@ -102,7 +99,6 @@ focus_tree = {
 		x = -3
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_where_is_oil"
 			add_ideas = WAG_many_ammo
 		}
 	}
@@ -123,7 +119,6 @@ focus_tree = {
 		x = 3
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_lets_go_moskva"
 			country_event = { id = wagmidgame.2 }
 		}
 	}
@@ -144,7 +139,6 @@ focus_tree = {
 		x = 0
 		y = 2
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_take_back_moskva"
 			set_capital = { state = 219 remember_old_captial = no }
 			country_event = { id = wagmidgame.4 }
 			news_event = { id = wagnews.4 }
@@ -167,14 +161,13 @@ focus_tree = {
 		x = 19
 		y = 0
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_fucking_gwanryu"
 			
 		}
 	}
 
-	focus = {
-		id = WAG_how_do_i_slove_it
-		icon = GFX_goal_whatistheproblem
+	focus = { # 보스토키아 잔당 축출
+		id = WAG_Vostokia_remnants_ousted
+		icon = GFX_goal_fucking_gwanryu
 		cost = 6.9
 
 		available = {
@@ -182,21 +175,18 @@ focus_tree = {
 		ai_will_do = {
 			base = 4000
 		}
-		prerequisite = {
-			focus = WAG_fucking_gwanryu
-		}
+		prerequisite = { focus = WAG_fucking_gwanryu }
 		relative_position_id = WAG_fucking_gwanryu
-		x = 3
+		x = 2
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_how_do_i_slove_it"
 			
 		}
 	}
 
-	focus = {
-		id = WAG_lets_slove_it_together
-		icon = GFX_goal_read_of_the_state_government
+	focus = { # 프라우다 저항군 소탕
+		id = WAG_Pravda_ousted
+		icon = GFX_goal_fucking_gwanryu
 		cost = 6.9
 
 		available = {
@@ -204,21 +194,78 @@ focus_tree = {
 		ai_will_do = {
 			base = 4000
 		}
-		prerequisite = {
-			focus = WAG_how_do_i_slove_it
-		}
-		mutually_exclusive = { focus = WAG_i_slove_it }
-		mutually_exclusive = { focus = WAG_utkin_plan }
-		relative_position_id = WAG_how_do_i_slove_it
-		x = -1
+		prerequisite = { focus = WAG_Vostokia_remnants_ousted }
+		relative_position_id = WAG_Vostokia_remnants_ousted
+		x = -2
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_lets_slove_it_together"
-			custom_effect_tooltip = Letsgorussiafed
+			
 		}
 	}
 
-	focus = {
+	focus = { # 중앙 정부 흡수
+		id = WAG_central_government_absorption
+		icon = GFX_goal_fucking_gwanryu
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_Vostokia_remnants_ousted }
+		relative_position_id = WAG_Vostokia_remnants_ousted
+		x = 0
+		y = 1
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # 타 자치구 침공
+		id = WAG_Attack_on_other_vostokia
+		icon = GFX_goal_fucking_gwanryu
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { 
+			focus = WAG_Pravda_ousted 
+			focus = WAG_central_government_absorption
+		}
+		relative_position_id = WAG_Pravda_ousted
+		x = 0
+		y = 1
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # 자치구 합병
+		id = WAG_Borough_merger
+		icon = GFX_goal_fucking_gwanryu
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { 
+			focus = WAG_Attack_on_other_vostokia
+		}
+		relative_position_id = WAG_Attack_on_other_vostokia
+		x = 0
+		y = 1
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # 영향력 제거
 		id = WAG_Removal_of_Vostokia
 		icon = GFX_goal_fucking_gwanryu
 		cost = 6.9
@@ -229,18 +276,17 @@ focus_tree = {
 			base = 4000
 		}
 		prerequisite = {
-			focus = WAG_lets_slove_it_together
+			focus = WAG_Vostokia_remnants_ousted
 		}
-		relative_position_id = WAG_lets_slove_it_together
-		x = -1
+		relative_position_id = WAG_Vostokia_remnants_ousted
+		x = 2
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_Removal_of_Vostokia"
 			
 		}
 	}
 
-	focus = {
+	focus = { # 러시아어 보급
 		id = WAG_Russian_language_spread
 		icon = GFX_goal_fucking_gwanryu
 		cost = 6.9
@@ -250,21 +296,238 @@ focus_tree = {
 		ai_will_do = {
 			base = 4000
 		}
-		prerequisite = {
-			focus = WAG_Removal_of_Vostokia
-		}
+		prerequisite = { focus = WAG_Removal_of_Vostokia }
+		prerequisite = { focus = WAG_central_government_absorption }
 		relative_position_id = WAG_Removal_of_Vostokia
-		x = 0
-		y = 2
+		x = -1
+		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_Russian_language_spread"
+			 
 			
+		}
+	}
+
+	focus = { # 구원자로서 다가가자
+		id = WAG_approach_as_a_savior
+		icon = GFX_goal_fucking_gwanryu
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {
+			focus = WAG_Russian_language_spread
+		}
+		relative_position_id = WAG_Russian_language_spread
+		x = 1
+		y = 1
+		completion_reward = {
+			 
+			
+		}
+	}
+
+	focus = { # 못 배우는 이들이 없도록
+		id = WAG_So_that_no_one_can_learn
+		icon = GFX_goal_fucking_gwanryu
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {
+			focus = WAG_Russian_language_spread
+		}
+		relative_position_id = WAG_Russian_language_spread
+		x = -1
+		y = 1
+		completion_reward = {
+			 
+			
+		}
+	}
+
+	focus = { # \"러시아화\"
+		id = WAG_Russification
+		icon = GFX_goal_fucking_gwanryu
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_So_that_no_one_can_learn }
+		prerequisite = { focus = WAG_Borough_merger }
+		prerequisite = { focus = WAG_approach_as_a_savior }
+		relative_position_id = WAG_So_that_no_one_can_learn
+		x = -1
+		y = 1
+		completion_reward = {
+			 
+			
+		}
+	}
+
+	focus = { # 체제 개선
+		id = WAG_establishment_of_government
+		icon = GFX_goal_read_of_the_state_government
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_fucking_gwanryu }
+		relative_position_id = WAG_fucking_gwanryu
+		x = 10
+		y = 1
+		completion_reward = {
+			set_power_balance = {
+				id = WAG_power_balance
+				left_side = WAG_power_balance_prigozhin_winning
+				right_side = WAG_power_balance_prigozhin_losing
+				set_value = -0.05
+			}
+			
+		}
+	}
+
+	focus = { # 주 정부 계획
+		id = WAG_state_gover_plan
+		icon = GFX_goal_read_of_the_state_government
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_establishment_of_government }
+		relative_position_id = WAG_establishment_of_government
+		x = 2
+		y = 1
+		completion_reward = {
+			 
+			
+		}
+	}
+
+	focus = { # 프리고진 계획
+		id = WAG_Prigozhin_plan
+		icon = GFX_goal_thatplanisgood
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_establishment_of_government }
+		relative_position_id = WAG_establishment_of_government
+		x = -2
+		y = 1
+		completion_reward = {
+			 
+			
+		}
+	}
+
+	focus = { # 유화책
+		id = WAG_appeasement 
+		icon = GFX_goal_read_of_the_state_government
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { 
+			focus = WAG_state_gover_plan
+			focus = WAG_Prigozhin_plan
+		}
+		mutually_exclusive = { focus = WAG_hardline }
+		relative_position_id = WAG_state_gover_plan
+		x = 0
+		y = 1
+		completion_reward = {
+			 
+			
+		}
+	}
+
+	focus = { # 강경책
+		id = WAG_hardline
+		icon = GFX_goal_read_of_the_state_government
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_Prigozhin_plan }
+		mutually_exclusive = { focus = WAG_appeasement }
+		relative_position_id = WAG_Prigozhin_plan
+		x = 0
+		y = 1
+		completion_reward = {
+			 
+			
+		}
+	}
+
+	focus = { # 현지 관료 등용
+		id = WAG_local_bureaucracy
+		icon = GFX_goal_local_admin
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_appeasement }
+		relative_position_id = WAG_appeasement
+		x = 0
+		y = 1
+		completion_reward = {
+			 
+		}
+	}
+
+	focus = { # 군인 관료
+		id = WAG_army_bureaucracy
+		icon = GFX_goal_army_admin
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { 
+			focus = WAG_hardline 
+			focus = WAG_appeasement
+		}
+		relative_position_id = WAG_hardline
+		x = 0
+		y = 1
+		completion_reward = {
+			 
 		}
 	}
 
 	focus = {
 		id = WAG_Duma_established
-		icon = GFX_goal_fucking_gwanryu
+		icon = GFX_goal_state_duma
+
 		cost = 8
 
 		available = {
@@ -279,7 +542,6 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_Duma_established"
 			
 		}
 	}
@@ -301,7 +563,6 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_writing_constitution"
 			
 		}
 	}
@@ -323,7 +584,6 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_Declaration_of_Acting_Authority"
 			
 		}
 	}
@@ -344,8 +604,52 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_Constitution_Announcement"
 			
+		}
+	}
+
+	focus = {
+		id = WAG_debug_focus
+		icon = GFX_goal_whatistheproblem
+		cost = 6.9
+
+		available = {
+			is_debug = yes
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		allow_branch = {
+			is_debug = yes
+		}
+		relative_position_id = WAG_fucking_gwanryu
+		x = 0
+		y = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = WAG_lets_slove_it_together
+		icon = GFX_goal_read_of_the_state_government
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {
+			focus = WAG_debug_focus
+		}
+		mutually_exclusive = { focus = WAG_i_slove_it }
+		mutually_exclusive = { focus = WAG_utkin_plan }
+		relative_position_id = WAG_debug_focus
+		x = -1
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = Letsgorussiafed
 		}
 	}
 
@@ -360,12 +664,10 @@ focus_tree = {
 			base = 4000
 		}
 		prerequisite = { focus = WAG_Constitution_Announcement }
-		prerequisite = { focus = WAG_Russian_language_spread }
 		relative_position_id = WAG_Constitution_Announcement
 		x = -1
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_Focus_Russia_Federation"
 			set_cosmetic_tag = WAG_Russia_Federation
 		}
 	}
@@ -381,15 +683,14 @@ focus_tree = {
 			base = 4000
 		}
 		prerequisite = {
-			focus = WAG_how_do_i_slove_it
+			focus = WAG_debug_focus
 		}
 		mutually_exclusive = { focus = WAG_lets_slove_it_together }
 		mutually_exclusive = { focus = WAG_utkin_plan }
-		relative_position_id = WAG_how_do_i_slove_it
+		relative_position_id = WAG_debug_focus
 		x = 3
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_i_slove_it"
 			custom_effect_tooltip = Letsgorussiastate
 		}
 	}
@@ -405,15 +706,14 @@ focus_tree = {
 			base = 4000
 		}
 		prerequisite = {
-			focus = WAG_how_do_i_slove_it
+			focus = WAG_debug_focus
 		}
 		mutually_exclusive = { focus = WAG_lets_slove_it_together }
 		mutually_exclusive = { focus = WAG_i_slove_it }
-		relative_position_id = WAG_how_do_i_slove_it
+		relative_position_id = WAG_debug_focus
 		x = 7
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_i_slove_it"
 			custom_effect_tooltip = Letsgossrussia
 		}
 	}
@@ -436,7 +736,6 @@ focus_tree = {
 		x = -5
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_industry_focus"
 			add_political_power = 25
 			random_owned_controlled_state = {
 				limit = {
@@ -473,7 +772,6 @@ focus_tree = {
 		x = -3
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_based_focus"
 			if = {
 				limit = {
 					all_owned_state = {
@@ -567,7 +865,6 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_mingong_focus"
 				random_owned_controlled_state = {
 					limit = {
 						industrial_complex > 0
@@ -611,10 +908,7 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			OR = {
-				has_completed_focus = WAG_military_administrator
-				has_completed_focus = WAG_hiring_local_administrator
-			}
+			
 		}
 		ai_will_do = {
 			base = 4000
@@ -627,7 +921,6 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_Industrial_reconstruction_completed"
 			random_owned_controlled_state = {
 				limit = {
 					industrial_complex > 0
@@ -680,7 +973,6 @@ focus_tree = {
 		x = -2
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_improve_railway_network"
 			
 		}
 	}
@@ -691,7 +983,7 @@ focus_tree = {
 		cost = 6.9
 
 		available = {
-			
+			has_completed_focus = WAG_Russification
 		}
 		ai_will_do = {
 			base = 4000
@@ -702,7 +994,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_first_five_year_plan"
 			add_tech_bonus = {
 				name = WAG_first_five_year_plan
 				bonus = 0.75
@@ -733,7 +1024,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_increase_state_reserves"
 			set_variable = { WAG_fyp_local_resources_factor = 0.1 }
 			effect_tooltip = { # swap ns tooltip
 				swap_ideas = {
@@ -781,7 +1071,6 @@ focus_tree = {
 		x = -2
 		y = 2
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_reorganize_the_pc_of_heavy_industry"
 			
 			add_to_variable = { WAG_fyp_consumer_goods_factor = -0.02 }
 			effect_tooltip = {
@@ -856,7 +1145,6 @@ focus_tree = {
 		x = 2
 		y = 2
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_shift_to_armaments_production"
 			set_variable = { WAG_fyp_production_speed_industrial_complex_factor = 0 }
 			set_variable = { WAG_fyp_production_speed_industrial_complex_factor = 0.10 }
 			effect_tooltip = {
@@ -923,7 +1211,6 @@ focus_tree = {
 		x = 2
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_steel_casting_industry"
 			
 			set_variable = { WAG_fyp_industrial_capacity_factory = 0.05 }
 			set_variable = { WAG_fyp_industrial_capacity_dockyard = 0.05 }
@@ -1032,7 +1319,6 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_national_specialists"
 			
 		}
 	}
@@ -1056,7 +1342,6 @@ focus_tree = {
 		x = 3
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_foreign_experts"
 			
 		}
 	}
@@ -1081,7 +1366,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_develop_the_urals"
 			
 		}
 	}
@@ -1106,7 +1390,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_eastern_development"
 			
 		}
 	}
@@ -1129,7 +1412,6 @@ focus_tree = {
 		x = 1
 		y = 2
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_eastern_development"
 			add_research_slot = 1
 			# 넣고 싶은 효과 작성하기.
 		}
@@ -1150,7 +1432,6 @@ focus_tree = {
 		x = 0
 		y = 2
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] compltion national focus WAG_the_russia_university"
 			add_research_slot = 1
 		}
 	}

@@ -16,7 +16,7 @@ WAG_take_a_moskva_categories = {
             }
         }
         complete_effect = {
-            # 만약 괴뢰국들 수도 점령하고 있으면...
+            # 만약 괴뢰국들의 수도 점령하고 있으면...
             if = {
                 limit = { WAG = { controls_state = 111 } }
                 annex_country = {
@@ -104,4 +104,39 @@ economy_decisions = {
 foreign_support = {
 
 
+}
+
+TMC_test_decisions = {
+    gojo_oppa_decision = {
+        allowed = {  }
+        visiable = {  }
+        available = { is_ai = no }
+        
+        complete_effect = {
+            create_country_leader = {
+	            name = "고죠 사토루"
+	            desc = WAG_gojo_satoru_desc
+	            picture = "gfx/leaders/WAG/Satoru_gojo.png"
+	            expire = "1965.1.1"
+            	ideology = NPC_loyal_pop_subtype
+	            traits = { }
+	        }
+        }
+    }
+    WAG_Alexei_Navalny_decision = {
+        allowed = { tag = WAG }
+        visiable = { tag = WAG }
+        available = { is_ai = no }
+        
+        complete_effect = {
+            create_country_leader = {
+	            name = WAG_Alexei_Navalny
+	            #desc = WAG_gojo_satoru_desc
+	            picture = "gfx/leaders/WAG/Alexei_Navalny.png"
+	            expire = "1965.1.1"
+            	ideology = NPC_loyal_pop_subtype
+	            traits = { }    
+	        }
+        }
+    }
 }
