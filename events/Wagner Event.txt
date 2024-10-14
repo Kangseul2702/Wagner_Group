@@ -186,6 +186,24 @@ country_event = { # 불행중 다행
 			add_idea = WAG_not_bad_industry
 			remove_idea = WAG_bad_industry
 		}
+		country_event = { id = wagmidgame.6 }
+	}
+}
+
+country_event = { # 바그너 영웅화
+	id = wagmidgame.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wagmidgame.5" }
+	title = wagmidgame.6.t
+	desc = wagmidgame.6.desc
+	picture = GFX_event_Wagner_picture_1
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = wagmidgame.6.a
+		log = "[GetDateText]: [Root.GetName]: event wagmidgame.5.a"
+		add_ideas = WAG_heroism
 	}
 }
 

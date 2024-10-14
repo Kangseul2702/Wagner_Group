@@ -141,6 +141,18 @@ ideas = {
                 custom_modifier_tooltip = WAG_many_oil_cancel_condition
             }
         }
+        WAG_heroism = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes  }
+            on_add = { log = "[GetDateText]: [Root.GetName] add idea WAG_heroism " }
+            
+            modifier = {
+                political_power_factor = -0.15
+                conscription_factor = 0.10
+                experience_gain_army_factor = 0.10
+                max_command_power = 20
+            }
+        }
         VTK_We_cant_win_to_wagner = { 
             picture = chi_wargaming_division
             allowed = { 
@@ -155,6 +167,33 @@ ideas = {
                 army_defence_factor = -0.75
             }
         }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         ## 5개년 국민정신

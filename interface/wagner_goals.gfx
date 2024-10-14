@@ -95,4 +95,28 @@ spriteTypes = {
 		name = "GFX_goal_state_duma"
 		texturefile = "gfx/wagner_gfx/state_duma.png" 
 	}
+	spriteType = {
+		name = "GFX_goal_hardbass"
+		texturefile = "gfx/wagner_gfx/hardbass.png" 
+	}
+	spriteType = {
+		name = "GFX_goal_read_state_gover"
+		texturefile = "gfx/wagner_gfx/read_state_gover.png" 
+	}
+	spriteType = {
+		name = "GFX_goal_focus_ENG_a_firm_grip"
+		texturefile = "gfx/wagner_gfx/focus_ENG_a_firm_grip.dds" 
+	}
+	spriteType = {
+		name = "GFX_goal_focus_ENG_a_fair_hand"
+		texturefile = "gfx/wagner_gfx/focus_ENG_a_fair_hand.dds" 
+	}
+	spriteType = {
+		name = "GFX_goal_focus_ENG_emergency_police_militarisation"
+		texturefile = "gfx/wagner_gfx/focus_ENG_emergency_police_militarisation.dds" 
+	}
+	spriteType = {
+		name = "GFX_goal_wagner_issue"
+		texturefile = "gfx/wagner_gfx/wagner_issue.png" 
+	}
 }

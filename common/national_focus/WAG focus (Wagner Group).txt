@@ -400,7 +400,8 @@ focus_tree = {
 
 	focus = { # 주 정부 계획
 		id = WAG_state_gover_plan
-		icon = GFX_goal_read_of_the_state_government
+		text = WAG_Prigozhin_plan
+		icon = GFX_goal_read_state_gover
 		cost = 6.9
 
 		available = {
@@ -413,13 +414,110 @@ focus_tree = {
 		x = 2
 		y = 1
 		completion_reward = {
-			 
-			
+			add_power_balance_value = {
+				id = WAG_power_balance
+				value = 0.1
+			}
+		}
+	}
+
+	focus = { # 경찰 동원
+		id = WAG_police_mobilization
+		icon = GFX_goal_focus_ENG_emergency_police_militarisation
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_state_gover_plan }
+		relative_position_id = WAG_state_gover_plan
+		x = 1
+		y = 1
+		completion_reward = {
+			every_owned_state = { add_compliance = 15 }
+			add_stability = 0.10
+			add_war_support = -0.05
+			add_power_balance_value = {
+				id = WAG_power_balance
+				value = 0.1
+			}
+		}
+	}
+
+	focus = { # 바그너 문제
+		id = WAG_wagner_issue
+		icon = GFX_goal_wagner_issue
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_state_gover_plan }
+		relative_position_id = WAG_state_gover_plan
+		x = 3
+		y = 1
+		completion_reward = {
+			add_power_balance_value = {
+				id = WAG_power_balance
+				value = 0.1
+			}
+		}
+	}
+
+	focus = { # 바그너 격하
+		id = WAG_wagner_downgrade
+		icon = GFX_goal_wagner_issue
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		mutually_exclusive = {
+			focus = WAG_wagner_admit
+		}
+		prerequisite = { focus = WAG_wagner_issue }
+		relative_position_id = WAG_wagner_issue
+		x = 2
+		y = 1
+		completion_reward = {
+			add_power_balance_value = {
+				id = WAG_power_balance
+				value = 0.1
+			}
+		}
+	}
+
+	focus = { # 바그너 인정
+		id = WAG_wagner_admit
+		icon = GFX_goal_wagner_issue
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_wagner_issue }
+		relative_position_id = WAG_wagner_issue
+		mutually_exclusive = {
+			focus = WAG_wagner_downgrade
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+
 		}
 	}
 
 	focus = { # 프리고진 계획
 		id = WAG_Prigozhin_plan
+		text = WAG_state_gover_plan
 		icon = GFX_goal_thatplanisgood
 		cost = 6.9
 
@@ -433,14 +531,16 @@ focus_tree = {
 		x = -2
 		y = 1
 		completion_reward = {
-			 
-			
+			add_power_balance_value = {
+				id = WAG_power_balance
+				value = -0.1
+			}
 		}
 	}
 
 	focus = { # 유화책
 		id = WAG_appeasement 
-		icon = GFX_goal_read_of_the_state_government
+		icon = GFX_goal_focus_ENG_a_fair_hand
 		cost = 6.9
 
 		available = {
@@ -454,7 +554,7 @@ focus_tree = {
 		}
 		mutually_exclusive = { focus = WAG_hardline }
 		relative_position_id = WAG_state_gover_plan
-		x = 0
+		x = -1
 		y = 1
 		completion_reward = {
 			 
@@ -464,7 +564,7 @@ focus_tree = {
 
 	focus = { # 강경책
 		id = WAG_hardline
-		icon = GFX_goal_read_of_the_state_government
+		icon = GFX_goal_focus_ENG_a_firm_grip
 		cost = 6.9
 
 		available = {
@@ -475,7 +575,7 @@ focus_tree = {
 		prerequisite = { focus = WAG_Prigozhin_plan }
 		mutually_exclusive = { focus = WAG_appeasement }
 		relative_position_id = WAG_Prigozhin_plan
-		x = 0
+		x = 1
 		y = 1
 		completion_reward = {
 			 

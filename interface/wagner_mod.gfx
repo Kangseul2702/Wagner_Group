@@ -66,6 +66,10 @@ spriteTypes = {
 	}
 
 	#국민정신 
+	spriteType = {
+		name = "GFX_idea_WAG_heroism"
+		texturefile = "gfx/wagner_gfx/wagner_issue_ns.png"
+	}
 	spriteType = { 
 		name = "GFX_idea_WAG_NoStepBack"
 		texturefile = "gfx/wagner_gfx/WAG_NoStepBack.png"
