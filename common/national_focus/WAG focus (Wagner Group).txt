@@ -385,16 +385,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = WAG_fucking_gwanryu }
 		relative_position_id = WAG_fucking_gwanryu
-		x = 10
+		x = 12
 		y = 1
 		completion_reward = {
-			set_power_balance = {
-				id = WAG_power_balance
-				left_side = WAG_power_balance_prigozhin_winning
-				right_side = WAG_power_balance_prigozhin_losing
-				set_value = -0.05
-			}
-			
+			country_event = { id = wagmidgame.7 }
 		}
 	}
 
@@ -483,7 +477,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = WAG_wagner_issue }
 		relative_position_id = WAG_wagner_issue
-		x = 2
+		x = 1
 		y = 1
 		completion_reward = {
 			add_power_balance_value = {
@@ -508,7 +502,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = WAG_wagner_downgrade
 		}
-		x = 0
+		x = -1
 		y = 1
 		completion_reward = {
 
@@ -529,6 +523,78 @@ focus_tree = {
 		prerequisite = { focus = WAG_establishment_of_government }
 		relative_position_id = WAG_establishment_of_government
 		x = -2
+		y = 1
+		completion_reward = {
+			add_power_balance_value = {
+				id = WAG_power_balance
+				value = -0.1
+			}
+		}
+	}
+
+	focus = { # 바그너 동원
+		id = WAG_Wagner_Mobilization
+		icon = GFX_goal_thatplanisgood
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_Prigozhin_plan }
+		relative_position_id = WAG_Prigozhin_plan
+		x = -1
+		y = 1
+		completion_reward = {
+			add_power_balance_value = {
+				id = WAG_power_balance
+				value = -0.1
+			}
+		}
+	}
+
+	focus = { # 선군정치
+		id = WAG_Songun_Politic
+		icon = GFX_goal_thatplanisgood
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		mutually_exclusive = {
+			focus = WAG_no_idolatry
+		}
+		prerequisite = { focus = WAG_Wagner_Mobilization }
+		relative_position_id = WAG_Wagner_Mobilization
+		x = -2
+		y = 1
+		completion_reward = {
+			add_power_balance_value = {
+				id = WAG_power_balance
+				value = -0.1
+			}
+		}
+	}
+
+	focus = { # 과도한 우상숭배 금지
+		id = WAG_no_idolatry
+		icon = GFX_goal_thatplanisgood
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		mutually_exclusive = {
+			focus = WAG_Songun_Politic
+		}
+		prerequisite = { focus = WAG_Wagner_Mobilization }
+		relative_position_id = WAG_Wagner_Mobilization
+		x = 0
 		y = 1
 		completion_reward = {
 			add_power_balance_value = {

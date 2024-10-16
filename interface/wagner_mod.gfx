@@ -69,54 +69,88 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_WAG_heroism"
 		texturefile = "gfx/wagner_gfx/wagner_issue_ns.png"
+		legacy_lazy_load = no
 	}
 	spriteType = { 
 		name = "GFX_idea_WAG_NoStepBack"
 		texturefile = "gfx/wagner_gfx/WAG_NoStepBack.png"
+		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_idea_WAG_Russia_Tactics"
 		texturefile = "gfx/wagner_gfx/WAG_Russia_Tactics.png"
+		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_idea_WAG_bad_bureaucracy"
 		texturefile = "gfx/wagner_gfx/WAG_bad_bureaucracy.png"
+		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_idea_WAG_bad_industry"
 		texturefile = "gfx/wagner_gfx/Wagner_bad_indutsry.png"
+		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_idea_WAG_many_oil"
 		texturefile = "gfx/wagner_gfx/WAG_many_oil.png"
+		legacy_lazy_load = no
 	}
 	spriteType = { 
 		name = "GFX_idea_WAG_many_ammo"
 		texturefile = "gfx/wagner_gfx/WAG_many_ammo.png"
+		legacy_lazy_load = no
 	}
 	spriteType = { 
 		name = "GFX_idea_WAG_Five_Year"
 		texturefile = "gfx/wagner_gfx/Five_Year_Idea.png"
+		legacy_lazy_load = no
 	}
 	# 인물
 	spriteType = {
 		name = "GFX_idea_WAG_general_staff_saintpetersburg"
 		texturefile = "gfx/wagner_gfx/people/Saintpetersburg.png"
+		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_idea_WAG_general_staff_Dmitry_utkin"
 		texturefile = "gfx/wagner_gfx/people/드미트리_웃킨.png"
+		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_idea_WAG_Vitaly_Gerasimov"
+		legacy_lazy_load = no
 		texturefile = "gfx/wagner_gfx/people/비탈리_게라시모프.png"
 	}
 	spriteType = {
 		name = "GFX_idea_WAG_Andrey_Mordvichev"
 		texturefile = "gfx/wagner_gfx/people/안드레이_모르드비체프.png"
+		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_idea_WAG_Dmitry_Utkin"
 		texturefile = "gfx/wagner_gfx/people/드미트리_웃킨.png"
+		legacy_lazy_load = no
+	}
+	# 흉상
+	spriteType = {
+		name = "GFX_Bust_of_prigojhin"
+		texturefile = "gfx/wagner_gfx/Bust_of_prigojhin.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Bust_of_prigojhin_win"
+		texturefile = "gfx/wagner_gfx/Bust_of_prigojhin_super_win.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Bust_of_state_gov"
+		texturefile = "gfx/wagner_gfx/Bust_of_state_gov.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Bust_of_state_gov_win"
+		texturefile = "gfx/wagner_gfx/Bust_of_state_gov_win.png"
+		legacy_lazy_load = no
 	}
 }
