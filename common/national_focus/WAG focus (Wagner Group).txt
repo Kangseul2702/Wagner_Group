@@ -357,6 +357,10 @@ focus_tree = {
 		cost = 6.9
 
 		available = {
+			OR = {
+				has_completed_focus = WAG_police_mobilization
+				has_completed_focus = WAG_Wagner_Mobilization
+			}
 		}
 		ai_will_do = {
 			base = 4000
@@ -482,7 +486,11 @@ focus_tree = {
 		completion_reward = {
 			add_power_balance_value = {
 				id = WAG_power_balance
-				value = 0.1
+				value = 0.05
+			}
+			swap_ideas = {
+				add_idea = Wagner_army_weak
+				remove_idea = Wagner_army
 			}
 		}
 	}
@@ -505,6 +513,10 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			add_power_balance_value = {
+				id = WAG_power_balance
+				value = -0.05
+			}
 
 		}
 	}
@@ -512,7 +524,7 @@ focus_tree = {
 	focus = { # 프리고진 계획
 		id = WAG_Prigozhin_plan
 		text = WAG_state_gover_plan
-		icon = GFX_goal_thatplanisgood
+		icon = GFX_goal_plan_of_prigozhin
 		cost = 6.9
 
 		available = {
@@ -599,8 +611,9 @@ focus_tree = {
 		completion_reward = {
 			add_power_balance_value = {
 				id = WAG_power_balance
-				value = -0.1
+				value = 0.1
 			}
+			remove_ideas = WAG_heroism
 		}
 	}
 

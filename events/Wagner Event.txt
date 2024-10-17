@@ -230,6 +230,29 @@ country_event = { # 정치적 갈등
 	}
 }
 
+country_event = { # 정치적 갈등
+	id = wagmidgame.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wagmidgame.8" }
+	title = wagmidgame.8.t
+	desc = wagmidgame.8.desc
+	picture = GFX_event_wagner_picture_2
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { # 협력
+		name = wagmidgame.8.a
+		log = "[GetDateText]: [Root.GetName]: event wagmidgame.8.a"
+		complete_national_focus = WAG_wagner_admit
+	}
+
+	option = { # 무장 해제
+		name = wagmidgame.8.b
+		log = "[GetDateText]: [Root.GetName]: event wagmidgame.8.a"
+		complete_national_focus = WAG_wagner_downgrade
+	}
+}
+
 country_event = { # 일어나, 마더 러시아.
 	id = waglast.1
 	immediate = { 

@@ -900,10 +900,10 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_goal_GFX_goal_wagner_issue_shine"
-		texturefile = "gfx/wagner_gfx/GFX_goal_wagner_issue.png" 
+		texturefile = "gfx/wagner_gfx/wagner_issue.png" 
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/wagner_gfx/GFX_goal_wagner_issue.png"
+			animationmaskfile = "gfx/wagner_gfx/wagner_issue.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -916,7 +916,38 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/wagner_gfx/GFX_goal_wagner_issue.png"
+			animationmaskfile = "gfx/wagner_gfx/wagner_issue.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_goal_plan_of_prigozhin_shine"
+		texturefile = "gfx/wagner_gfx/plan_of_prigozhin.png" 
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/wagner_gfx/plan_of_prigozhin.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/wagner_gfx/plan_of_prigozhin.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

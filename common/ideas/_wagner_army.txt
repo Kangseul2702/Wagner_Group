@@ -24,6 +24,32 @@ ideas = {
 			
 			cancel_if_invalid = no
 		}
+		Wagner_army_weak = {
+			picture = Wagner_army
+			allowed = { always = no }
+			available = { tag = WAG }
+			visible = {
+				has_completed_focus = WAG_wagner_downgrade
+				NOT = { has_country_flag = RUSSIA_ARMY }
+			}
+			allowed_to_remove = { always = no }
+
+			cost = -1
+			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = -0.15
+				army_org_factor = -0.15
+				army_defence_factor = -0.15
+				army_attack_factor = -0.15
+				land_night_attack = -0.5
+				breakthrough_factor = -0.15
+				conscription_factor = -0.5
+				custom_modifier_tooltip = Wagner_army_weak_tt
+			}
+			
+			cancel_if_invalid = no
+		}
 	}
 	government_base = {
 

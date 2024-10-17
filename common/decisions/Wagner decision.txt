@@ -139,4 +139,48 @@ TMC_test_decisions = {
 	        }
         }
     }
+    WAG_ukr_smo_decision = {
+        allowed = { tag = WAG }
+        visiable = { tag = WAG }
+        available = { is_ai = no }
+        
+        complete_effect = {
+            create_dynamic_country = {
+                copy_tag = SEV
+                original_tag = SEV
+                add_political_power = 120
+                set_stability = 0.5
+                set_war_support = 0.2
+                every_state = {
+                    limit = {
+                        is_core_of = SEV
+                        NOT = { 
+                            state = 93
+                            state = 1111
+                            state = 1148
+                            state = 990
+                            state = 91
+                            state = 89
+                            state = 163
+                            state = 80
+                            state = 196
+                            state = 137
+                            state = 963
+                            state = 200
+                            state = 227
+                            state = 996
+                            state = 228
+                            state = 218
+                            state = 234
+                        }
+                    }
+                    transfer_state_to = PREV
+                }
+                ROOT = { puppet = PREV}
+            }
+            create_dynamic_country = {
+
+            }
+        }
+    }
 }

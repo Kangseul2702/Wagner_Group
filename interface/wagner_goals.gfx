@@ -119,4 +119,8 @@ spriteTypes = {
 		name = "GFX_goal_wagner_issue"
 		texturefile = "gfx/wagner_gfx/wagner_issue.png" 
 	}
+	spriteType = {
+		name = "GFX_goal_plan_of_prigozhin"
+		texturefile = "gfx/wagner_gfx/plan_of_prigozhin.png" 
+	}
 }
