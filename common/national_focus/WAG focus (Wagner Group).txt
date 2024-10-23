@@ -199,7 +199,10 @@ focus_tree = {
 		x = -2
 		y = 1
 		completion_reward = {
-			
+			every_owned_state = {
+				limit = { is_core_of = PRV }
+				add_resistance = -5
+			}
 		}
 	}
 
@@ -218,7 +221,10 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-			
+			swap_ideas = {
+				add_idea = WAG_bad_bureaucracy
+				remove_idea = WAG_too_bad_bureaucracy
+			}
 		}
 	}
 
@@ -228,7 +234,24 @@ focus_tree = {
 		cost = 6.9
 
 		available = {
+			OR = {
+				country_exists = RWN
+				country_exists = NTH
+				country_exists = CDN
+				country_exists = SHI
+				country_exists = URS
+			}
 		}
+		bypass = {
+			NOT = {
+				country_exists = RWN
+				country_exists = NTH
+				country_exists = CDN
+				country_exists = SHI
+				country_exists = URS
+			}
+		}
+		
 		ai_will_do = {
 			base = 4000
 		}
@@ -240,7 +263,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-			
+			unlock_decision_category_tooltip = WAG_Attack_on_other_vostokia_cat
 		}
 	}
 
@@ -518,7 +541,7 @@ focus_tree = {
 				limit = {
 					NOT = { is_core_of = WAG }
 				}
-				add_compliance = 15 
+				add_resistance = -15 
 			}
 		}
 	}

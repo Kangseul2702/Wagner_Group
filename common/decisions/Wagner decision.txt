@@ -67,6 +67,36 @@ WAG_take_a_moskva_categories = {
         }
     }
 }
+WAG_Attack_on_other_vostokia_cat = {
+	WAG_attack_other_vostokia_decision = { # 시발 다 뒤져
+		icon = GFX_decision_SWE_set_army_budget
+		allowed = { tag = WAG }
+		on_map_mode = decision_view_only
+        available = { has_completed_focus = WAG_Attack_on_other_vostokia }
+		target_trigger = {
+			FROM = {
+				is_neighbor_of = WAG
+				OR = {
+					tag = RWN
+					tag = NTH
+					tag = CDN
+					tag = SHI
+					tag = URS
+				}
+			}
+		}
+
+
+        complete_effect = {
+            ROOT = {
+                create_wargoal = {
+				    target = FROM
+				    type = annex_everything
+                }
+            }
+        }
+	}
+}
 
 
 political_actions = {

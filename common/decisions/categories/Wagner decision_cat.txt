@@ -5,3 +5,14 @@ WAG_take_a_moskva_categories = {
     allowed = { original_tag = WAG }
     available = { original_tag = WAG }
 }
+WAG_Attack_on_other_vostokia_cat = {
+    icon = GFX_decision_category_assault
+    #picture = GFX_wagner_decision_categories_picture
+	priority = 999999
+    allowed = { original_tag = WAG }
+    available = { 
+        original_tag = WAG
+        has_completed_focus = WAG_Attack_on_other_vostokia
+    }
+    visiable = { has_completed_focus = WAG_Attack_on_other_vostokia }
+}
