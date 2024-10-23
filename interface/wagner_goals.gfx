@@ -123,4 +123,12 @@ spriteTypes = {
 		name = "GFX_goal_plan_of_prigozhin"
 		texturefile = "gfx/wagner_gfx/plan_of_prigozhin.png" 
 	}
+	spriteType = {
+		name = "GFX_goal_prigozhin_win"
+		texturefile = "gfx/wagner_gfx/win_of_prigozhin.png" 
+	}
+	spriteType = {
+		name = "GFX_goal_win_of_gover"
+		texturefile = "gfx/wagner_gfx/win_of_gover.png" 
+	}
 }

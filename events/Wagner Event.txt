@@ -230,7 +230,7 @@ country_event = { # 정치적 갈등
 	}
 }
 
-country_event = { # 정치적 갈등
+country_event = { # 바그너 문제
 	id = wagmidgame.8
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wagmidgame.8" }
 	title = wagmidgame.8.t
@@ -240,13 +240,7 @@ country_event = { # 정치적 갈등
 	fire_only_once = no
 	is_triggered_only = yes
 
-	option = { # 협력
-		name = wagmidgame.8.a
-		log = "[GetDateText]: [Root.GetName]: event wagmidgame.8.a"
-		complete_national_focus = WAG_wagner_admit
-	}
-
-	option = { # 무장 해제
+	option = { # 무장 해제 ( 원래는 인정과 무장 해제 둘다 넣을려고 했는데 이후 중점을 유동적으로 제작할 능력이 없어서 무조건 다운그레이드 하기로 결심함. )
 		name = wagmidgame.8.b
 		log = "[GetDateText]: [Root.GetName]: event wagmidgame.8.a"
 		complete_national_focus = WAG_wagner_downgrade

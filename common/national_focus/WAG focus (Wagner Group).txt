@@ -357,10 +357,6 @@ focus_tree = {
 		cost = 6.9
 
 		available = {
-			OR = {
-				has_completed_focus = WAG_police_mobilization
-				has_completed_focus = WAG_Wagner_Mobilization
-			}
 		}
 		ai_will_do = {
 			base = 4000
@@ -389,10 +385,36 @@ focus_tree = {
 		}
 		prerequisite = { focus = WAG_fucking_gwanryu }
 		relative_position_id = WAG_fucking_gwanryu
-		x = 12
+		x = 9
 		y = 1
 		completion_reward = {
 			country_event = { id = wagmidgame.7 }
+		}
+	}
+
+	focus = { # 바그너 격하
+		id = WAG_wagner_downgrade
+		icon = GFX_goal_wagner_issue
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_establishment_of_government }
+		relative_position_id = WAG_establishment_of_government
+		x = 0
+		y = 1
+		completion_reward = {
+			add_power_balance_value = {
+				id = WAG_power_balance
+				value = 0.15
+			}
+			swap_ideas = {
+				add_idea = Wagner_army_weak
+				remove_idea = Wagner_army
+			}
 		}
 	}
 
@@ -434,90 +456,18 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
-			every_owned_state = { add_compliance = 15 }
+			every_owned_state = { 
+				limit = {
+					NOT = { is_core_of = WAG }
+				}
+				add_compliance = 15 
+			}
 			add_stability = 0.10
 			add_war_support = -0.05
 			add_power_balance_value = {
 				id = WAG_power_balance
 				value = 0.1
 			}
-		}
-	}
-
-	focus = { # 바그너 문제
-		id = WAG_wagner_issue
-		icon = GFX_goal_wagner_issue
-		cost = 6.9
-
-		available = {
-		}
-		ai_will_do = {
-			base = 4000
-		}
-		prerequisite = { focus = WAG_state_gover_plan }
-		relative_position_id = WAG_state_gover_plan
-		x = 3
-		y = 1
-		completion_reward = {
-			add_power_balance_value = {
-				id = WAG_power_balance
-				value = 0.1
-			}
-		}
-	}
-
-	focus = { # 바그너 격하
-		id = WAG_wagner_downgrade
-		icon = GFX_goal_wagner_issue
-		cost = 6.9
-
-		available = {
-		}
-		ai_will_do = {
-			base = 4000
-		}
-		mutually_exclusive = {
-			focus = WAG_wagner_admit
-		}
-		prerequisite = { focus = WAG_wagner_issue }
-		relative_position_id = WAG_wagner_issue
-		x = 1
-		y = 1
-		completion_reward = {
-			add_power_balance_value = {
-				id = WAG_power_balance
-				value = 0.05
-			}
-			swap_ideas = {
-				add_idea = Wagner_army_weak
-				remove_idea = Wagner_army
-			}
-		}
-	}
-
-	focus = { # 바그너 인정
-		id = WAG_wagner_admit
-		icon = GFX_goal_wagner_issue
-		cost = 6.9
-
-		available = {
-		}
-		ai_will_do = {
-			base = 4000
-		}
-		prerequisite = { focus = WAG_wagner_issue }
-		relative_position_id = WAG_wagner_issue
-		mutually_exclusive = {
-			focus = WAG_wagner_downgrade
-		}
-		x = -1
-		y = 1
-		completion_reward = {
-			add_power_balance_value = {
-				id = WAG_power_balance
-				value = -0.05
-			}
-
 		}
 	}
 
@@ -563,57 +513,13 @@ focus_tree = {
 				id = WAG_power_balance
 				value = -0.1
 			}
-		}
-	}
-
-	focus = { # 선군정치
-		id = WAG_Songun_Politic
-		icon = GFX_goal_thatplanisgood
-		cost = 6.9
-
-		available = {
-		}
-		ai_will_do = {
-			base = 4000
-		}
-		mutually_exclusive = {
-			focus = WAG_no_idolatry
-		}
-		prerequisite = { focus = WAG_Wagner_Mobilization }
-		relative_position_id = WAG_Wagner_Mobilization
-		x = -2
-		y = 1
-		completion_reward = {
-			add_power_balance_value = {
-				id = WAG_power_balance
-				value = -0.1
+			add_stability = -0.1
+			every_owned_state = { 
+				limit = {
+					NOT = { is_core_of = WAG }
+				}
+				add_compliance = 15 
 			}
-		}
-	}
-
-	focus = { # 과도한 우상숭배 금지
-		id = WAG_no_idolatry
-		icon = GFX_goal_thatplanisgood
-		cost = 6.9
-
-		available = {
-		}
-		ai_will_do = {
-			base = 4000
-		}
-		mutually_exclusive = {
-			focus = WAG_Songun_Politic
-		}
-		prerequisite = { focus = WAG_Wagner_Mobilization }
-		relative_position_id = WAG_Wagner_Mobilization
-		x = 0
-		y = 1
-		completion_reward = {
-			add_power_balance_value = {
-				id = WAG_power_balance
-				value = 0.1
-			}
-			remove_ideas = WAG_heroism
 		}
 	}
 
@@ -698,6 +604,48 @@ focus_tree = {
 		relative_position_id = WAG_hardline
 		x = 0
 		y = 1
+		completion_reward = {
+			 
+		}
+	}
+
+	focus = { # 프리고진 승리
+		id = WAG_Prigozhin_win
+		icon = GFX_goal_prigozhin_win
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {  focus = WAG_Prigozhin_plan focus = WAG_state_gover_plan }
+		prerequisite = { focus = WAG_Russification }
+		relative_position_id = WAG_Prigozhin_plan
+		mutually_exclusive = { focus = WAG_state_gover_win }
+		x = 0
+		y = 4
+		completion_reward = {
+			 
+		}
+	}
+
+	focus = { # 주정부 승리
+		id = WAG_state_gover_win
+		icon = GFX_goal_win_of_gover
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {  focus = WAG_Prigozhin_plan focus = WAG_state_gover_plan }
+		prerequisite = { focus = WAG_Russification }
+		relative_position_id = WAG_state_gover_plan
+		mutually_exclusive = { focus = WAG_Prigozhin_win }
+		x = 0
+		y = 4
 		completion_reward = {
 			 
 		}
