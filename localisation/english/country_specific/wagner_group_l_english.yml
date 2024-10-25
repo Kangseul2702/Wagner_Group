@@ -181,19 +181,28 @@
  WAG_power_balance_state_gover_winning: "주 정부"
  WAG_Prigozhin_plan: "주 정부의 계획"
  WAG_Wagner_Mobilization: "바그너 동원"
- WAG_no_idolatry: "과도한 우상숭배 금지"
- WAG_Songun_Politic: "선군정치"
  WAG_state_gover_plan: "프리고진의 계획"
  WAG_police_mobilization: "경찰 동원"
- WAG_wagner_issue: "바그너 문제"
- WAG_wagner_admit: "바그너 인정"
  WAG_wagner_downgrade: "바그너 무장 해제"
  WAG_hardline: "강경책"
  WAG_appeasement: "유화책"
  WAG_army_bureaucracy: "감독관 파견"
  WAG_local_bureaucracy: "현지 관료 등용"
  WAG_Russification: "\"러시아화\""
+
+ 
+ WAG_resupply_weapon: "무기 재보급"
+ # 프리고진 루트
+ 
  WAG_Prigozhin_win: "권력 유지"
+ WAG_Prigozhin_russia: "단일한 지배"
+ WAG_maintaining_balance_of_power: "권력의 균형 유지"
+ WAG_big_brother: "큰 형"
+ WAG_control_of_everything: "권력 집중"
+ WAG_Prigozhism: "프리고진주의 제창"
+ WAG_united_russia: "단일 러시아"
+ WAG_strong_leader_strong_country: "강한 지도자, 강한 러시아"
+ # 프리고진 루트
  WAG_state_gover_win: "역전된 권력"
  WAG_i_slove_it: "대장의 뜻을 따라"
  WAG_lets_slove_it_together: "주 정부의 지도"

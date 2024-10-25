@@ -131,4 +131,20 @@ spriteTypes = {
 		name = "GFX_goal_win_of_gover"
 		texturefile = "gfx/wagner_gfx/win_of_gover.png" 
 	}
+	spriteType = {
+		name = "GFX_goal_StrongLeaderStrongCountry"
+		texturefile = "gfx/wagner_gfx/StrongLeaderStrongCountry.png" 
+	}
+	spriteType = {
+		name = "GFX_goal_bigbrother"
+		texturefile = "gfx/wagner_gfx/bigbrother.png" 
+	}
+	spriteType = {
+		name = "GFX_goal_daihyung"
+		texturefile = "gfx/wagner_gfx/daihyung.png" 
+	}
+	spriteType = {
+		name = "GFX_goal_focus_gunryuk"
+		texturefile = "gfx/wagner_gfx/focus_gunryuk.png" 
+	}
 }

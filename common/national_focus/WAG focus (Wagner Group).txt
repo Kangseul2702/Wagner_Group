@@ -199,8 +199,12 @@ focus_tree = {
 		x = -2
 		y = 1
 		completion_reward = {
+			add_political_power = 150
 			every_owned_state = {
-				limit = { is_core_of = PRV }
+				limit = { 
+					is_core_of = PRV 
+					NOT = { is_core_of = WAG }
+				}
 				add_resistance = -5
 			}
 		}
@@ -601,9 +605,12 @@ focus_tree = {
 		ai_will_do = {
 			base = 4000
 		}
-		prerequisite = { focus = WAG_appeasement }
+		prerequisite = { 
+			focus = WAG_appeasement 
+			focus = WAG_hardline
+		}
 		relative_position_id = WAG_appeasement
-		x = 0
+		x = -1
 		y = 1
 		completion_reward = {
 			 
@@ -621,10 +628,9 @@ focus_tree = {
 			base = 4000
 		}
 		prerequisite = { 
-			focus = WAG_hardline 
-			focus = WAG_appeasement
+			focus = WAG_local_bureaucracy 
 		}
-		relative_position_id = WAG_hardline
+		relative_position_id = WAG_local_bureaucracy
 		x = 0
 		y = 1
 		completion_reward = {
@@ -650,6 +656,193 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			 
+		}
+	}
+
+	focus = {
+		id = WAG_Prigozhin_russia
+		icon = GFX_goal_state_duma
+
+		cost = 8
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {
+			focus = WAG_Prigozhin_win
+		}
+		mutually_exclusive = {
+			focus = WAG_maintaining_balance_of_power
+		}
+		relative_position_id = WAG_Prigozhin_win
+		x = 0
+		y = 1
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = WAG_big_brother
+		icon = GFX_goal_daihyung
+
+		cost = 8
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {
+			focus = WAG_Prigozhin_russia
+			focus = WAG_maintaining_balance_of_power
+		}
+		relative_position_id = WAG_Prigozhin_russia
+		x = -1
+		y = 1
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = WAG_control_of_everything
+		icon = GFX_goal_focus_gunryuk
+
+		cost = 8
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {
+			focus = WAG_big_brother
+		}
+		relative_position_id = WAG_big_brother
+		x = -1
+		y = 1
+		completion_reward = {
+			remove_ideas = WAG_bad_bureaucracy
+		}
+	}
+
+	focus = {
+		id = WAG_Prigozhism
+		icon = GFX_goal_bigbrother
+
+		cost = 8
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {
+			focus = WAG_big_brother
+		}
+		relative_position_id = WAG_big_brother
+		x = 1
+		y = 1
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = WAG_united_russia
+		icon = GFX_goal_Russia_Federation
+
+		cost = 8
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {
+			focus = WAG_control_of_everything
+			focus = WAG_Prigozhism
+		}
+		relative_position_id = WAG_control_of_everything
+		x = 1
+		y = 1
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = WAG_strong_leader_strong_country
+		icon = GFX_goal_StrongLeaderStrongCountry
+
+		cost = 8
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {
+			focus = WAG_united_russia
+		}
+		relative_position_id = WAG_united_russia
+		x = 0
+		y = 1
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = WAG_resupply_weapon
+		icon = GFX_goal_state_duma
+
+		cost = 8
+
+		available = {
+			has_idea = Wagner_army_weak
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {
+			focus = WAG_Prigozhin_win
+			focus = WAG_state_gover_win
+		}
+		relative_position_id = WAG_Prigozhin_win
+		x = 2
+		y = 1
+		completion_reward = {
+			swap_ideas = {
+				add_idea = Wagner_army
+				remove_idea = Wagner_army_weak
+			}
+		}
+	}
+
+	focus = {
+		id = WAG_maintaining_balance_of_power
+		icon = GFX_goal_state_duma
+
+		cost = 8
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_Prigozhin_win }
+		mutually_exclusive = {
+			focus = WAG_Prigozhin_russia
+		}
+		relative_position_id = WAG_Prigozhin_win
+		x = -2
+		y = 1
+		completion_reward = {
+			
 		}
 	}
 
@@ -774,7 +967,7 @@ focus_tree = {
 		}
 		relative_position_id = WAG_fucking_gwanryu
 		x = 0
-		y = 10
+		y = 15
 		completion_reward = {
 			
 		}
