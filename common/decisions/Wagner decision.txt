@@ -75,7 +75,6 @@ WAG_Attack_on_other_vostokia_cat = {
         available = { has_completed_focus = WAG_Attack_on_other_vostokia }
 		target_trigger = {
 			FROM = {
-				is_neighbor_of = WAG
 				OR = {
 					tag = RWN
 					tag = NTH
@@ -85,7 +84,6 @@ WAG_Attack_on_other_vostokia_cat = {
 				}
 			}
 		}
-
 
         complete_effect = {
             ROOT = {

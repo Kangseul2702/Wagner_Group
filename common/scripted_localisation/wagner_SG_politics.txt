@@ -1,0 +1,150 @@
+defined_text = {
+	name = GetSubIdeologyLoc
+	text = {
+		trigger = { has_government = loyal_pop }
+		localization_key = "[GetSubIdeologyLocLoyal_pop]"
+	}
+	text = {
+		trigger = { has_government = radical_pop }
+		localization_key = "[GetSubIdeologyLocRadical_pop]"
+	}
+	text = {
+		trigger = { has_government = neutral_pop }
+		localization_key = "[GetSubIdeologyLocNeutral_pop]"
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyLocLoyal_pop
+	#### WG_MOD_FIX
+	text = {
+		trigger = { has_country_leader_ideology = Wagner_ideologies }
+		localization_key = PMC
+	}
+	text = {
+		trigger = { has_country_leader_ideology = WAG_Prigozhism_ideaologies }
+		localization_key = WAG_Prigozhism_ideaologies
+	}
+	####
+	text = {
+		trigger = { has_country_leader_ideology = MyGO_loyal_pop_subtype }
+		localization_key = MyGO_loyal_pop_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = SEV_noctchill_loyal_pop_subtype }
+		localization_key =SEV_noctchill_loyal_pop_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = TRI_loyal_subtype }
+		localization_key = TRI_loyal_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = GEH_loyal_pop_subtype }
+		localization_key = GEH_loyal_pop_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = GEP_loyal_pop_subtype }
+		localization_key = GEP_loyal_pop_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = ABY_loyal_pop_subtype }
+		localization_key = ABY_loyal_pop_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = SHA_loyal_pop_subtype }
+		localization_key = SHA_loyal_pop_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = Touhou_loyal_pop_subtype }
+		localization_key = Touhou_loyal_pop_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = HBR_loyal_pop_subtype_nomal }
+		localization_key = HBR_loyal_pop_subtype_nomal
+	}
+	text = {
+		trigger = { has_country_leader_ideology = HBR_loyal_pop_subtype_ruka }
+		localization_key = HBR_loyal_pop_subtype_ruka
+	}
+	text = {
+		trigger = { has_country_leader_ideology = HBR_loyal_pop_subtype_yuki }
+		localization_key = HBR_loyal_pop_subtype_yuki
+	}
+	text = {
+		trigger = { has_country_leader_ideology = HBR_loyal_pop_subtype_charlotta }
+		localization_key = HBR_loyal_pop_subtype_charlotta
+	}
+	text = {
+		trigger = { has_country_leader_ideology = HBR_loyal_pop_subtype_higumin }
+		localization_key = HBR_loyal_pop_subtype_higumin
+	}
+	text = {
+		trigger = { has_country_leader_ideology = HBR_loyal_pop_subtype_megumin }
+		localization_key = HBR_loyal_pop_subtype_megumin
+	}
+	text = {
+		trigger = { has_country_leader_ideology = UMA_loyal_pop_subtype }
+		localization_key = UMA_loyal_pop_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = VTK_loyal_pop_subtype }
+		localization_key = VTK_loyal_pop_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = ANZ_loyal_pop_subtype }
+		localization_key = ANZ_loyal_pop_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = STG_loyal_pop_subtype }
+		localization_key = STG_loyal_pop_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = BLD_loyal_pop_subtype }
+		localization_key = BLD_loyal_pop_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = STR_loyal_pop_subtype }
+		localization_key = STR_loyal_pop_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = RWN_loyal_pop_subtype}
+		localization_key = RWN_loyal_pop_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = PRV_loyal_pop_subtype }
+		localization_key = PRV_loyal_pop_subtype 
+	}
+	text = {
+		localization_key = NPC_loyal_pop_subtype
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyLocRadical_pop
+	text = {
+		trigger = { has_country_leader_ideology = SHA_radical_pop_subtype }
+		localization_key = SHA_radical_pop_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = SEV_noctchill_radical_pop_subtype }
+		localization_key = SEV_noctchill_radical_pop_subtype
+	}
+	text = {
+		localization_key = NPC_loyal_pop_subtype
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyLocNeutral_pop
+	text = {
+		trigger = { has_country_leader_ideology = anarchy_subtype }
+		localization_key = anarchy_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = SEV_no_tsubasa_neutral_pop_subtype }
+		localization_key = SEV_no_tsubasa_neutral_pop_subtype
+	}
+	text = {
+		localization_key = NPC_loyal_pop_subtype
+	}
+}

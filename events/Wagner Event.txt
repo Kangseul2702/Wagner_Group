@@ -226,7 +226,7 @@ country_event = { # 정치적 갈등
 				right_side = WAG_power_balance_state_gover_winning
 				set_value = -0.05
 			}
-		#add_ideas = WAG_heroism
+		
 	}
 }
 
@@ -244,6 +244,63 @@ country_event = { # 바그너 문제
 		name = wagmidgame.8.b
 		log = "[GetDateText]: [Root.GetName]: event wagmidgame.8.a"
 		complete_national_focus = WAG_wagner_downgrade
+	}
+}
+
+country_event = { # "러시아화"
+	id = wagmidgame.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wagmidgame.9" }
+	title = wagmidgame.9.t
+	desc = wagmidgame.9.desc
+	picture = GFX_event_wagner_picture_4
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = wagmidgame.9.a
+		log = "[GetDateText]: [Root.GetName]: event wagmidgame.9.a"
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = RWN
+					is_core_of = PRV
+					is_core_of = VKT
+					is_core_of = NTH
+					is_core_of = CDN
+					is_core_of = SHI
+					is_core_of = URS
+				}
+			}
+			add_core_of = WAG
+			remove_core_of = RWN
+			remove_core_of = PRV
+			remove_core_of = VKT
+			remove_core_of = NTH
+			remove_core_of = CDN
+			remove_core_of = SHI
+			remove_core_of = URS
+		}
+		hidden_effect = {
+			country_event = { id = wagmidgame.10 days = 04 }
+		}
+	}
+}
+
+country_event = { # 헤일로로 차별 하면 안돼요~
+	id = wagmidgame.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wagmidgame.10" }
+	title = wagmidgame.10.t
+	desc = wagmidgame.10.desc
+	picture = GFX_event_wagner_picture_9
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { # 
+		name = wagmidgame.10.a
+		log = "[GetDateText]: [Root.GetName]: event wagmidgame.10.a"
+		add_stability = 0.05
 	}
 }
 

@@ -5,6 +5,16 @@ ideologies = {
 			#### WG_MOD_FIX
 			Wagner_ideologies = {
 				can_be_randomly_selected = no
+				can_generate_female_country_leaders  = no
+				can_generate_female_unit_leaders  = no
+				can_generate_female_aces = no
+				color = { 31 32 35 }
+			}
+			WAG_Prigozhism_ideaologies = {
+				can_be_randomly_selected = no
+				can_generate_female_country_leaders  = no
+				can_generate_female_unit_leaders  = no
+				can_generate_female_aces = no
 				color = { 31 32 35 }
 			}
 			#### WG_MOD_FIX

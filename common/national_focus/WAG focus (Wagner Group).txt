@@ -395,8 +395,10 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
-			 
-			
+			add_timed_idea = {
+				idea = WAG_russification
+				days = 365
+			}
 		}
 	}
 
@@ -661,7 +663,7 @@ focus_tree = {
 
 	focus = {
 		id = WAG_Prigozhin_russia
-		icon = GFX_goal_state_duma
+		icon = GFX_goal_Prigozhin_russia
 
 		cost = 8
 
@@ -703,7 +705,10 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
-			
+			swap_ruler_traits = { 
+				remove = RUS_dictator 
+				add = RUS_dictator_2
+			}	
 		}
 	}
 
@@ -725,7 +730,17 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
-			remove_ideas = WAG_bad_bureaucracy
+			if = {
+				limit = { has_idea = WAG_bad_bureaucracy }
+				remove_ideas = WAG_bad_bureaucracy
+			}
+			if = {
+				limit = { has_idea = WAG_too_bad_bureaucracy }
+				remove_ideas = WAG_too_bad_bureaucracy
+			}
+			else = {
+				add_political_power = 120
+			}
 		}
 	}
 
@@ -747,7 +762,21 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
-			
+			set_country_leader_ideology = WAG_Prigozhism_ideaologies
+			set_party_name = {
+				ideology = loyal_pop
+				name = All_Russia_peoples_front
+				long_name = All_Russia_peoples_front_long
+			}
+			set_rule = { can_create_factions = yes }
+			if = {
+				limit = { is_in_faction = no }
+				create_faction = Eurasian_Union
+			}
+			if = {
+				limit = { is_faction_leader = yes }
+				set_faction_name = Eurasian_Union
+			}
 		}
 	}
 
@@ -825,7 +854,7 @@ focus_tree = {
 
 	focus = {
 		id = WAG_maintaining_balance_of_power
-		icon = GFX_goal_state_duma
+		icon = GFX_goal_maintaining_balance_of_power
 
 		cost = 8
 
@@ -958,6 +987,7 @@ focus_tree = {
 
 		available = {
 			is_debug = yes
+			is_ai = no 
 		}
 		ai_will_do = {
 			base = 4000
@@ -1101,7 +1131,7 @@ focus_tree = {
 
 	focus = {
 		id = WAG_infrastructure_effort
-		icon = GFX_goal_improve_railway_network
+		icon = GFX_SOV_infrastructure_effort_nsb_ccp_2d_sov_compatibility
 		cost = 5
 
 		available = {
@@ -1194,7 +1224,7 @@ focus_tree = {
 
 	focus = {
 		id = WAG_mingong_focus
-		icon = GFX_goal_industry_focus
+		icon = GFX_SOV_heavy_industry_ccp_2d_sov_compatibility
 		cost = 5
 
 		available = {
@@ -1247,7 +1277,7 @@ focus_tree = {
 
 	focus = {
 		id = WAG_Industrial_reconstruction_completed
-		icon = GFX_goal_industry_focus
+		icon = GFX_SOV_finish_the_five_year_plan_ccp_2d_sov_compatibility
 		cost = 5
 
 		available = {
@@ -1352,7 +1382,7 @@ focus_tree = {
 
 	focus = {
 		id = WAG_increase_state_reserves
-		icon = GFX_goal_industry_focus
+		icon = GFX_SOV_increase_state_reserves_ccp_2d_sov_compatibility
 		cost = 5
 
 		available = {
@@ -1397,7 +1427,7 @@ focus_tree = {
 
 	focus = {
 		id = WAG_reorganize_the_pc_of_heavy_industry
-		icon = GFX_goal_industry_focus
+		icon = GFX_SOV_reorganize_the_pc_of_heavy_industry_ccp_2d_sov_compatibility
 		cost = 6.9
 
 		available = {
@@ -1440,7 +1470,7 @@ focus_tree = {
 	focus = {
 		id = WAG_industrial_modernization
 
-		icon = GFX_goal_industry_focus
+		icon = GFX_SOV_industrial_modernization_ccp_2d_sov_compatibility
 		prerequisite = { focus = WAG_reorganize_the_pc_of_heavy_industry }
 		x = 0
 		y = 3
@@ -1471,7 +1501,7 @@ focus_tree = {
 
 	focus = {
 		id = WAG_shift_to_armaments_production
-		icon = GFX_goal_industry_focus
+		icon = GFX_SOV_shift_to_armaments_production_ccp_2d_sov_compatibility
 		cost = 6.9
 
 		available = {
@@ -1502,7 +1532,7 @@ focus_tree = {
 	focus = {
 		id = WAG_optimize_production_lines
 
-		icon = GFX_goal_industry_focus
+		icon = GFX_SOV_optimize_production_lines_ccp_2d_sov_compatibility
 		prerequisite = { focus = WAG_shift_to_armaments_production }
 		x = 0
 		y = 3
@@ -1536,7 +1566,7 @@ focus_tree = {
 
 	focus = {
 		id = WAG_steel_casting_industry
-		icon = GFX_goal_industry_focus
+		icon = GFX_SOV_steel_casting_industry_ccp_2d_sov_compatibility
 		cost = 6.9
 
 		available = {
@@ -1691,7 +1721,7 @@ focus_tree = {
 
 	focus = {
 		id = WAG_develop_the_urals
-		icon = GFX_goal_industry_focus
+		icon = GFX_SOV_develop_the_urals_ccp_2d_sov_compatibility
 		cost = 6.9
 
 		available = {
@@ -1715,7 +1745,7 @@ focus_tree = {
 
 	focus = {
 		id = WAG_eastern_development
-		icon = GFX_goal_industry_focus
+		icon = GFX_SOV_eastern_development_ccp_2d_sov_compatibility
 		cost = 6.9
 
 		available = {
@@ -1762,7 +1792,7 @@ focus_tree = {
 
 	focus = {
 		id = WAG_the_russia_academy_of_sciences
-		icon = GFX_goal_industry_focus
+		icon = GFX_SOV_national_academies_of_sciences_ccp_2d_sov_compatibility
 		cost = 6.9
 
 		available = { }

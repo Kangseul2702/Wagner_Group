@@ -33,6 +33,16 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_event_wagner_picture_4"
+		texturefile = "gfx/event_pictures/WAG/wagner_picture_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_wagner_picture_9"
+		texturefile = "gfx/event_pictures/WAG/wagner_picture_9.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_event_wakeuprussia"
 		texturefile = "gfx/event_pictures/WAG/wakeuprussia.png"
 		legacy_lazy_load = no
@@ -111,6 +121,11 @@ spriteTypes = {
 		texturefile = "gfx/wagner_gfx/Five_Year_Idea.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_idea_WAG_Russification"
+		texturefile = "gfx/wagner_gfx/WAG_russification.png"
+		legacy_lazy_load = no
+	}
 	# 인물
 	spriteType = {
 		name = "GFX_idea_WAG_general_staff_saintpetersburg"
@@ -156,6 +171,17 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Bust_of_state_gov_win"
 		texturefile = "gfx/wagner_gfx/Bust_of_state_gov_win.png"
+		legacy_lazy_load = no
+	}
+	# 이데올로기
+	spriteType = {
+		name = "GFX_ideology_WAG_Prigozhism_ideaologies"
+		texturefile = "gfx/interface/ideologies/AllRussiaPeoplesFront.png"
+	}
+	# 배너
+	spriteType = {
+		name = "GFX_Prigozhin_banner"
+		texturefile = "gfx/wagner_gfx/Prigozhin_banner.png"
 		legacy_lazy_load = no
 	}
 }
