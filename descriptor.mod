@@ -29,4 +29,4 @@ dependencies={
 	"The Moe Chronicles"
 }
 name="[TMC] Wagner Group"
-supported_version="1.14.8"
+supported_version="1.14.*"

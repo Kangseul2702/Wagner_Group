@@ -16,3 +16,10 @@ WAG_Attack_on_other_vostokia_cat = {
     }
     visiable = { has_completed_focus = WAG_Attack_on_other_vostokia }
 }
+WAG_balance_of_power_category = {
+    allowed = { original_tag = WAG }
+    available = { 
+        original_tag = WAG 
+        has_completed_focus = WAG_establishment_of_government
+    }
+}

@@ -2,7 +2,7 @@ WAG_power_balance = {
 	initial_value = 0.00
 	left_side = WAG_power_balance_prigozhin_winning
 	right_side = WAG_power_balance_state_gover_winning
-	#decision_category = WAG_balance_of_power_category
+	decision_category = WAG_balance_of_power_category
 
 	### Favoring PAC
 	side = {
@@ -105,6 +105,64 @@ WAG_power_balance = {
 			modifier = {
 				political_power_factor = 0.1
 				stability_factor = 0.1
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = WAG_power_balance
+					side = WAG_power_balance_state_gover_winning
+					gfx = GFX_Bust_of_state_gov_win
+				}
+			}
+			on_deactivate = {
+				set_power_balance_gfx = {
+					id = WAG_power_balance
+					side = WAG_power_balance_state_gover_winning
+					gfx = GFX_Bust_of_state_gov
+				}
+			}
+		}
+	}
+	side = {
+		id = WAG_power_balance_utkin
+		icon = GFX_Bust_of_state_gov
+
+		range = {
+			id = CHI_bop_utkin_tilt
+			min = 0.00
+			max = 0.20
+			modifier = {
+				stability_factor = 0.05
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+
+			}
+		}
+
+		range = {
+			id = CHI_bop_utkin_ascendant
+			min = 0.20
+			max = 0.60
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.05
+			}
+			on_activate = {
+
+			}
+			on_deactivate = {
+
+			}
+		}
+
+		range = {
+			id = CHI_bop_utkin_dominant
+			min = 0.60
+			max = 1.00
+			modifier = {
+				war_support_factor = 0.1
+				stability_factor = -0.1
 			}
 			on_activate = {
 				set_power_balance_gfx = {

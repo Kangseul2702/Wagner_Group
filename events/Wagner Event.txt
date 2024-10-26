@@ -156,6 +156,7 @@ country_event = { # 모스크바 점령시 이 이벤트
 			add_idea = WAG_too_bad_bureaucracy
 			remove_idea = WAG_bad_bureaucracy
 		}
+		complete_national_focus = WAG_fucking_gwanryu
 		remove_ideas = WAG_NoStepBack
 		if = {
 			limit = { has_idea = WAG_many_ammo }

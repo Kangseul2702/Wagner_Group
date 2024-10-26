@@ -12,8 +12,8 @@ ideas = {
 
 			modifier = {
 				army_morale_factor = -0.15
-				army_org_factor = -0.15
-				army_defence_factor = -0.15
+				army_org_factor = -0.30
+				army_defence_factor = -0.30
 				army_attack_factor = 0.15
 				land_night_attack = 0.5
 				army_speed_factor = 2
@@ -38,12 +38,10 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				army_morale_factor = -0.15
-				army_org_factor = -0.15
-				army_defence_factor = -0.15
-				army_attack_factor = -0.15
-				land_night_attack = -0.5
-				breakthrough_factor = -0.15
+				army_morale_factor = -0.3
+				army_org_factor = -0.30
+				army_defence_factor = -0.30
+				breakthrough_factor = -0.3
 				conscription_factor = -0.5
 				custom_modifier_tooltip = Wagner_army_weak_tt
 			}

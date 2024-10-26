@@ -155,4 +155,8 @@ spriteTypes = {
 		name = "GFX_goal_maintaining_balance_of_power"
 		texturefile = "gfx/wagner_gfx/maintaining_balance_of_power.png" 
 	}
+	spriteType = {
+		name = "GFX_goal_sungon"
+		texturefile = "gfx/wagner_gfx/sungon.png" 
+	}
 }
