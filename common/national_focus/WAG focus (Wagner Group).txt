@@ -106,7 +106,7 @@ focus_tree = {
 	focus = {
 		id = WAG_lets_go_moskva
 		icon = GFX_goal_March_of_justice
-		cost = 5
+		cost = 1
 
 		available = {
 		}
@@ -126,7 +126,7 @@ focus_tree = {
 	focus = {
 		id = WAG_take_back_moskva
 		icon = GFX_goal_moskva
-		cost = 5
+		cost = 1
 
 		available = {
 			owns_state = 219
@@ -180,7 +180,9 @@ focus_tree = {
 		x = 2
 		y = 1
 		completion_reward = {
-			
+			every_owned_state = {
+				add_resistance = -5
+			}
 		}
 	}
 
@@ -292,7 +294,7 @@ focus_tree = {
 		}
 	}
 
-	focus = { # 영향력 제거
+	focus = { # 식량 위기 해결
 		id = WAG_Removal_of_Vostokia
 		icon = GFX_goal_fucking_gwanryu
 		cost = 6.9
@@ -309,7 +311,19 @@ focus_tree = {
 		x = 2
 		y = 1
 		completion_reward = {
-			
+			effect_tooltip = {
+				swap_ideas = {
+					add_idea = WAG_aftermath_of_food_crisis
+					remove_idea = WAG_food_crisis
+				}
+			}
+			hidden_effect = {
+				remove_ideas = WAG_food_crisis
+				add_timed_idea = {
+					idea = WAG_aftermath_of_food_crisis
+					days = 180
+				}
+			}
 		}
 	}
 
@@ -329,7 +343,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
-			 
+			country_event = { id = wagmidgame.12 }
 			
 		}
 	}
@@ -351,8 +365,12 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
-			 
-			
+			every_owned_state = {
+				limit = { 
+					NOT= { is_core_of = WAG }
+				}
+				add_compliance = 5
+			}
 		}
 	}
 
@@ -673,7 +691,7 @@ focus_tree = {
 		id = WAG_Prigozhin_russia
 		icon = GFX_goal_Prigozhin_russia
 
-		cost = 8
+		cost = 6.9
 
 		available = {
 		}
@@ -698,7 +716,7 @@ focus_tree = {
 		id = WAG_big_brother
 		icon = GFX_goal_daihyung
 
-		cost = 8
+		cost = 6.9
 
 		available = {
 		}
@@ -724,7 +742,7 @@ focus_tree = {
 		id = WAG_stop_the_idolization
 		icon = GFX_goal_Russia_Federation
 
-		cost = 8
+		cost = 6.9
 
 		available = {
 		}
@@ -751,7 +769,7 @@ focus_tree = {
 		id = WAG_songun
 		icon = GFX_goal_sungon
 
-		cost = 8
+		cost = 6.9
 
 		available = {
 		}
@@ -777,7 +795,7 @@ focus_tree = {
 		id = WAG_control_of_everything
 		icon = GFX_goal_focus_gunryuk
 
-		cost = 8
+		cost = 6.9
 
 		available = {
 		}
@@ -810,7 +828,7 @@ focus_tree = {
 		id = WAG_Prigozhism
 		icon = GFX_goal_bigbrother
 
-		cost = 8
+		cost = 6.9
 
 		available = {
 		}
@@ -847,7 +865,7 @@ focus_tree = {
 		id = WAG_strong_leader_strong_country
 		icon = GFX_goal_StrongLeaderStrongCountry
 
-		cost = 8
+		cost = 6.9
 
 		available = {
 		}
@@ -868,7 +886,7 @@ focus_tree = {
 		id = WAG_resupply_weapon
 		icon = GFX_goal_state_duma
 
-		cost = 8
+		cost = 6.9
 
 		available = {
 			has_idea = Wagner_army_weak
@@ -895,7 +913,7 @@ focus_tree = {
 		id = WAG_maintaining_balance_of_power
 		icon = GFX_goal_maintaining_balance_of_power
 
-		cost = 8
+		cost = 6.9
 
 		available = {
 		}
@@ -943,7 +961,7 @@ focus_tree = {
 		id = WAG_Duma_established
 		icon = GFX_goal_state_duma
 
-		cost = 8
+		cost = 6.9
 
 		available = {
 		}
@@ -1337,6 +1355,24 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			if = {
+				limit = { has_idea = WAG_bad_industry }
+				remove_ideas = WAG_bad_industry
+				else_if = {
+					limit = { has_idea = WAG_not_bad_industry }
+					remove_ideas = WAG_not_bad_industry
+				}
+				else = {
+					random_owned_state ={
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
 			random_owned_controlled_state = {
 				limit = {
 					industrial_complex > 0

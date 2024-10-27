@@ -205,6 +205,9 @@ country_event = { # 바그너 영웅화
 		name = wagmidgame.6.a
 		log = "[GetDateText]: [Root.GetName]: event wagmidgame.6.a"
 		add_ideas = WAG_heroism
+		hidden_effect = {
+			country_event = { id = wagmidgame.11 days = 04 }
+		}
 	}
 }
 
@@ -302,6 +305,41 @@ country_event = { # 헤일로로 차별 하면 안돼요~
 		name = wagmidgame.10.a
 		log = "[GetDateText]: [Root.GetName]: event wagmidgame.10.a"
 		add_stability = 0.05
+	}
+}
+
+country_event = { # 기근 씨발련아
+	id = wagmidgame.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wagmidgame.11" }
+	title = wagmidgame.11.t
+	desc = wagmidgame.11.desc
+	picture = GFX_event_wagner_picture_11
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { # 
+		name = wagmidgame.11.a
+		log = "[GetDateText]: [Root.GetName]: event wagmidgame.11.a"
+		add_stability = -0.05
+		add_ideas = WAG_food_crisis
+	}
+}
+
+country_event = { # 러시아어 수업
+	id = wagmidgame.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wagmidgame.12" }
+	title = wagmidgame.12.t
+	desc = wagmidgame.12.desc
+	picture = GFX_event_wagner_picture_11
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { # 
+		name = wagmidgame.12.a
+		log = "[GetDateText]: [Root.GetName]: event wagmidgame.12.a"
+		
 	}
 }
 

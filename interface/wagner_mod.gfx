@@ -43,6 +43,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_event_wagner_picture_11"
+		texturefile = "gfx/event_pictures/WAG/wagner_picture_11.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_event_wakeuprussia"
 		texturefile = "gfx/event_pictures/WAG/wakeuprussia.png"
 		legacy_lazy_load = no
