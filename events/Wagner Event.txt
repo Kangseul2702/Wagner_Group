@@ -152,6 +152,7 @@ country_event = { # 모스크바 점령시 이 이벤트
 	option = {
 		name = wagmidgame.4.a
 		log = "[GetDateText]: [Root.GetName]: event wagmidgame.4.a"
+		add_stability = -0.4
 		swap_ideas = {
 			add_idea = WAG_too_bad_bureaucracy
 			remove_idea = WAG_bad_bureaucracy
@@ -205,6 +206,7 @@ country_event = { # 바그너 영웅화
 		name = wagmidgame.6.a
 		log = "[GetDateText]: [Root.GetName]: event wagmidgame.6.a"
 		add_ideas = WAG_heroism
+		add_stability = -0.1
 		hidden_effect = {
 			country_event = { id = wagmidgame.11 days = 04 }
 		}
@@ -331,7 +333,7 @@ country_event = { # 러시아어 수업
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wagmidgame.12" }
 	title = wagmidgame.12.t
 	desc = wagmidgame.12.desc
-	picture = GFX_event_wagner_picture_11
+	picture = GFX_event_wagner_picture_12
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -339,6 +341,46 @@ country_event = { # 러시아어 수업
 	option = { # 
 		name = wagmidgame.12.a
 		log = "[GetDateText]: [Root.GetName]: event wagmidgame.12.a"
+		country_event = { id = wagmidgame.13 hours = 04}
+		hidden_effect = {
+			country_event = {
+				id = wagmidgame.14
+				days = 05
+			}
+		}
+	}
+}
+
+country_event = { # 러시아어 수업 - 그 이면
+	id = wagmidgame.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wagmidgame.13" }
+	title = wagmidgame.13.t
+	desc = wagmidgame.13.desc
+	picture = GFX_event_wagner_picture_13
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { # 
+		name = wagmidgame.13.a
+		log = "[GetDateText]: [Root.GetName]: event wagmidgame.13.a"
+		
+	}
+}
+
+country_event = { # 러시아어 수업 - 3
+	id = wagmidgame.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wagmidgame.14" }
+	title = wagmidgame.14.t
+	desc = wagmidgame.14.desc
+	picture = GFX_event_wagner_picture_12
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { # 
+		name = wagmidgame.14.a
+		log = "[GetDateText]: [Root.GetName]: event wagmidgame.14.a"
 		
 	}
 }

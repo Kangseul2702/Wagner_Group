@@ -48,6 +48,16 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_event_wagner_picture_12"
+		texturefile = "gfx/event_pictures/WAG/wagner_picture_12.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_wagner_picture_13"
+		texturefile = "gfx/event_pictures/WAG/wagner_picture_13.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_event_wakeuprussia"
 		texturefile = "gfx/event_pictures/WAG/wakeuprussia.png"
 		legacy_lazy_load = no
@@ -63,7 +73,7 @@ spriteTypes = {
 		texturefile = "gfx/wagner_gfx/other_vostokia_attack.png"
 		legacy_lazy_load = no 
 	}
-	# 모드 종족 군대
+	# 텍스트콘
 	spriteType = {
 		name = "GFX_idea_Wagner_army"
 		texturefile = "gfx/wagner_gfx/Wagner_idea.png"
@@ -82,6 +92,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_russia_texticon"
 		texturefile = "gfx/wagner_gfx/russia_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Wagner_logo"
+		texturefile = "gfx/wagner_gfx/Wagner_logo.png"
 		legacy_lazy_load = no
 	}
 

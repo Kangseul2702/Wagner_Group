@@ -311,17 +311,23 @@ focus_tree = {
 		x = 2
 		y = 1
 		completion_reward = {
-			effect_tooltip = {
-				swap_ideas = {
-					add_idea = WAG_aftermath_of_food_crisis
-					remove_idea = WAG_food_crisis
+			if = {
+				limit = { has_idea = WAG_food_crisis }
+				effect_tooltip = {
+					swap_ideas = {
+						add_idea = WAG_aftermath_of_food_crisis
+						remove_idea = WAG_food_crisis
+					}
 				}
-			}
-			hidden_effect = {
-				remove_ideas = WAG_food_crisis
-				add_timed_idea = {
-					idea = WAG_aftermath_of_food_crisis
-					days = 180
+				hidden_effect = {
+					remove_ideas = WAG_food_crisis
+					add_timed_idea = {
+						idea = WAG_aftermath_of_food_crisis
+						days = 180
+					}
+				}
+				else = {
+					add_stability = 0.05
 				}
 			}
 		}
@@ -392,7 +398,6 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			 
-			
 		}
 	}
 
@@ -1155,7 +1160,7 @@ focus_tree = {
 
 	focus = {
 		id = WAG_industry_focus
-		icon = GFX_goal_industry_focus_2
+		icon = GFX_SOV_national_unification_ccp_2d_sov_compatibility
 		cost = 5
 
 		available = {
@@ -1171,6 +1176,7 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			add_political_power = 25
+			custom_effect_tooltip = YOU_SHOULD_BUY_2D_SOVIET_ART
 			random_owned_controlled_state = {
 				limit = {
 					industrial_complex > 0
@@ -1338,7 +1344,7 @@ focus_tree = {
 
 	focus = {
 		id = WAG_Industrial_reconstruction_completed
-		icon = GFX_SOV_finish_the_five_year_plan_ccp_2d_sov_compatibility
+		icon = GFX_SOV_rebuild_the_nation_ccp_2d_sov_compatibility
 		cost = 5
 
 		available = {
@@ -1410,7 +1416,7 @@ focus_tree = {
 
 	focus = {
 		id = WAG_improve_railway_network
-		icon = GFX_goal_improve_railway_network
+		icon = GFX_SOV_westward_bound_ccp_2d_sov_compatibility
 		cost = 5
 
 		available = {
@@ -1754,7 +1760,7 @@ focus_tree = {
 
 	focus = {
 		id = WAG_national_specialists
-		icon = GFX_goal_national_specialists
+		icon = GFX_SOV_national_specialists_ccp_2d_sov_compatibility
 		cost = 6.9
 
 		available = {
@@ -1777,7 +1783,7 @@ focus_tree = {
 
 	focus = {
 		id = WAG_foreign_experts
-		icon = GFX_goal_foreign_experts
+		icon = GFX_SOV_foreign_experts_ccp_2d_sov_compatibility
 		cost = 6.9
 
 		available = {
@@ -1848,7 +1854,7 @@ focus_tree = {
 
 	focus = {
 		id = WAG_the_russia_university
-		icon = GFX_goal_moskva_university
+		icon = GFX_SOV_the_ussr_academy_of_sciences_ccp_2d_sov_compatibility
 		cost = 6.9
 
 		available = {
@@ -1871,7 +1877,7 @@ focus_tree = {
 
 	focus = {
 		id = WAG_the_russia_academy_of_sciences
-		icon = GFX_SOV_national_academies_of_sciences_ccp_2d_sov_compatibility
+		icon = GFX_goal_moskva_university
 		cost = 6.9
 
 		available = { }

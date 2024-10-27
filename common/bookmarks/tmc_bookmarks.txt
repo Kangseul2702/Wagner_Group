@@ -1,0 +1,933 @@
+bookmarks = {
+
+	bookmark = {
+		name = "ALPHA_TMC_BOOKMARKS_NAME"
+		desc = "ALPHA_TMC_BOOKMARKS_DESC"
+		date = 3230.1.1.12
+		picture = "GFX_select_date_BA2"
+		default_country = "HBR"
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"HBR"={
+			history = "HBR_LEGENDS_NEVER_DIE_DESC"
+			ideology = loyal_pop
+			ideas = {
+				HBR_cancer_theory
+				HBR_world_gov_and_seraph_crisis
+				HBR_egg_hammer
+			}
+			focuses = {
+				HBR_pacifism_plan
+				HBR_army_reform_project
+				HBR_operation_cepheus
+			}
+		}
+
+		"MYG"={
+			history = "MYG_MYGO_BOOKMARK_DESC"
+			ideology = loyal_pop
+			ideas = {
+				other_distribution_of_resources
+				MYG_snow_globe_project
+			}
+			focuses = {
+				MYG_this_is_a_song
+				MYG_with_morfonica_live
+				MYG_go_home_club
+			}
+		}
+
+		"GEH"={
+			history = "GEH_WO_ALLE_STRASSE_ENDEN_DESC"
+			ideology = loyal_pop
+			ideas = {
+				GEH_shadow_follows_light
+				GEH_controlled_budget
+			}
+			focuses = {
+				GEH_focus_organizing
+				GEH_focus_hina_restraint
+				GEH_focus_nk_ultra
+			}
+		}
+		
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+
+	bookmark = {
+		name = "BETA_TMC_BOOKMARKS_NAME"
+		desc = "BETA_TMC_BOOKMARKS_DESC"
+		date = 3230.1.1.12
+		picture = "GFX_select_date_BA2"
+		default_country = "WAG"
+
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"WAG"={
+			history = "WAGNER_BOOKMARK_DESC"
+			ideology = loyal_pop
+			ideas = {
+				Wagner_army
+				WAG_Russia_Tactics
+				WAG_NoStepBack
+			}
+			focuses = {
+				WAG_where_is_ammo
+				WAG_lets_go_moskva
+				WAG_where_is_oil
+			}
+		}
+		
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+
+	bookmark = {
+		name = "WO_ALLE_STRASSE_ENDEN_NAME"
+		desc = "WO_ALLE_STRASSE_ENDEN_DESC"
+		date = 3230.1.1.12
+		picture = "GFX_select_date_BA2"
+		default_country = "GEH"
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"GEP"={
+			history = "GEP_WO_ALLE_STRASSE_ENDEN_DESC"
+			ideology = loyal_pop
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"GEH"={
+			history = "GEH_WO_ALLE_STRASSE_ENDEN_DESC"
+			ideology = loyal_pop
+			ideas = {
+				GEH_shadow_follows_light
+				GEH_controlled_budget
+			}
+			focuses = {
+			}
+		}
+
+		"KRM"={
+			history = "KRM_WO_ALLE_STRASSE_ENDEN_DESC"
+			ideology = loyal_pop
+			ideas = {
+  				KRM_idea_the_broken_cross #부서진 철십자
+				KRM_idea_in_the_leaf #가문비나무 잎사귀 뒤에서
+			}
+			focuses = {
+			}
+		}
+
+		"HSD"={
+			history = "KRM_WO_ALLE_STRASSE_ENDEN_DESC"
+			ideology = loyal_pop
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+bookmark = {
+		name = "INTER_ARMA_ENIM_SILENT_LEGES_NAME"
+		desc = "INTER_ARMA_ENIM_SILENT_LEGES_DESC"
+		date = 3230.1.1.12
+		picture = "GFX_select_date_BA"
+		default_country = "VTK"
+		
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"VTK"={
+			history = "VTK_INTER_ARMA_ENIM_SILENT_LEGES_DESC"
+			ideology = loyal_pop
+			ideas = {
+				VTK_endless_chaos #끝나지 않는 혼돈
+				VTK_food_crisis #식량 위기
+				VTK_great_mighty_withering_fed #위대하며, 강력하고, 시들거리는 연방
+			}
+			focuses = {
+			}
+		}
+
+		"PRV"={
+			history = "PRV_INTER_ARMA_ENIM_SILENT_LEGES_DESC"
+			ideology = loyal_pop
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"SEV"={
+			history = "SEV_WINTER_ARMA_ENIM_SILENT_LEGES_DESC"
+			ideology = loyal_pop
+			ideas = {
+				SEV_against_great_red_wave
+				SEV_endless_field 
+				SEV_where_are_you
+			}
+			focuses = {
+			}
+		}
+		"GAL"={
+			history = "GAL_WINTER_ARMA_ENIM_SILENT_LEGES_DESC"
+			ideology = loyal_pop
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"URS"={
+			history = "URS_WINTER_ARMA_ENIM_SILENT_LEGES_DESC"
+		}
+		"RWN"={
+			history = "RWN_WINTER_ARMA_ENIM_SILENT_LEGES_DESC"
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+
+bookmark = {
+		name = "LEGENDS_NEVER_DIE_NAME"
+		desc = "LEGENDS_NEVER_DIE_DESC"
+		date = 3230.1.1.12
+		picture = "GFX_select_date_UMA"
+		default_country = "UFU"
+		default = yes
+		
+		"ZZZ"={
+			history = "ZZZ_LEGENDS_NEVER_DIE_DESC"
+			ideology = UMA_loyal_pop_subtype 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"UFU"={
+			history = "UFU_LEGENDS_NEVER_DIE_DESC"
+			ideology = UMA_loyal_pop_subtype 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"USK"={
+			history = "USK_LEGENDS_NEVER_DIE_DESC"
+			ideology = UMA_loyal_pop_subtype 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"HSH"={
+			history = "HSH_LEGENDS_NEVER_DIE_DESC"
+			ideology = UMA_loyal_pop_subtype 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"MJR"={
+			history = "MJR_LEGENDS_NEVER_DIE_DESC"
+			ideology = UMA_loyal_pop_subtype 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+
+		"HBR"={
+			history = "HBR_LEGENDS_NEVER_DIE_DESC"
+			ideology = HBR_loyal_pop_subtype_nomal
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+	bookmark = {
+		name = "TOUHOU_GREAT_WAR_NAME"
+		desc = "TOUHOU_GREAT_WAR_DESC"
+		date = 3230.1.1.12
+		picture = "GFX_select_date_TOU"
+		default_country = "GSK"
+		default = yes
+		
+		"ZZZ"={
+			history = "ZZZ_TOUHOU_GREAT_WAR_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"MRT"={
+			history = "MRT_TOUHOU_GREAT_WAR_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"GSK"={
+			history = "GSK_TOUHOU_GREAT_WAR_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"SDM"={
+			history = "SDM_TOUHOU_GREAT_WAR_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"YKM"={
+			history = "YKM_TOUHOU_GREAT_WAR_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+
+		"HMV"={
+			history = "HMV_TOUHOU_GREAT_WAR_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"MRS"={
+			history = "MRS_TOUHOU_GREAT_WAR_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"AOF"={
+			history = "AOF_TOUHOU_GREAT_WAR_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"ENT"={
+			history = "ENT_TOUHOU_GREAT_WAR_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+	bookmark = {
+		name = "IN_OUR_TIME_NAME"
+		desc = "IN_OUR_TIME_DESC"
+		date = 3230.1.1.12
+		picture = "GFX_select_date_SR1"
+		default_country = "SR1"
+		default = yes
+		
+		"ZZZ"={
+			history = "ZZZ_LEGENDS_NEVER_DIE_DESC"
+			ideology = loyal_pop
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"SR1"={
+			history = "SR1_IN_OUR_TIME_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"PAP"={
+			history = "PAP_IN_OUR_TIME_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"SRN"={
+			history = "SRN_IN_OUR_TIME_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"MAF"={
+			history = "MAF_IN_OUR_TIME_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+
+		"MV1"={
+			history = "MV1_IN_OUR_TIME_DESC"
+			ideology = loyal_pop
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+	bookmark = {
+		name = "MYGO_BOOKMARK_NAME"
+		desc = "MYGO_BOOKMARK_DESC"
+		date = 3230.1.1.12
+		picture = "GFX_select_date_MYG"
+		default_country = "MYG"
+		default = yes
+		
+		"ZZZ"={
+			history = "ZZZ_LEGENDS_NEVER_DIE_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"MYG"={
+			history = "MYG_MYGO_BOOKMARK_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"BGD"={
+			history = "BGD_MYGO_BOOKMARK_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"PPP"={
+			history = "PPP_MYGO_BOOKMARK_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		
+		"PST"={
+			history = "PST_MYGO_BOOKMARK_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+	bookmark = {
+		name = "AMERICA_BOOKMARK_NAME"
+		desc = "AMERICA_BOOKMARK_DESC"
+		date = 3230.1.1.12
+		picture = "GFX_select_date_USA"
+		default_country = "USA"
+		default = yes
+		
+		"ZZZ"={
+			history = "ZZZ_AMERICA_BOOKMARK_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"USA"={
+			history = "USA_AMERICA_BOOKMARK_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"TRC"={
+			history = "TRC_AMERICA_BOOKMARK_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"STG"={
+			history = "STG_AMERICA_BOOKMARK_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		
+		"SND"={
+			history = "SND_AMERICA_BOOKMARK_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"MPL"={
+			history = "MPL_AMERICA_BOOKMARK_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"NPT"={
+			history = "NPT_AMERICA_BOOKMARK_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"LTT"={
+			history = "LTT_AMERICA_BOOKMARK_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"SNJ"={
+			history = "SNJ_AMERICA_BOOKMARK_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+	bookmark = {
+		name = "BHARAT_BOOKMARK_NAME"
+		desc = "BHARAT_BOOKMARK_DESC"
+		date = 3230.1.1.12
+		picture = "GFX_select_date_PNR"
+		default_country = "PNR"
+		default = yes
+		
+		"ZZZ"={
+			history = "ZZZ_BHARAT_BOOKMARK_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"IND"={
+			history = "IND_BHARAT_BOOKMARK_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"PNR"={
+			history = "PNR_BHARAT_BOOKMARK_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"MIG"={
+			history = "MIG_BHARAT_BOOKMARK_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		
+		"MPH"={
+			history = "MPH_BHARAT_BOOKMARK_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"EIC"={
+			history = "EIC_BHARAT_BOOKMARK_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"NTD"={
+			history = "NTD_BHARAT_BOOKMARK_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+	bookmark = {
+		name = "ENDLESS_SAGA_NAME"
+		desc = "ENDLESS_SAGA_DESC"
+		date = 3230.1.1.12
+		picture = "GFX_select_date_SAG"
+		default_country = "SAG"
+		default = yes
+		
+		"ZZZ"={
+			history = "ZZZ_BHARAT_BOOKMARK_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"SAG"={
+			history = "SAG_ENDLESS_SAGA_DESC"
+			ideology = loyal_pop 
+			ideas = {
+				SAG_where_is_sakura
+			}
+			focuses = {
+			}
+		}
+
+		"TKG"={
+			history = "TKG_ENDLESS_SAGA_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"MYU"={
+			history = "MYU_ENDLESS_SAGA_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		
+		"AQU"={
+			history = "AQU_ENDLESS_SAGA_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"ZZZ"={
+			history = "ZZZ_GATHERING_STORM_DESC"
+		}
+		"NIJ"={
+			history = "NIJ_ENDLESS_SAGA_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"ANA"={
+			history = "ANA_ENDLESS_SAGA_DESC"
+			ideology = loyal_pop 
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}
