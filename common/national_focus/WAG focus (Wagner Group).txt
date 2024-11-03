@@ -730,10 +730,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = WAG_Prigozhin_russia
-			focus = WAG_maintaining_balance_of_power
 		}
 		relative_position_id = WAG_Prigozhin_russia
-		x = -1
+		x = 2
 		y = 1
 		completion_reward = {
 			swap_ruler_traits = { 
@@ -889,7 +888,7 @@ focus_tree = {
 
 	focus = {
 		id = WAG_resupply_weapon
-		icon = GFX_goal_state_duma
+		icon = GFX_SOV_pc_of_mechanical_engineering_ccp_2d_sov_compatibility
 
 		cost = 6.9
 
@@ -930,10 +929,156 @@ focus_tree = {
 			focus = WAG_Prigozhin_russia
 		}
 		relative_position_id = WAG_Prigozhin_win
-		x = -2
+		x = -4
 		y = 1
 		completion_reward = {
 			
+		}
+	}
+
+	focus = {
+		id = WAG_Prigozhin_eviction
+		icon = GFX_goal_focus_utkin
+
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {
+			focus = WAG_maintaining_balance_of_power
+		}
+		relative_position_id = WAG_maintaining_balance_of_power
+		x = -2
+		y = 1
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = WAG_lead_radicals
+		icon = GFX_goal_focus_utkin
+
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {
+			focus = WAG_Prigozhin_eviction
+		}
+		relative_position_id = WAG_Prigozhin_eviction
+		x = 1
+		y = 1
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = WAG_patriotism_stimulation
+		icon = GFX_goal_Motherland_Calls
+
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = {
+			focus = WAG_Prigozhin_eviction
+		}
+		relative_position_id = WAG_Prigozhin_eviction
+		x = -1
+		y = 1
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = WAG_create_russia_patriotic_front
+		icon = GFX_goal_focus_utkin
+
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_patriotism_stimulation }
+		prerequisite = { focus = WAG_lead_radicals }
+		relative_position_id = WAG_lead_radicals
+		x = 0
+		y = 1
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = WAG_purebloodism
+		icon = GFX_goal_focus_utkin
+
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_patriotism_stimulation }
+		prerequisite = { focus = WAG_lead_radicals }
+		relative_position_id = WAG_patriotism_stimulation
+		x = 0
+		y = 1
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = WAG_Russian_Nationalist_Republic
+		icon = GFX_goal_focus_utkin
+
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_create_russia_patriotic_front }
+		prerequisite = { focus = WAG_purebloodism }
+		relative_position_id = WAG_create_russia_patriotic_front
+		x = -1
+		y = 1
+		completion_reward = {
+		}
+	}
+	
+
+	focus = {
+		id = WAG_state_gover_admit
+		icon = GFX_goal_state_duma
+
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { 
+			focus = WAG_Prigozhin_russia 
+			focus = WAG_maintaining_balance_of_power
+		}
+		relative_position_id = WAG_maintaining_balance_of_power
+		x = 2
+		y = 1
+		completion_reward = {
 		}
 	}
 

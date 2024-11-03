@@ -81,7 +81,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_goal_focus_utkin"
-		texturefile = "gfx/wagner_gfx/focus_utkin.png" 
+		texturefile = "gfx/wagner_gfx/win_of_utkin.png" 
 	}
 	spriteType = {
 		name = "GFX_goal_read_of_the_state_government"
@@ -158,5 +158,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_sungon"
 		texturefile = "gfx/wagner_gfx/sungon.png" 
+	}
+	spriteType = {
+		name = "GFX_goal_Motherland_Calls"
+		texturefile = "gfx/wagner_gfx/Motherland_Calls.png" 
 	}
 }

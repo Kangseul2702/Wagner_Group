@@ -233,17 +233,24 @@
  
  WAG_resupply_weapon: "무기 재보급"
  # 프리고진 루트
- 
  WAG_Prigozhin_win: "권력 유지"
  WAG_Prigozhin_russia: "단일한 지배"
- WAG_maintaining_balance_of_power: "권력의 균형 유지"
  WAG_big_brother: "큰 형님"
  WAG_control_of_everything: "권력 집중"
  WAG_Prigozhism: "프리고진주의 제창"
  WAG_songun: "선군 정치"
  WAG_stop_the_idolization: "과도한 우상화 금지"
  WAG_strong_leader_strong_country: "강한 지도자, 강한 러시아"
- # 프리고진 루트
+ # 프리고진 루트 - > 우트킨 or 현대 러시아
+ WAG_maintaining_balance_of_power: "권력 균형 유지"
+ WAG_Prigozhin_eviction: "권력 찬탈"
+ WAG_lead_radicals: "급진파 결집"
+ WAG_patriotism_stimulation: "러시아 민족주의 자극"
+ WAG_purebloodism: "순혈주의"
+ WAG_create_russia_patriotic_front: "러시아 애국전선 창설"
+ WAG_Russian_Nationalist_Republic: "러시아 국민공화국 선포"
+ WAG_state_gover_admit: "주 정부 인정"
+
  WAG_state_gover_win: "역전된 권력"
  WAG_i_slove_it: "대장의 뜻을 따라"
  WAG_lets_slove_it_together: "주 정부의 지도"
