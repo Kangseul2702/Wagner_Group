@@ -29,6 +29,12 @@ characters={
 				large= "gfx/leaders/WAG/Dmitry_Utkin.png"
 			}
 		}
+		country_leader = {
+			desc = WAG_dmitry_utkin_desc
+			ideology = Wagner_ideologies_radical 
+			id = -1
+			traits = {  }
+		}
 		field_marshal={
 			desc = WAG_dmitry_utkin_desc
 			skill=3

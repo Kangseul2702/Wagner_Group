@@ -121,6 +121,16 @@ defined_text = {
 
 defined_text = {
 	name = GetSubIdeologyLocRadical_pop
+	#### WG_MOD_FIX
+	text = {
+		trigger = { has_country_leader_ideology = Wagner_ideologies_radical }
+		localization_key = PMC
+	}
+	text = {
+		trigger = { has_country_leader_ideology = WAG_utkin_ideaologies }
+		localization_key = WAG_utkin_ideaologies
+	}
+	#### WG_MOD_FIX
 	text = {
 		trigger = { has_country_leader_ideology = SHA_radical_pop_subtype }
 		localization_key = SHA_radical_pop_subtype

@@ -251,6 +251,22 @@ ideologies = {
 			}
 			NPC_radical_pop_subtype = {
 			}
+			#### WG_MOD_FIX
+			Wagner_ideologies_radical = {
+				can_be_randomly_selected = no
+				can_generate_female_country_leaders  = no
+				can_generate_female_unit_leaders  = no
+				can_generate_female_aces = no
+				color = { 7 7 7 }
+			}
+			WAG_utkin_ideaologies = {
+				can_be_randomly_selected = no
+				can_generate_female_country_leaders  = no
+				can_generate_female_unit_leaders  = no
+				can_generate_female_aces = no
+				color = { 7 7 7 }
+			}
+			#### 
 			#블루 아카이브 급진파
 			SHA_radical_pop_subtype = { #카야
 				can_be_randomly_selected = no

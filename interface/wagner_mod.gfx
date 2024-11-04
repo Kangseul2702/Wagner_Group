@@ -146,6 +146,11 @@ spriteTypes = {
 		texturefile = "gfx/wagner_gfx/WAG_russification.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_idea_WAG_Reactionism"
+		texturefile = "gfx/wagner_gfx/Russia_Reactionism_.png"
+		legacy_lazy_load = no
+	}
 	# 인물
 	spriteType = {
 		name = "GFX_idea_WAG_general_staff_saintpetersburg"
@@ -197,6 +202,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_WAG_Prigozhism_ideaologies"
 		texturefile = "gfx/interface/ideologies/AllRussiaPeoplesFront.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_WAG_utkin_ideaologies"
+		texturefile = "gfx/interface/ideologies/Russia_National_front.png"
 	}
 	# 배너
 	spriteType = {

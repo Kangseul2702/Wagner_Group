@@ -799,7 +799,7 @@ focus_tree = {
 		id = WAG_control_of_everything
 		icon = GFX_goal_focus_gunryuk
 
-		cost = 6.9
+		cost = 5
 
 		available = {
 		}
@@ -830,9 +830,9 @@ focus_tree = {
 
 	focus = {
 		id = WAG_Prigozhism
-		icon = GFX_goal_bigbrother
+		icon = GFX_goal_gathering_of_radicals
 
-		cost = 6.9
+		cost = 5
 
 		available = {
 		}
@@ -854,14 +854,6 @@ focus_tree = {
 				long_name = All_Russia_peoples_front_long
 			}
 			set_rule = { can_create_factions = yes }
-			if = {
-				limit = { is_in_faction = no }
-				create_faction = Eurasian_Union
-			}
-			if = {
-				limit = { is_faction_leader = yes }
-				set_faction_name = Eurasian_Union
-			}
 		}
 	}
 
@@ -869,7 +861,7 @@ focus_tree = {
 		id = WAG_strong_leader_strong_country
 		icon = GFX_goal_StrongLeaderStrongCountry
 
-		cost = 6.9
+		cost = 10.00
 
 		available = {
 		}
@@ -882,7 +874,10 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
-			
+			swap_ruler_traits = {
+				remove = RUS_dictator_2
+				add = wagner_great_commander
+			}
 		}
 	}
 
@@ -954,12 +949,17 @@ focus_tree = {
 		x = -2
 		y = 1
 		completion_reward = {
+			set_politics = {
+				ruling_party = radical_pop
+				elections_allowed = no
+				election_frequency = 48
+			}
 		}
 	}
 
 	focus = {
 		id = WAG_lead_radicals
-		icon = GFX_goal_focus_utkin
+		icon = GFX_goal_bigbrother
 
 		cost = 6.9
 
@@ -975,6 +975,12 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
+			add_political_power = 75
+			add_stability = -0.05
+			add_popularity = {
+				ideology = radical_pop
+				popularity = 0.25
+			}
 		}
 	}
 
@@ -996,12 +1002,16 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			add_popularity = {
+				ideology = radical_pop
+				popularity = 0.25
+			}
 		}
 	}
 
 	focus = {
 		id = WAG_create_russia_patriotic_front
-		icon = GFX_goal_focus_utkin
+		icon = GFX_goal_russia_patriotic_front
 
 		cost = 6.9
 
@@ -1016,12 +1026,19 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
+			set_country_leader_ideology = WAG_utkin_ideaologies
+			set_party_name = {
+				ideology = radical_pop
+				name = Russia_national_front
+				long_name = Russia_national_front_long
+			}
+			set_rule = { can_create_factions = yes }
 		}
 	}
 
 	focus = {
 		id = WAG_purebloodism
-		icon = GFX_goal_focus_utkin
+		icon = GFX_goal_Russia_Reactionism
 
 		cost = 6.9
 
@@ -1036,12 +1053,18 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
+			add_popularity = {
+				ideology = radical_pop
+				popularity = 0.25
+			}
+			add_political_power = 120
+			add_ideas = WAG_Reactionism
 		}
 	}
 
 	focus = {
 		id = WAG_Russian_Nationalist_Republic
-		icon = GFX_goal_focus_utkin
+		icon = GFX_goal_russia_state
 
 		cost = 6.9
 
@@ -1056,6 +1079,15 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			set_cosmetic_tag = WAG_russia_national_state
+			if = {
+				limit = { is_in_faction = no }
+				create_faction = Eurasian_Union
+			}
+			if = {
+				limit = { is_faction_leader = yes }
+				set_faction_name = Eurasian_Union
+			}
 		}
 	}
 	

@@ -163,4 +163,20 @@ spriteTypes = {
 		name = "GFX_goal_Motherland_Calls"
 		texturefile = "gfx/wagner_gfx/Motherland_Calls.png" 
 	}
+	spriteType = {
+		name = "GFX_goal_Russia_Reactionism"
+		texturefile = "gfx/wagner_gfx/Russia_Reactionism.png" 
+	}
+	spriteType = {
+		name = "GFX_goal_gathering_of_radicals"
+		texturefile = "gfx/wagner_gfx/gathering_of_radicals.png" 
+	}
+	spriteType = {
+		name = "GFX_goal_russia_patriotic_front"
+		texturefile = "gfx/wagner_gfx/russia_patriotic_front.png" 
+	}
+	spriteType = {
+		name = "GFX_goal_russia_state"
+		texturefile = "gfx/wagner_gfx/russia_state.png" 
+	}
 }

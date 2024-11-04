@@ -203,10 +203,26 @@ ideas = {
                 tag = WAG
             }
             allowed_civil_war = { always = yes  }
-            on_add = { log = "[GetDateText]: [Root.GetName] add idea WAG_food_crisis " }
+            on_add = { log = "[GetDateText]: [Root.GetName] add idea WAG_aftermath_of_food_crisis " }
             modifier = {
 				stability_factor = -0.05
 				conscription_factor = -0.1
+            }
+        }
+        WAG_Reactionism = {
+            name = WAG_purebloodism
+            allowed = { 
+                always = no 
+                tag = WAG
+            }
+            allowed_civil_war = { always = yes  }
+            on_add = { log = "[GetDateText]: [Root.GetName] add idea WAG_Reactionism " }
+            modifier = {
+				stability_factor = -0.15
+                political_power_factor = 0.15
+                war_support_factor = 0.15
+		        drift_defence_factor = 0.15
+		        offensive_war_stability_factor = 0.2
             }
         }
         VTK_We_cant_win_to_wagner = { 
