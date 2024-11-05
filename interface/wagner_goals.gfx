@@ -179,4 +179,16 @@ spriteTypes = {
 		name = "GFX_goal_russia_state"
 		texturefile = "gfx/wagner_gfx/russia_state.png" 
 	}
+	spriteType = {
+		name = "GFX_goal_solution_of_sickryang"
+		texturefile = "gfx/wagner_gfx/solution_of_sickryang.png" 
+	}
+	spriteType = {
+		name = "GFX_goal_Russian_language_spread"
+		texturefile = "gfx/wagner_gfx/Russian_language_spread.png" 
+	}
+	spriteType = {
+		name = "GFX_goal_Resistance"
+		texturefile = "gfx/wagner_gfx/레지스탕스.png" 
+	}
 }
