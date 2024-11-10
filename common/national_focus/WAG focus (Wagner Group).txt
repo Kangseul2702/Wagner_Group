@@ -188,7 +188,7 @@ focus_tree = {
 
 	focus = { # 프라우다 저항군 소탕
 		id = WAG_Pravda_ousted
-		icon = GFX_goal_fucking_gwanryu
+		icon = GFX_goal_Resistance
 		cost = 6.9
 
 		available = {
@@ -214,7 +214,7 @@ focus_tree = {
 
 	focus = { # 중앙 정부 흡수
 		id = WAG_central_government_absorption
-		icon = GFX_goal_fucking_gwanryu
+		icon = GFX_focus_VTK_federal_report
 		cost = 6.9
 
 		available = {
@@ -296,7 +296,7 @@ focus_tree = {
 
 	focus = { # 식량 위기 해결
 		id = WAG_Removal_of_Vostokia
-		icon = GFX_goal_fucking_gwanryu
+		icon = GFX_goal_solution_of_sickryang
 		cost = 6.9
 
 		available = {
@@ -335,7 +335,7 @@ focus_tree = {
 
 	focus = { # 러시아어 보급
 		id = WAG_Russian_language_spread
-		icon = GFX_goal_fucking_gwanryu
+		icon = GFX_goal_Russian_language_spread
 		cost = 6.9
 
 		available = {
