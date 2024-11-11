@@ -20,6 +20,12 @@ set_party_name = {
 	name = Wagner_party
 }
 
+set_party_name ={
+	ideology = neutral_pop
+	long_name = Russia_state_government_long
+	name = Russia_state_government
+}
+
 set_technology = {
     infantry_weapons_0 = 1
 	infantry_weapons_1 = 1

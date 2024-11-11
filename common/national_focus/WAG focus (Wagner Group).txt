@@ -717,11 +717,16 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { # 큰 형님
 		id = WAG_big_brother
 		icon = GFX_goal_daihyung
 
 		cost = 6.9
+
+		mutually_exclusive = {
+			focus = WAG_Prigozhin_eviction
+			focus = WAG_state_gover_admit
+		}
 
 		available = {
 		}
@@ -932,10 +937,16 @@ focus_tree = {
 	}
 
 	focus = {
+		# 권력 찬탈
 		id = WAG_Prigozhin_eviction
 		icon = GFX_goal_focus_utkin
 
 		cost = 6.9
+
+		mutually_exclusive = {
+			focus = WAG_big_brother
+			focus = WAG_state_gover_admit
+		}
 
 		available = {
 		}
@@ -1092,10 +1103,157 @@ focus_tree = {
 	}
 	
 
-	focus = {
+	focus = { # 주 정부 인정
 		id = WAG_state_gover_admit
 		icon = GFX_goal_state_duma
 
+		cost = 6.9
+
+		mutually_exclusive = {
+			focus = WAG_big_brother
+			focus = WAG_Prigozhin_eviction
+		}
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { 
+			focus = WAG_Prigozhin_russia
+			focus = WAG_maintaining_balance_of_power
+		}
+		relative_position_id = WAG_maintaining_balance_of_power
+		x = 2
+		y = 1
+		completion_reward = {
+			add_popularity = {
+				ideology = neutral_pop
+				popularity = 0.25
+			}
+		}
+	}
+
+	focus = { # 민주정 전환
+		id = WAG_democratic_transition
+		icon = GFX_goal_fucking_gwanryu
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_state_gover_admit }
+		relative_position_id = WAG_state_gover_admit
+		x = 1
+		y = 1
+		completion_reward = {
+			add_popularity = {
+				ideology = neutral_pop
+				popularity = 0.25
+			}
+		}
+	}
+
+	focus = { # 의회 설립
+		id = WAG_establishment_of_parliament
+		icon = GFX_goal_fucking_gwanryu
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_state_gover_admit }
+		relative_position_id = WAG_state_gover_admit
+		x = -1
+		y = 1
+		completion_reward = {
+			add_popularity = {
+				ideology = neutral_pop
+				popularity = 0.25
+			}
+		}
+	}
+	
+	focus = { # 사법부 독립
+		id = WAG_independence_of_the_judiciary
+		icon = GFX_goal_fucking_gwanryu
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_democratic_transition }
+		prerequisite = { focus = WAG_establishment_of_parliament }
+		relative_position_id = WAG_establishment_of_parliament
+		x = 0
+		y = 1
+		completion_reward = {
+			add_popularity = {
+				ideology = neutral_pop
+				popularity = 0.25
+			}
+		}
+	}
+
+	focus = { # 행정 개편
+		id = WAG_administrative_reform
+		icon = GFX_goal_fucking_gwanryu
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_democratic_transition }
+		prerequisite = { focus = WAG_establishment_of_parliament }
+		relative_position_id = WAG_democratic_transition
+		x = 0
+		y = 1
+		completion_reward = {
+			if = {
+				limit = { has_idea = WAG_bad_bureaucracy }
+				remove_ideas = WAG_bad_bureaucracy
+			}
+			if = {
+				limit = { has_idea = WAG_too_bad_bureaucracy }
+				remove_ideas = WAG_too_bad_bureaucracy
+			}
+			else = {
+				add_political_power = 50
+			}
+		}
+	}
+
+	focus = { # 재건되는 조국
+		id = WAG_rebuilding_homeland
+		icon = GFX_goal_fucking_gwanryu
+		cost = 6.9
+
+		available = {
+		}
+		ai_will_do = {
+			base = 4000
+		}
+		prerequisite = { focus = WAG_independence_of_the_judiciary }
+		prerequisite = { focus = WAG_administrative_reform }
+		relative_position_id = WAG_independence_of_the_judiciary
+		x = 1
+		y = 1
+		completion_reward = {
+			add_ideas = WAG_reformed_russia_administration
+		}
+	}
+
+	focus = { # 러시아의 길
+		id = WAG_Russia_way
+		icon = GFX_goal_fucking_gwanryu
 		cost = 6.9
 
 		available = {
@@ -1104,13 +1262,15 @@ focus_tree = {
 			base = 4000
 		}
 		prerequisite = { 
-			focus = WAG_Prigozhin_russia 
-			focus = WAG_maintaining_balance_of_power
+			focus = WAG_Russian_Nationalist_Republic
+			focus = WAG_strong_leader_strong_country
+			focus = WAG_rebuilding_homeland
 		}
-		relative_position_id = WAG_maintaining_balance_of_power
-		x = 2
+		relative_position_id = WAG_rebuilding_homeland
+		x = 0
 		y = 1
 		completion_reward = {
+			add_ideas = WAG_bear_spirit
 		}
 	}
 

@@ -137,6 +137,7 @@ ideas = {
             modifier = {
                 army_speed_factor = 0.5
                 army_attack_speed_factor = 0.5
+                country_resource_steel = 30
                 custom_modifier_tooltip = Cancel_when_condition
                 custom_modifier_tooltip = WAG_many_oil_cancel_condition
             }
@@ -226,6 +227,54 @@ ideas = {
                 radical_pop_drift = 0.05
             }
         }
+        WAG_reformed_russia_administration = {
+            name = WAG_reformed_russia_administration
+            picture = WAG_bad_bureaucracy
+            allowed = { 
+                always = no 
+                tag = WAG
+            }
+            allowed_civil_war = { always = yes  }
+            on_add = { log = "[GetDateText]: [Root.GetName] add idea WAG_reformed_russia_administration " }
+            modifier = {
+                stability_factor = 0.05
+                political_power_factor = 0.15
+                war_support_factor = 0.15
+                consumer_goods_factor = -0.10
+				production_factory_max_efficiency_factor = 0.20
+                production_factory_efficiency_gain_factor = 0.20
+                production_factory_start_efficiency_factor = 0.20
+            }
+        }
+
+        WAG_bear_spirit = {
+            name = WAG_bear_spirit
+            picture = WAG_bad_bureaucracy
+            allowed = { 
+                always = no 
+                tag = WAG
+            }
+            allowed_civil_war = { always = yes  }
+            on_add = { log = "[GetDateText]: [Root.GetName] add idea WAG_bear_spirit " }
+            modifier = {
+                stability_factor = -0.35
+
+                # 군사적 효과
+                army_org_factor = 0.05                     # 육군 조직력 5% 증가
+                army_morale_factor = 0.10        # 육군 사기 10% 증가
+                max_planning = 0.15              # 최대 계획 수립 15% 증가
+                army_attack_factor = 0.05        # 육군 공격력 5% 증가
+                army_defence_factor = 0.05       # 육군 방어력 5% 증가
+
+                # 산업적 효과
+                industrial_capacity_factory = 0.05  # 공장 생산성 5% 증가
+                production_speed_buildings_factor = 0.10  # 건설 속도 10% 증가
+
+                # 외교적 효과
+                justify_war_goal_time = -0.15    # 전쟁 목표 정당화 시간 15% 감소
+                generate_wargoal_tension = -0.15 # 전쟁 목표 생성시 세계 긴장도 15% 감소            }
+            }
+
         VTK_We_cant_win_to_wagner = { 
             picture = chi_wargaming_division
             allowed = { 
