@@ -1,0 +1,42 @@
+wagner_state_gover_idea_up = {
+	if = {
+		limit = { 
+			NOT = { 
+				has_idea = WAG_reformed_russia_administration_1
+				has_idea = WAG_reformed_russia_administration_2
+				has_idea = WAG_reformed_russia_administration_3
+				has_idea = WAG_reformed_russia_administration_4
+				has_idea = WAG_reformed_russia_administration_5
+			}
+		}
+		add_ideas = WAG_reformed_russia_administration_1
+		else_if = {
+			limit = { has_idea = WAG_reformed_russia_administration_1 }
+			swap_ideas = {
+				remove_idea = WAG_reformed_russia_administration_1
+				add_idea = WAG_reformed_russia_administration_2
+			}
+		}
+		else_if = {
+			limit = { has_idea = WAG_reformed_russia_administration_2 }
+			swap_ideas = {
+				remove_idea = WAG_reformed_russia_administration_2
+				add_idea = WAG_reformed_russia_administration_3
+			}
+		}
+		else_if = {
+			limit = { has_idea = WAG_reformed_russia_administration_3 }
+			swap_ideas = {
+				remove_idea = WAG_reformed_russia_administration_3
+				add_idea = WAG_reformed_russia_administration_4
+			}
+		}
+		else_if = {
+			limit = { has_idea = WAG_reformed_russia_administration_4 }
+			swap_ideas = {
+				remove_idea = WAG_reformed_russia_administration_4
+				add_idea = WAG_reformed_russia_administration_5
+			}
+		}
+	}
+}

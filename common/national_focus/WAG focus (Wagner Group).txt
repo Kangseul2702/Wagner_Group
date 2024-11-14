@@ -1129,7 +1129,7 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = {
 				ideology = neutral_pop
-				popularity = 0.25
+				popularity = 0.45
 			}
 		}
 	}
@@ -1149,16 +1149,18 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
-			add_popularity = {
+			wagner_state_gover_idea_up = yes
+			set_party_name = {
 				ideology = neutral_pop
-				popularity = 0.25
+				name = united_russia_party_name
+				long_name = united_russia_party_name
 			}
 		}
 	}
 
 	focus = { # 의회 설립
 		id = WAG_establishment_of_parliament
-		icon = GFX_goal_fucking_gwanryu
+		icon = GFX_goal_state_duma
 		cost = 6.9
 
 		available = {
@@ -1171,9 +1173,10 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			wagner_state_gover_idea_up = yes
 			add_popularity = {
 				ideology = neutral_pop
-				popularity = 0.25
+				popularity = 0.05
 			}
 		}
 	}
@@ -1194,10 +1197,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-			add_popularity = {
-				ideology = neutral_pop
-				popularity = 0.25
-			}
+			wagner_state_gover_idea_up = yes
 		}
 	}
 
@@ -1228,6 +1228,7 @@ focus_tree = {
 			else = {
 				add_political_power = 50
 			}
+			wagner_state_gover_idea_up = yes
 		}
 	}
 
@@ -1247,7 +1248,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
-			add_ideas = WAG_reformed_russia_administration
+			wagner_state_gover_idea_up = yes
 		}
 	}
 
